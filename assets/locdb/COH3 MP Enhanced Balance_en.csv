@@ -1,0 +1,24 @@
+﻿ID,Pipeline,PipelineStage,Notes,TranslationNotes,Tags,Text
+1,,,Mod name.,,,reBALANCE
+2,,,Mod description.,,,A soft COH3 balance tuning pack for consideration in assisting with multiplayer balancing
+3,,,ui_name,,,Veterancy 1
+4,,,ui_name,,,Veterancy 1
+5,,,ui_name,,,In combat
+6,,,ui_name,,,In combat
+7,,,ui_name,,,Near enemy
+8,,,ui_name,,,Near enemy
+9,,,ui_name,,,Must be out of combat
+10,,,ui_name,,,Must be out of combat
+11,,,ui_name,,,Must be out of combat
+12,,,ui_name,,,Must be out of combat
+13,,,ui_name,,,Must be out of combat
+14,,,ui_name,,,Must be out of combat
+15,,,ui_name,,,Must be out of combat
+16,,,ui_name,,,Requires 
+17,,,ui_name,,,Platoon Command Post
+18,,,ui_name,,,requires Grenade package
+19,,,ui_name,,,Grenade Package
+20,,,ui_name,,,Light Machine Gun 42
+21,,,screen_name,,,MG 42 Light Machine Gun
+22,,,brief_text,,,Upgrades the squad with a MG 42 Light Machine Gun.
+23,,,help_text,,,Disables Movement

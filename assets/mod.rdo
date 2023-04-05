@@ -1,0 +1,28 @@
+<DataWarehouse>
+	<!--COH3 MP Enhanced Balance/-->
+	<DataObject Name="COH3 MP Enhanced Balance" Type="Mod" Id="4909421921765136359" Version="1">
+		<DataProperty Name="m_description" Type="Object">
+			<DataValue Name="util::ReflectLocString">14203465713487197584</DataValue>
+			<!--COH3 MP Enhanced Balance/util::ReflectLocString/-->
+			<DataObject Name="" Type="util::ReflectLocString" Id="14203465713487197584" OwnerId="4909421921765136359">
+				<DataProperty Name="m_modPart2" Type="UInt32" Value="2508941711"/>
+				<DataProperty Name="m_modPart3" Type="UInt32" Value="1947600866"/>
+				<DataProperty Name="m_modPart0" Type="UInt32" Value="2453258698"/>
+				<DataProperty Name="m_modPart1" Type="UInt32" Value="1203899856"/>
+				<DataProperty Name="m_locStringKey" Type="Int32" Value="2"/>
+			</DataObject>
+		</DataProperty>
+		<DataProperty Name="m_name" Type="Object">
+			<DataValue Name="util::ReflectLocString">13793985576957279159</DataValue>
+			<!--COH3 MP Enhanced Balance/util::ReflectLocString/-->
+			<DataObject Name="" Type="util::ReflectLocString" Id="13793985576957279159" OwnerId="4909421921765136359">
+				<DataProperty Name="m_modPart2" Type="UInt32" Value="2508941711"/>
+				<DataProperty Name="m_modPart3" Type="UInt32" Value="1947600866"/>
+				<DataProperty Name="m_modPart0" Type="UInt32" Value="2453258698"/>
+				<DataProperty Name="m_modPart1" Type="UInt32" Value="1203899856"/>
+				<DataProperty Name="m_locStringKey" Type="Int32" Value="1"/>
+			</DataObject>
+		</DataProperty>
+	</DataObject>
+</DataWarehouse>
+

@@ -1,0 +1,26 @@
+<instance version="5" description="" template="abilities">
+	<variant name="default">
+		<group name="ability_bag">
+			<group name="ui_position">
+				<int name="ui_position_row" value="2" overrideParent="True" />
+				<int name="ui_position_column" value="2" overrideParent="True" />
+			</group>
+			<instance_reference name="ui_menu" value="menu\construction" overrideParent="True" />
+			<enum_table name="cost_to_player">
+				<float name="munition" value="45" overrideParent="True" />
+			</enum_table>
+		</group>
+		<uniqueid name="pbgid" value="2128102" />
+		<instance_reference name="parent_pbg" value="abilities\races\afrika_korps\infantry\booby_trap_territory_guastatori_ak" />
+	</variant>
+	<variant name="sp">
+		<group name="ability_bag">
+			<group name="ui_position">
+				<int name="ui_position_row" value="3" overrideParent="True" />
+				<int name="ui_position_column" value="2" overrideParent="True" />
+			</group>
+		</group>
+		<uniqueid name="pbgid" value="2128102" />
+		<instance_reference name="parent_pbg" value="abilities\races\afrika_korps\infantry\booby_trap_territory_guastatori_ak" />
+	</variant>
+</instance>
