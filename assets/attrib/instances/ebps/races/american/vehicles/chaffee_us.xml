@@ -56,7 +56,7 @@
 			<template_reference name="exts" value="ebpextensions\moving_ext" List.ItemID="-1164819730" List.ParentItemID="-1164819730">
 				<float name="acceleration" value="2.5" overrideParent="True" />
 				<float name="deceleration" value="3.5" overrideParent="True" />
-				<instance_reference name="pass_type" value="pass_types\vehicle_light" overrideParent="True" />
+				<instance_reference name="pass_type" value="pass_types\vehicle_medium" overrideParent="True" />
 				<float name="on_land_overturn_scale" value="0.3" overrideParent="True" />
 				<enum_table name="speed_levels">
 					<float name="speed_level_2" value="5.5" overrideParent="True" />
