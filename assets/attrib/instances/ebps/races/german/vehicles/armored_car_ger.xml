@@ -213,7 +213,7 @@
 											<string name="parent_rigidbody_target_name" value="" />
 											<enum name="game_object_attachment_type" value="scenegraph" />
 										</template_reference>
-										<instance_reference name="ebp" value="" overrideParent="True" />
+										<instance_reference name="ebp" value="ebps\races\german\vehicles\crew\crew_vehicle_ger" overrideParent="True" />
 										<group name="attachment_flags">
 											<bool name="sim_only" value="False" />
 											<bool name="no_pathfinding" value="True" />
@@ -237,13 +237,13 @@
 								<group name="role" List.ItemID="-911871560">
 									<string name="name" value="gunner_panzerbuchse" />
 									<bool name="spawn_crew_on_create" value="False" />
-									<template_reference name="entity_attach_data" value="attachments\attach_data_entity">
+									<template_reference name="entity_attach_data" value="attachments\attach_data_entity" overrideParent="True">
 										<template_reference name="attach_data" value="attachments\attach_data">
 											<string name="marker_name_parent" value="loc_gunner" />
 											<string name="parent_rigidbody_target_name" value="" />
 											<enum name="game_object_attachment_type" value="scenegraph" />
 										</template_reference>
-										<instance_reference name="ebp" value="" overrideParent="True" />
+										<instance_reference name="ebp" value="ebps\races\german\infantry\crew_scout_car_sdkfz_221" overrideParent="True" />
 										<group name="attachment_flags">
 											<bool name="sim_only" value="False" />
 											<bool name="no_pathfinding" value="True" />
@@ -645,7 +645,7 @@
 				<list name="race_mapping_list">
 					<group name="race_mapping" List.ItemID="-2145794439" List.ListAction="Append">
 						<instance_reference name="race_key" value="racebps\americans" />
-						<instance_reference name="presentation_entity_override" value="ebps\races\american\vehicles\halftrack_us" mod="9239c1ca0dd047c28f698b95e2071674" overrideParent="True" />
+						<instance_reference name="presentation_entity_override" value="ebps\races\american\vehicles\halftrack_us" overrideParent="True" />
 						<instance_reference name="presentation_squad_override" value="sbps\races\american\vehicles\halftrack_us" overrideParent="True" />
 					</group>
 					<group name="race_mapping" List.ItemID="-107426865" List.ListAction="Append">
@@ -660,7 +660,7 @@
 					</group>
 					<group name="race_mapping" List.ItemID="-1272681506" List.ListAction="Append">
 						<instance_reference name="race_key" value="racebps\afrika_korps" />
-						<instance_reference name="presentation_entity_override" value="ebps\races\afrika_korps\vehicles\armored_car_8_rad_ak" mod="9239c1ca0dd047c28f698b95e2071674" />
+						<instance_reference name="presentation_entity_override" value="ebps\races\afrika_korps\vehicles\armored_car_8_rad_ak" overrideParent="True" />
 						<instance_reference name="presentation_squad_override" value="sbps\races\afrika_korps\vehicles\armored_car_8_rad_ak" />
 					</group>
 				</list>
@@ -939,13 +939,13 @@
 								<group name="role" List.ItemID="625684987">
 									<string name="name" value="gunner_panzerbuchse" />
 									<bool name="spawn_crew_on_create" value="False" />
-									<template_reference name="entity_attach_data" value="attachments\attach_data_entity">
+									<template_reference name="entity_attach_data" value="attachments\attach_data_entity" overrideParent="True">
 										<template_reference name="attach_data" value="attachments\attach_data">
 											<string name="marker_name_parent" value="loc_gunner" />
 											<string name="parent_rigidbody_target_name" value="" />
 											<enum name="game_object_attachment_type" value="scenegraph" />
 										</template_reference>
-										<instance_reference name="ebp" value="ebps\races\german\vehicles\crew\crew_vehicle_ger" />
+										<instance_reference name="ebp" value="ebps\races\german\vehicles\crew\crew_vehicle_ger" overrideParent="True" />
 										<group name="attachment_flags">
 											<bool name="sim_only" value="False" />
 											<bool name="no_pathfinding" value="True" />
@@ -1347,7 +1347,7 @@
 				<list name="race_mapping_list">
 					<group name="race_mapping" List.ItemID="1203666929" List.ListAction="Append">
 						<instance_reference name="race_key" value="racebps\americans" />
-						<instance_reference name="presentation_entity_override" value="ebps\races\american\vehicles\halftrack_us" mod="9239c1ca0dd047c28f698b95e2071674" overrideParent="True" />
+						<instance_reference name="presentation_entity_override" value="ebps\races\american\vehicles\halftrack_us" overrideParent="True" />
 						<instance_reference name="presentation_squad_override" value="sbps\races\american\vehicles\halftrack_us" overrideParent="True" />
 					</group>
 					<group name="race_mapping" List.ItemID="639686312" List.ListAction="Append">
@@ -1362,7 +1362,7 @@
 					</group>
 					<group name="race_mapping" List.ItemID="1145630148" List.ListAction="Append">
 						<instance_reference name="race_key" value="racebps\afrika_korps" />
-						<instance_reference name="presentation_entity_override" value="ebps\races\afrika_korps\vehicles\armored_car_8_rad_ak" mod="9239c1ca0dd047c28f698b95e2071674" />
+						<instance_reference name="presentation_entity_override" value="ebps\races\afrika_korps\vehicles\armored_car_8_rad_ak" overrideParent="True" />
 						<instance_reference name="presentation_squad_override" value="sbps\races\afrika_korps\vehicles\armored_car_8_rad_ak" />
 					</group>
 				</list>
