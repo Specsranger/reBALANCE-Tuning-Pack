@@ -3,7 +3,7 @@
 		<group name="weapon_bag">
 			<group name="accuracy">
 				<float name="near" value="0.075" comment="Intentionally set to always hit at close range, even while moving" overrideParent="True" />
-				<float name="far" value="0.045" overrideParent="True" />
+				<float name="far" value="0.0375" overrideParent="True" />
 				<float name="mid" value="0.0563" overrideParent="True" />
 			</group>
 			<group name="aim">
@@ -60,19 +60,19 @@
 				<int name="damage_max_members_per_squad" value="3" overrideParent="True" />
 			</group>
 			<group name="behaviour">
-				<bool name="can_be_offhanded" value="True" overrideParent="True" />
-				<bool name="can_be_substituted" value="True" overrideParent="True" />
+				<bool name="can_be_offhanded" value="False" overrideParent="True" />
+				<bool name="can_be_substituted" value="False" overrideParent="True" />
 				<float name="combat_slot_offset" value="0" overrideParent="True" />
 				<bool name="enable_auto_target_search" value="True" overrideParent="True" />
 				<float name="ground_hit_rate" value="1" overrideParent="True" />
-				<bool name="can_abort_winddown_on_weapon_switch" value="True" overrideParent="True" />
+				<bool name="can_abort_winddown_on_weapon_switch" value="False" overrideParent="True" />
 				<enum name="attack_ground_type" value="anywhere" overrideParent="True" />
 				<bool name="can_damage_allies" value="True" overrideParent="True" />
-				<bool name="can_abort_winddown_on_move_command" value="True" overrideParent="True" />
+				<bool name="can_abort_winddown_on_move_command" value="False" overrideParent="True" />
 			</group>
 			<group name="damage">
-				<float name="max" value="160" overrideParent="True" />
-				<float name="min" value="160" overrideParent="True" />
+				<float name="max" value="120" overrideParent="True" />
+				<float name="min" value="120" overrideParent="True" />
 				<enum name="damage_type" value="ballistic" overrideParent="True" />
 			</group>
 			<group name="deflection">
@@ -106,7 +106,7 @@
 				<instance_reference name="projectile" value="ebps\gameplay\projectiles\common\gun\p_gun_shell_medium" overrideParent="True" />
 			</group>
 			<group name="range">
-				<float name="max" value="50" overrideParent="True" />
+				<float name="max" value="40" overrideParent="True" />
 				<group name="distance">
 					<float name="mid" value="30" overrideParent="True" />
 					<float name="near" value="10" overrideParent="True" />
@@ -165,9 +165,9 @@
 				</group>
 			</group>
 			<group name="penetration">
-				<float name="near" value="300" overrideParent="True" />
-				<float name="far" value="220" overrideParent="True" />
-				<float name="mid" value="250" overrideParent="True" />
+				<float name="near" value="180" overrideParent="True" />
+				<float name="far" value="130" overrideParent="True" />
+				<float name="mid" value="160" overrideParent="True" />
 			</group>
 			<enum name="weapon_class" value="cannon" overrideParent="True" />
 			<enum_table name="cover_table">
@@ -197,7 +197,12 @@
 			<enum name="default_attack_type" value="ballistic" overrideParent="True" />
 			<group name="height_bonuses">
 				<group name="height_advantage">
-					<float name="height_threshold" value="3.5" overrideParent="True" />
+					<float name="height_threshold" value="0" overrideParent="True" />
+				</group>
+			</group>
+			<group name="cooldown">
+				<group name="duration">
+					<float name="max" value="2" overrideParent="True" />
 				</group>
 			</group>
 		</group>

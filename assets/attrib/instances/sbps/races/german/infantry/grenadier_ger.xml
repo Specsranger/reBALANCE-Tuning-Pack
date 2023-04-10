@@ -199,7 +199,7 @@
 								</list>
 							</group>
 							<group name="construction_item" List.ItemID="-1440065351">
-								<instance_reference name="ebp" value="ebps\races\german\buildings\defensive\fighting_nest_ger" />
+								<instance_reference name="ebp" value="" />
 								<group name="ui_position">
 									<int name="ui_position_row" value="1" />
 									<int name="ui_position_column" value="3" />
@@ -417,7 +417,7 @@
 								</list>
 							</group>
 							<group name="construction_item" List.ItemID="462545064">
-								<instance_reference name="ebp" value="ebps\races\german\buildings\defensive\fighting_nest_ger" />
+								<instance_reference name="ebp" value="" />
 								<group name="ui_position">
 									<int name="ui_position_row" value="1" />
 									<int name="ui_position_column" value="3" />

@@ -195,7 +195,7 @@
 			</group>
 			<group name="fire">
 				<float name="wind_down" value="0" />
-				<float name="wind_up" value="0.3" />
+				<float name="wind_up" value="0.15" />
 			</group>
 			<float name="flinch_radius" value="2.5" />
 			<string name="fx_action_target_name" value="" />

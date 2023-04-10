@@ -81,9 +81,9 @@
 				</group>
 				<bool name="damage_all_in_hold" value="True" />
 				<template_reference name="aoe_penetration" value="tables\range_table">
-					<float name="far" value="30" />
-					<float name="mid" value="30" />
-					<float name="near" value="30" />
+					<float name="far" value="35" />
+					<float name="mid" value="35" />
+					<float name="near" value="35" />
 				</template_reference>
 				<int name="damage_max_members_per_squad" value="3" />
 				<enum name="aoe_origin_and_direction" value="hit_position_and_direction" />
@@ -252,14 +252,14 @@
 				<float name="midair_detonation_height" value="0" />
 			</group>
 			<group name="range">
-				<float name="max" value="65" comment="Must be greater than ability range or ability breaks. Difference is the buffer zone for moving away from target before ability stops." />
+				<float name="max" value="90" comment="Must be greater than ability range or ability breaks. Difference is the buffer zone for moving away from target before ability stops." />
 				<float name="min" value="15" />
 				<group name="distance">
 					<float name="near" value="10" />
 					<float name="far" value="80" />
 					<float name="mid" value="40" />
 				</group>
-				<float name="max_height" value="45" />
+				<float name="max_height" value="65" />
 				<float name="max_animation_angle_distance" value="75" />
 				<float name="attack_move_stop_offset" value="0" />
 			</group>

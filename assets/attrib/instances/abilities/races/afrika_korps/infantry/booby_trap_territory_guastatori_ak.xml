@@ -10,7 +10,7 @@
 				<float name="command" value="0" />
 				<float name="popcap" value="0" />
 				<float name="fuel" value="0" />
-				<float name="munition" value="45" />
+				<float name="munition" value="50" />
 				<float name="manpower" value="0" />
 				<float name="requisition" value="0" />
 				<float name="ultimate" value="0" />

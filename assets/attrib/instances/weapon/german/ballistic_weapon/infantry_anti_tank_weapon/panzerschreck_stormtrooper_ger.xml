@@ -1,24 +1,24 @@
-<instance version="5" description="M9 Bazooka used by the Bazooka Team" template="weapon">
+<instance version="5" description="Panzerschrek used by the Stormtrooper" template="weapon">
 	<variant name="default">
 		<group name="weapon_bag">
 			<group name="accuracy">
-				<float name="near" value="0.067" overrideParent="True" />
-				<float name="far" value="0.0363" overrideParent="True" />
+				<float name="near" value="0.07" overrideParent="True" />
+				<float name="far" value="0.036" overrideParent="True" />
 				<float name="mid" value="0.05" overrideParent="True" />
 			</group>
 			<group name="aim">
 				<group name="fire_aim_time">
-					<float name="max" value="1" overrideParent="True" />
-					<float name="min" value="0.75" overrideParent="True" />
+					<float name="max" value="1.25" overrideParent="True" />
+					<float name="min" value="1" overrideParent="True" />
 				</group>
 				<float name="post_firing_aim_time_seconds" value="1.25" overrideParent="True" />
 				<group name="ready_aim_time">
-					<float name="max" value="1" overrideParent="True" />
-					<float name="min" value="0.5" overrideParent="True" />
+					<float name="max" value="1.25" overrideParent="True" />
+					<float name="min" value="1" overrideParent="True" />
 				</group>
 				<group name="aim_time_multiplier">
 					<float name="near" value="0.85" overrideParent="True" />
-					<float name="far" value="1.25" overrideParent="True" />
+					<float name="far" value="1.5" overrideParent="True" />
 				</group>
 			</group>
 			<group name="anim_table">
@@ -31,15 +31,14 @@
 					<float name="mid" value="5" overrideParent="True" />
 				</group>
 				<template_reference name="area_info" value="options\area_info_options\circle_area_option" overrideParent="True">
-					<float name="outer_radius" value="3" />
+					<float name="outer_radius" value="0.5" />
 					<float name="inner_radius" value="0" />
 					<bool name="is_two_dimensional" value="True" />
 					<enum name="dynamic_radius_type" value="fixed" />
 				</template_reference>
 				<group name="damage">
-					<float name="far" value="0.5" overrideParent="True" />
-					<float name="near" value="0.5" overrideParent="True" />
-					<float name="mid" value="0.5" overrideParent="True" />
+					<float name="far" value="0.05" overrideParent="True" />
+					<float name="mid" value="0.15" overrideParent="True" />
 				</group>
 				<group name="damage_friendly">
 					<float name="far" value="0.025" overrideParent="True" />
@@ -47,42 +46,40 @@
 					<float name="mid" value="0.075" overrideParent="True" />
 				</group>
 				<group name="distance">
-					<float name="far" value="0.5" overrideParent="True" />
-					<float name="near" value="0.5" overrideParent="True" />
-					<float name="mid" value="0.5" overrideParent="True" />
+					<float name="far" value="0.25" overrideParent="True" />
+					<float name="near" value="0.15" overrideParent="True" />
+					<float name="mid" value="0.2" overrideParent="True" />
 				</group>
 				<bool name="has_friendly_fire" value="False" overrideParent="True" />
-				<bool name="damage_all_in_hold" value="True" overrideParent="True" />
 				<template_reference name="aoe_penetration" value="tables\range_table">
-					<float name="far" value="1" overrideParent="True" />
-					<float name="mid" value="1" overrideParent="True" />
-					<float name="near" value="1" overrideParent="True" />
+					<float name="far" value="95" overrideParent="True" />
+					<float name="mid" value="100" overrideParent="True" />
+					<float name="near" value="105" overrideParent="True" />
 				</template_reference>
-				<int name="damage_max_members_per_squad" value="3" overrideParent="True" />
 			</group>
 			<group name="behaviour">
-				<bool name="can_be_offhanded" value="True" overrideParent="True" />
-				<bool name="can_be_substituted" value="True" overrideParent="True" />
 				<float name="combat_slot_offset" value="0" overrideParent="True" />
 				<bool name="enable_auto_target_search" value="True" overrideParent="True" />
 				<float name="ground_hit_rate" value="1" overrideParent="True" />
 				<float name="reaction_radius" value="0.5" overrideParent="True" />
-				<bool name="can_abort_winddown_on_weapon_switch" value="True" overrideParent="True" />
 				<enum name="attack_ground_type" value="anywhere" overrideParent="True" />
 				<bool name="can_damage_allies" value="True" overrideParent="True" />
-				<bool name="can_abort_winddown_on_move_command" value="True" overrideParent="True" />
-				<bool name="support_weapon" value="True" overrideParent="True" />
 			</group>
-			<group name="cooldown" comment="Original bazooka was all reload and no cooldown. Changed this because we shifted suppression to affect cooldown but not reload.">
+			<group name="cooldown">
 				<group name="duration">
-					<float name="max" value="2" overrideParent="True" />
-					<float name="min" value="1.5" overrideParent="True" />
+					<float name="max" value="4" overrideParent="True" />
+					<float name="min" value="4" overrideParent="True" />
 				</group>
 			</group>
 			<group name="damage">
-				<float name="max" value="75" overrideParent="True" />
-				<float name="min" value="75" overrideParent="True" />
+				<float name="max" value="160" overrideParent="True" />
+				<float name="min" value="160" overrideParent="True" />
 				<enum name="damage_type" value="ballistic" overrideParent="True" />
+				<list name="on_penetrated_state_trees">
+					<group name="container" List.ItemID="1051607498" List.ListAction="Append">
+						<state_tree_node name="state_tree" value="improvised_armor_snare_bonus_us\attack_type_snare_panzerschrek\snare_panzerschrek_attack_selector" />
+					</group>
+				</list>
 			</group>
 			<group name="deflection">
 				<float name="deflection_damage_multiplier" value="0.15" overrideParent="True" />
@@ -92,7 +89,7 @@
 			<bool name="fx_always_visible" value="True" overrideParent="True" />
 			<string name="fx_munition_name" value="\cannon\shell_small" overrideParent="True" />
 			<bool name="fx_use_building_panel_normal" value="True" overrideParent="True" />
-			<file name="icon_name" value="common\weapons\weapon_m9_bazooka" overrideParent="True" />
+			<file name="icon_name" value="common\weapons\weapon_panzerschreck" overrideParent="True" />
 			<group name="moving">
 				<float name="accuracy_multiplier" value="0.5" overrideParent="True" />
 			</group>
@@ -121,17 +118,15 @@
 			</group>
 			<group name="reload" comment="NOTE: Eventually this should be moved into the wind down. This way it will always play a cooldown after every shot which can be modified by suppression. This has to be done because everytime a weapon reloads, it skips cooldown.">
 				<group name="duration">
-					<float name="max" value="4.5" overrideParent="True" />
-					<float name="min" value="3.6" overrideParent="True" />
+					<float name="max" value="5.5" overrideParent="True" />
+					<float name="min" value="5" overrideParent="True" />
 				</group>
-				<bool name="require_reload_after_switch" value="True" overrideParent="True" />
-				<bool name="persistent_reloadticks" value="True" overrideParent="True" />
 			</group>
 			<group name="scatter">
-				<float name="angle_scatter" value="7" overrideParent="True" />
-				<float name="distance_scatter_max" value="5" overrideParent="True" />
-				<float name="distance_scatter_offset" value="0.75" overrideParent="True" />
-				<float name="distance_scatter_ratio" value="0.55" overrideParent="True" />
+				<float name="angle_scatter" value="16" overrideParent="True" />
+				<float name="distance_scatter_max" value="15" overrideParent="True" />
+				<float name="distance_scatter_offset" value="0.55" overrideParent="True" />
+				<float name="distance_scatter_ratio" value="0.6" overrideParent="True" />
 				<float name="fow_angle_multiplier" value="1.25" overrideParent="True" />
 				<float name="fow_distance_multiplier" value="1.25" overrideParent="True" />
 				<float name="tilt_scatter_chance" comment="The cannon's tilt_scatter_chance was set to 50%.  I reduced it to 0 to get the projectiles reliably hit the ground when I use attack ground.  Otherwise 50% of the time the projectile will angle up and miss the ground altogether.  Adjust as you see fit..   - moose july2018&#xD;&#xA;&#xD;&#xA;It looks like at least in CoH2 most of these allied tanks had their tilt scatter chance set to 0 anyways. -Brock july2018" />
@@ -169,36 +164,26 @@
 				</group>
 			</group>
 			<group name="penetration">
-				<float name="near" value="200" overrideParent="True" />
-				<float name="far" value="110" overrideParent="True" />
-				<float name="mid" value="125" overrideParent="True" />
+				<float name="near" value="300" overrideParent="True" />
+				<float name="far" value="130" overrideParent="True" />
+				<float name="mid" value="180" overrideParent="True" />
 			</group>
 			<enum name="weapon_class" value="bazooka" overrideParent="True" />
-			<list name="target_type_table" comment="Has a target type table, unique (note for cloning).">
-				<group name="target_unit_type_multipliers" List.ItemID="1693772811" List.ListAction="Append">
+			<list name="target_type_table" comment="Was originally 75%, changed to 80% to reflect whats happening against the average target.">
+				<group name="target_unit_type_multipliers" List.ItemID="-1185568437" List.ListAction="Append">
 					<enum name="unit_type" value="building" />
 					<group name="weapon_multipliers">
-						<float name="accuracy_multiplier" value="10" />
-						<float name="damage_multiplier" value="1" />
+						<float name="accuracy_multiplier" value="1" />
+						<float name="damage_multiplier" value="0.5" />
 						<float name="penetration_multiplier" value="1" />
 						<float name="suppression_multiplier" value="1" />
 					</group>
 					<float name="base_damage_modifier" value="0" />
 				</group>
-				<group name="target_unit_type_multipliers" List.ItemID="1229911354" List.ListAction="Append">
-					<enum name="unit_type" value="bunker" />
+				<group name="target_unit_type_multipliers" List.ItemID="-1195157708" List.ListAction="Append">
+					<enum name="unit_type" value="infantry" overrideParent="True" />
 					<group name="weapon_multipliers">
-						<float name="accuracy_multiplier" value="10" />
-						<float name="damage_multiplier" value="1.5" />
-						<float name="penetration_multiplier" value="10" />
-						<float name="suppression_multiplier" value="1" />
-					</group>
-					<float name="base_damage_modifier" value="0" />
-				</group>
-				<group name="target_unit_type_multipliers" List.ItemID="1731521328" List.ListAction="Append">
-					<enum name="unit_type" value="infantry" />
-					<group name="weapon_multipliers">
-						<float name="accuracy_multiplier" value="0.01" />
+						<float name="accuracy_multiplier" value="1" />
 						<float name="damage_multiplier" value="0.25" overrideParent="True" />
 						<float name="penetration_multiplier" value="1" />
 						<float name="suppression_multiplier" value="1" />
@@ -233,15 +218,45 @@
 			<enum name="default_attack_type" value="ballistic" overrideParent="True" />
 			<template_reference name="animation_role_option" value="options\animation_role\animation_role_flavour_option" overrideParent="True">
 				<list name="squad_animation_roles">
-					<group name="flavour" List.ItemID="-127772124">
+					<group name="flavour" List.ItemID="1950824483">
 						<list name="squad_contents">
-							<group name="squad_member" List.ItemID="801459162">
+							<group name="squad_member" List.ItemID="75571337">
 								<list name="animation_variants">
-									<instance_reference name="animation_role" value="animation_role\soldier\s_bazooka_gunner" List.ItemID="1515986314" />
+									<instance_reference name="animation_role" value="animation_role\soldier\s_bazooka_gunner" List.ItemID="-510671379" />
+								</list>
+							</group>
+						</list>
+						<enum name="key" value="wehrmacht" />
+					</group>
+					<group name="flavour" List.ItemID="-144561560">
+						<list name="squad_contents">
+							<group name="squad_member" List.ItemID="345174550">
+								<list name="animation_variants">
+									<instance_reference name="animation_role" value="animation_role\soldier\s_bazooka_gunner" List.ItemID="-1626322105" />
 								</list>
 							</group>
 						</list>
 						<enum name="key" value="american" />
+					</group>
+					<group name="flavour" List.ItemID="-1871678691">
+						<list name="squad_contents">
+							<group name="squad_member" List.ItemID="-43383860">
+								<list name="animation_variants">
+									<instance_reference name="animation_role" value="animation_role\soldier\s_bazooka_gunner" List.ItemID="-849033726" />
+								</list>
+							</group>
+						</list>
+						<enum name="key" value="british" />
+					</group>
+					<group name="flavour" List.ItemID="1191664213">
+						<list name="squad_contents">
+							<group name="squad_member" List.ItemID="-690911509">
+								<list name="animation_variants">
+									<instance_reference name="animation_role" value="animation_role\soldier\s_bazooka_gunner" List.ItemID="284669077" />
+								</list>
+							</group>
+						</list>
+						<enum name="key" value="afrika_korps" />
 					</group>
 				</list>
 			</template_reference>
@@ -258,29 +273,29 @@
 				</group>
 			</group>
 		</group>
-		<uniqueid name="pbgid" value="1464161" />
+		<uniqueid name="pbgid" value="188679" />
 		<instance_reference name="parent_pbg" value="weapon\common\parent\ballistic_parent" />
 	</variant>
 	<variant name="sp">
 		<group name="weapon_bag">
 			<group name="accuracy">
-				<float name="near" value="0.067" overrideParent="True" />
-				<float name="far" value="0.0363" overrideParent="True" />
-				<float name="mid" value="0.05" overrideParent="True" />
+				<float name="near" value="0.0844" overrideParent="True" />
+				<float name="far" value="0.0375" overrideParent="True" />
+				<float name="mid" value="0.0563" overrideParent="True" />
 			</group>
 			<group name="aim">
 				<group name="fire_aim_time">
-					<float name="max" value="1" overrideParent="True" />
-					<float name="min" value="0.75" overrideParent="True" />
+					<float name="max" value="1.25" overrideParent="True" />
+					<float name="min" value="1" overrideParent="True" />
 				</group>
 				<float name="post_firing_aim_time_seconds" value="1.25" overrideParent="True" />
 				<group name="ready_aim_time">
-					<float name="max" value="1" overrideParent="True" />
-					<float name="min" value="0.5" overrideParent="True" />
+					<float name="max" value="1.25" overrideParent="True" />
+					<float name="min" value="1" overrideParent="True" />
 				</group>
 				<group name="aim_time_multiplier">
 					<float name="near" value="0.85" overrideParent="True" />
-					<float name="far" value="1.25" overrideParent="True" />
+					<float name="far" value="1.5" overrideParent="True" />
 				</group>
 			</group>
 			<group name="anim_table">
@@ -293,15 +308,14 @@
 					<float name="mid" value="5" overrideParent="True" />
 				</group>
 				<template_reference name="area_info" value="options\area_info_options\circle_area_option" overrideParent="True">
-					<float name="outer_radius" value="3" />
+					<float name="outer_radius" value="0.5" />
 					<float name="inner_radius" value="0" />
 					<bool name="is_two_dimensional" value="True" />
 					<enum name="dynamic_radius_type" value="fixed" />
 				</template_reference>
 				<group name="damage">
-					<float name="far" value="0.5" overrideParent="True" />
-					<float name="near" value="0.5" overrideParent="True" />
-					<float name="mid" value="0.5" overrideParent="True" />
+					<float name="far" value="0.05" overrideParent="True" />
+					<float name="mid" value="0.15" overrideParent="True" />
 				</group>
 				<group name="damage_friendly">
 					<float name="far" value="0.025" overrideParent="True" />
@@ -309,42 +323,40 @@
 					<float name="mid" value="0.075" overrideParent="True" />
 				</group>
 				<group name="distance">
-					<float name="far" value="0.5" overrideParent="True" />
-					<float name="near" value="0.5" overrideParent="True" />
-					<float name="mid" value="0.5" overrideParent="True" />
+					<float name="far" value="0.25" overrideParent="True" />
+					<float name="near" value="0.15" overrideParent="True" />
+					<float name="mid" value="0.2" overrideParent="True" />
 				</group>
 				<bool name="has_friendly_fire" value="False" overrideParent="True" />
-				<bool name="damage_all_in_hold" value="True" overrideParent="True" />
 				<template_reference name="aoe_penetration" value="tables\range_table">
-					<float name="far" value="1" overrideParent="True" />
-					<float name="mid" value="1" overrideParent="True" />
-					<float name="near" value="1" overrideParent="True" />
+					<float name="far" value="95" overrideParent="True" />
+					<float name="mid" value="100" overrideParent="True" />
+					<float name="near" value="105" overrideParent="True" />
 				</template_reference>
-				<int name="damage_max_members_per_squad" value="3" overrideParent="True" />
 			</group>
 			<group name="behaviour">
-				<bool name="can_be_offhanded" value="True" overrideParent="True" />
-				<bool name="can_be_substituted" value="True" overrideParent="True" />
 				<float name="combat_slot_offset" value="0" overrideParent="True" />
 				<bool name="enable_auto_target_search" value="True" overrideParent="True" />
 				<float name="ground_hit_rate" value="1" overrideParent="True" />
 				<float name="reaction_radius" value="0.5" overrideParent="True" />
-				<bool name="can_abort_winddown_on_weapon_switch" value="True" overrideParent="True" />
 				<enum name="attack_ground_type" value="anywhere" overrideParent="True" />
 				<bool name="can_damage_allies" value="True" overrideParent="True" />
-				<bool name="can_abort_winddown_on_move_command" value="True" overrideParent="True" />
-				<bool name="support_weapon" value="True" overrideParent="True" />
 			</group>
-			<group name="cooldown" comment="Original bazooka was all reload and no cooldown. Changed this because we shifted suppression to affect cooldown but not reload.">
+			<group name="cooldown">
 				<group name="duration">
-					<float name="max" value="2" overrideParent="True" />
-					<float name="min" value="1.5" overrideParent="True" />
+					<float name="max" value="4" overrideParent="True" />
+					<float name="min" value="4" overrideParent="True" />
 				</group>
 			</group>
 			<group name="damage">
-				<float name="max" value="60" overrideParent="True" />
-				<float name="min" value="60" overrideParent="True" />
+				<float name="max" value="160" overrideParent="True" />
+				<float name="min" value="160" overrideParent="True" />
 				<enum name="damage_type" value="ballistic" overrideParent="True" />
+				<list name="on_penetrated_state_trees">
+					<group name="container" List.ItemID="-12693043" List.ListAction="Append">
+						<state_tree_node name="state_tree" value="sp_improvised_armor_snare_bonus_us\attack_type_snare_panzerschrek\snare_panzerschrek_attack_selector" />
+					</group>
+				</list>
 			</group>
 			<group name="deflection">
 				<float name="deflection_damage_multiplier" value="0.15" overrideParent="True" />
@@ -354,7 +366,7 @@
 			<bool name="fx_always_visible" value="True" overrideParent="True" />
 			<string name="fx_munition_name" value="\cannon\shell_small" overrideParent="True" />
 			<bool name="fx_use_building_panel_normal" value="True" overrideParent="True" />
-			<file name="icon_name" value="common\weapons\weapon_m9_bazooka" overrideParent="True" />
+			<file name="icon_name" value="common\weapons\weapon_panzerschreck" overrideParent="True" />
 			<group name="moving">
 				<float name="accuracy_multiplier" value="0.5" overrideParent="True" />
 			</group>
@@ -383,17 +395,15 @@
 			</group>
 			<group name="reload" comment="NOTE: Eventually this should be moved into the wind down. This way it will always play a cooldown after every shot which can be modified by suppression. This has to be done because everytime a weapon reloads, it skips cooldown.">
 				<group name="duration">
-					<float name="max" value="4.5" overrideParent="True" />
-					<float name="min" value="3.6" overrideParent="True" />
+					<float name="max" value="4" overrideParent="True" />
+					<float name="min" value="3.75" overrideParent="True" />
 				</group>
-				<bool name="require_reload_after_switch" value="True" overrideParent="True" />
-				<bool name="persistent_reloadticks" value="True" overrideParent="True" />
 			</group>
 			<group name="scatter">
-				<float name="angle_scatter" value="7" overrideParent="True" />
-				<float name="distance_scatter_max" value="5" overrideParent="True" />
-				<float name="distance_scatter_offset" value="0.75" overrideParent="True" />
-				<float name="distance_scatter_ratio" value="0.55" overrideParent="True" />
+				<float name="angle_scatter" value="16" overrideParent="True" />
+				<float name="distance_scatter_max" value="15" overrideParent="True" />
+				<float name="distance_scatter_offset" value="0.55" overrideParent="True" />
+				<float name="distance_scatter_ratio" value="0.6" overrideParent="True" />
 				<float name="fow_angle_multiplier" value="1.25" overrideParent="True" />
 				<float name="fow_distance_multiplier" value="1.25" overrideParent="True" />
 				<float name="tilt_scatter_chance" comment="The cannon's tilt_scatter_chance was set to 50%.  I reduced it to 0 to get the projectiles reliably hit the ground when I use attack ground.  Otherwise 50% of the time the projectile will angle up and miss the ground altogether.  Adjust as you see fit..   - moose july2018&#xD;&#xA;&#xD;&#xA;It looks like at least in CoH2 most of these allied tanks had their tilt scatter chance set to 0 anyways. -Brock july2018" />
@@ -431,37 +441,27 @@
 				</group>
 			</group>
 			<group name="penetration">
-				<float name="near" value="200" overrideParent="True" />
-				<float name="far" value="110" overrideParent="True" />
-				<float name="mid" value="125" overrideParent="True" />
+				<float name="near" value="300" overrideParent="True" />
+				<float name="far" value="130" overrideParent="True" />
+				<float name="mid" value="180" overrideParent="True" />
 			</group>
 			<enum name="weapon_class" value="bazooka" overrideParent="True" />
-			<list name="target_type_table" comment="Has a target type table, unique (note for cloning).">
-				<group name="target_unit_type_multipliers" List.ItemID="270569461" List.ListAction="Append">
+			<list name="target_type_table" comment="Was originally 75%, changed to 80% to reflect whats happening against the average target.">
+				<group name="target_unit_type_multipliers" List.ItemID="1317219871" List.ListAction="Append">
 					<enum name="unit_type" value="building" />
 					<group name="weapon_multipliers">
-						<float name="accuracy_multiplier" value="10" />
-						<float name="damage_multiplier" value="1" />
+						<float name="accuracy_multiplier" value="1" />
+						<float name="damage_multiplier" value="0.5" />
 						<float name="penetration_multiplier" value="1" />
 						<float name="suppression_multiplier" value="1" />
 					</group>
 					<float name="base_damage_modifier" value="0" />
 				</group>
-				<group name="target_unit_type_multipliers" List.ItemID="-2261682" List.ListAction="Append">
-					<enum name="unit_type" value="bunker" />
+				<group name="target_unit_type_multipliers" List.ItemID="2071341663" List.ListAction="Append">
+					<enum name="unit_type" value="infantry" overrideParent="True" />
 					<group name="weapon_multipliers">
-						<float name="accuracy_multiplier" value="10" />
-						<float name="damage_multiplier" value="1.5" />
-						<float name="penetration_multiplier" value="10" />
-						<float name="suppression_multiplier" value="1" />
-					</group>
-					<float name="base_damage_modifier" value="0" />
-				</group>
-				<group name="target_unit_type_multipliers" List.ItemID="310416320" List.ListAction="Append">
-					<enum name="unit_type" value="infantry" />
-					<group name="weapon_multipliers">
-						<float name="accuracy_multiplier" value="0.01" />
-						<float name="damage_multiplier" value="0.5" />
+						<float name="accuracy_multiplier" value="1" />
+						<float name="damage_multiplier" value="0.25" overrideParent="True" />
 						<float name="penetration_multiplier" value="1" />
 						<float name="suppression_multiplier" value="1" />
 					</group>
@@ -495,15 +495,45 @@
 			<enum name="default_attack_type" value="ballistic" overrideParent="True" />
 			<template_reference name="animation_role_option" value="options\animation_role\animation_role_flavour_option" overrideParent="True">
 				<list name="squad_animation_roles">
-					<group name="flavour" List.ItemID="74770985">
+					<group name="flavour" List.ItemID="1290215925">
 						<list name="squad_contents">
-							<group name="squad_member" List.ItemID="2035241869">
+							<group name="squad_member" List.ItemID="-988792836">
 								<list name="animation_variants">
-									<instance_reference name="animation_role" value="animation_role\soldier\s_bazooka_gunner" List.ItemID="1915544291" />
+									<instance_reference name="animation_role" value="animation_role\soldier\s_bazooka_gunner" List.ItemID="-1309994158" />
+								</list>
+							</group>
+						</list>
+						<enum name="key" value="wehrmacht" />
+					</group>
+					<group name="flavour" List.ItemID="-64295574">
+						<list name="squad_contents">
+							<group name="squad_member" List.ItemID="515457967">
+								<list name="animation_variants">
+									<instance_reference name="animation_role" value="animation_role\soldier\s_bazooka_gunner" List.ItemID="-808583338" />
 								</list>
 							</group>
 						</list>
 						<enum name="key" value="american" />
+					</group>
+					<group name="flavour" List.ItemID="809757118">
+						<list name="squad_contents">
+							<group name="squad_member" List.ItemID="1935753503">
+								<list name="animation_variants">
+									<instance_reference name="animation_role" value="animation_role\soldier\s_bazooka_gunner" List.ItemID="779904141" />
+								</list>
+							</group>
+						</list>
+						<enum name="key" value="british" />
+					</group>
+					<group name="flavour" List.ItemID="1516846668">
+						<list name="squad_contents">
+							<group name="squad_member" List.ItemID="68218338">
+								<list name="animation_variants">
+									<instance_reference name="animation_role" value="animation_role\soldier\s_bazooka_gunner" List.ItemID="-1764018376" />
+								</list>
+							</group>
+						</list>
+						<enum name="key" value="afrika_korps" />
 					</group>
 				</list>
 			</template_reference>
@@ -520,7 +550,7 @@
 				</group>
 			</group>
 		</group>
-		<uniqueid name="pbgid" value="1464161" />
+		<uniqueid name="pbgid" value="188679" />
 		<instance_reference name="parent_pbg" value="weapon\common\parent\ballistic_parent" />
 	</variant>
 </instance>

@@ -26,8 +26,8 @@
 			<template_reference name="exts" value="ebpextensions\cost_ext" List.ItemID="-1776010655" List.ParentItemID="-1776010655">
 				<group name="time_cost">
 					<enum_table name="cost">
-						<float name="fuel" value="45" overrideParent="True" />
-						<float name="manpower" value="320" overrideParent="True" />
+						<float name="fuel" value="35" overrideParent="True" />
+						<float name="manpower" value="280" overrideParent="True" />
 					</enum_table>
 					<float name="time_seconds" value="37.5" overrideParent="True" />
 				</group>
@@ -59,9 +59,9 @@
 				<enum name="map_rotation_type_override" value="no_override" overrideParent="True" />
 			</template_reference>
 			<template_reference name="exts" value="ebpextensions\moving_ext" List.ItemID="-1164819730" List.ParentItemID="-1164819730">
-				<float name="acceleration" value="1.5" overrideParent="True" />
+				<float name="acceleration" value="3" overrideParent="True" />
 				<float name="deceleration" value="3" overrideParent="True" />
-				<float name="rotation_rate" value="30" overrideParent="True" />
+				<float name="rotation_rate" value="32" overrideParent="True" />
 				<float name="on_land_overturn_scale" value="0.03" overrideParent="True" />
 			</template_reference>
 			<template_reference name="exts" value="ebpextensions\combat_ext" List.ItemID="-1137803893" List.ParentItemID="-1137803893">

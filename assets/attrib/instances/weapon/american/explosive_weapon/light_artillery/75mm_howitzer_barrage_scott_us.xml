@@ -47,15 +47,15 @@
 					<float name="mid" value="5" />
 				</group>
 				<template_reference name="area_info" value="options\area_info_options\circle_area_option">
-					<float name="outer_radius" value="5.5" />
+					<float name="outer_radius" value="6" />
 					<float name="inner_radius" value="0" />
 					<bool name="is_two_dimensional" value="True" />
 					<enum name="dynamic_radius_type" value="fixed" />
 				</template_reference>
 				<group name="damage">
 					<float name="far" value="0.15" />
-					<float name="near" value="0.33" />
-					<float name="mid" value="0.25" />
+					<float name="near" value="0.5" />
+					<float name="mid" value="0.4" />
 				</group>
 				<group name="damage_friendly">
 					<float name="far" value="0.025" />
@@ -63,9 +63,9 @@
 					<float name="mid" value="0.075" />
 				</group>
 				<group name="distance">
-					<float name="far" value="4" />
+					<float name="far" value="6" />
 					<float name="near" value="0" />
-					<float name="mid" value="2" />
+					<float name="mid" value="0.35" />
 				</group>
 				<bool name="has_friendly_fire" value="True" />
 				<bool name="can_harm_shooter" value="False" />
@@ -106,7 +106,7 @@
 				<bool name="fire_at_building_combat_slot" value="False" />
 				<float name="ground_hit_rate" value="1" />
 				<bool name="ignore_shot_blocking" value="False" />
-				<bool name="non_moving_setup" value="False" />
+				<bool name="non_moving_setup" value="True" />
 				<bool name="point_blank" value="False" />
 				<bool name="prevents_prone" value="False" />
 				<bool name="reset_rotation_on_teardown" value="False" />

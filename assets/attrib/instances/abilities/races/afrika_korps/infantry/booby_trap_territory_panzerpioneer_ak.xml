@@ -7,7 +7,7 @@
 			</group>
 			<instance_reference name="ui_menu" value="menu\construction" overrideParent="True" />
 			<enum_table name="cost_to_player">
-				<float name="munition" value="45" overrideParent="True" />
+				<float name="munition" value="50" overrideParent="True" />
 			</enum_table>
 		</group>
 		<uniqueid name="pbgid" value="2128102" />
