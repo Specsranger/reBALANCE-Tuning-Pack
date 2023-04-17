@@ -275,6 +275,14 @@
 							</template_reference>
 						</list>
 					</template_reference>
+					<template_reference name="required" value="requirements\required_in_territory" List.ItemID="80367067">
+						<enum name="reason" value="usage" />
+						<locstring name="ui_name" value="0" />
+						<bool name="in_supply" value="True" />
+						<bool name="is_secured" value="False" />
+						<bool name="is_secured_by_checkpoint" value="False" />
+						<bool name="not_in_transition" value="False" />
+					</template_reference>
 				</list>
 				<bool name="spawn_to_hold_try_first" value="False" />
 				<list name="queue_requirements">
@@ -644,6 +652,14 @@
 								<enum name="nearby_collision_filter" value="enemy" overrideParent="True" />
 							</template_reference>
 						</list>
+					</template_reference>
+					<template_reference name="required" value="requirements\required_in_territory" List.ItemID="-1203096163">
+						<enum name="reason" value="usage" />
+						<locstring name="ui_name" value="0" />
+						<bool name="in_supply" value="True" />
+						<bool name="is_secured" value="False" />
+						<bool name="is_secured_by_checkpoint" value="False" />
+						<bool name="not_in_transition" value="False" />
 					</template_reference>
 				</list>
 				<bool name="spawn_to_hold_try_first" value="False" />

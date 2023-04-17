@@ -2,15 +2,15 @@
 	<variant name="default">
 		<group name="weapon_bag">
 			<group name="accuracy">
-				<float name="near" value="0.075" comment="Intentionally set to always hit at close range, even while moving" overrideParent="True" />
-				<float name="far" value="0.0375" overrideParent="True" />
-				<float name="mid" value="0.0563" overrideParent="True" />
+				<float name="near" value="0.1" comment="Intentionally set to always hit at close range, even while moving" overrideParent="True" />
+				<float name="far" value="0.0563" overrideParent="True" />
+				<float name="mid" value="0.075" overrideParent="True" />
 			</group>
 			<group name="aim">
 				<float name="post_firing_aim_time_seconds" value="4" overrideParent="True" />
 				<group name="ready_aim_time">
-					<float name="max" value="0.75" overrideParent="True" />
-					<float name="min" value="0.5" overrideParent="True" />
+					<float name="max" value="0.5" overrideParent="True" />
+					<float name="min" value="0.35" overrideParent="True" />
 				</group>
 				<group name="aim_time_multiplier">
 					<float name="near" value="0.75" overrideParent="True" />
@@ -66,8 +66,8 @@
 			</group>
 			<group name="cooldown">
 				<group name="duration">
-					<float name="max" value="2" overrideParent="True" />
-					<float name="min" value="2" overrideParent="True" />
+					<float name="max" value="0" overrideParent="True" />
+					<float name="min" value="0" overrideParent="True" />
 				</group>
 			</group>
 			<group name="damage">
@@ -106,7 +106,7 @@
 				<instance_reference name="projectile" value="ebps\gameplay\projectiles\common\gun\p_gun_shell_medium_high_velocity" overrideParent="True" />
 			</group>
 			<group name="range">
-				<float name="max" value="40" overrideParent="True" />
+				<float name="max" value="50" overrideParent="True" />
 				<group name="distance">
 					<float name="near" value="10" overrideParent="True" />
 					<float name="mid" value="30" overrideParent="True" />
@@ -164,8 +164,8 @@
 			</group>
 			<group name="penetration">
 				<float name="near" value="180" overrideParent="True" />
-				<float name="far" value="130" overrideParent="True" />
-				<float name="mid" value="160" overrideParent="True" />
+				<float name="far" value="160" overrideParent="True" />
+				<float name="mid" value="170" overrideParent="True" />
 			</group>
 			<enum name="weapon_class" value="cannon" overrideParent="True" />
 			<enum_table name="cover_table">

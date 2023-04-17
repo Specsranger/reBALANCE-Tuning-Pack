@@ -202,10 +202,10 @@
 							<template_reference name="required" value="requirements\required_in_state" List.ItemID="-2008618827">
 								<enum name="reason" value="usage_and_display" overrideParent="True" />
 								<locstring name="ui_name" value="12" mod="9239c1ca0dd047c28f698b95e2071674" overrideParent="True" />
-								<float name="was_attacked_within_seconds" value="10" overrideParent="True" />
+								<float name="was_attacked_within_seconds" value="6" overrideParent="True" />
 								<list name="check_states">
 								</list>
-								<float name="was_attacking_within_seconds" value="10" overrideParent="True" />
+								<float name="was_attacking_within_seconds" value="6" overrideParent="True" />
 							</template_reference>
 						</list>
 					</template_reference>
@@ -215,11 +215,11 @@
 						<list name="requirement_table">
 							<template_reference name="required" value="requirements\required_near_entity" List.ItemID="-1520888369">
 								<enum name="reason" value="usage" />
-								<locstring name="ui_name" value="0" />
+								<locstring name="ui_name" value="28" mod="9239c1ca0dd047c28f698b95e2071674" overrideParent="True" />
 								<list name="near_entity_requirement">
 								</list>
 								<template_reference name="area_option" value="options\area_info_options\circle_area_option">
-									<float name="outer_radius" value="60" overrideParent="True" />
+									<float name="outer_radius" value="40" overrideParent="True" />
 									<float name="inner_radius" value="0" />
 									<bool name="is_two_dimensional" value="True" />
 									<enum name="dynamic_radius_type" value="fixed" />
@@ -227,6 +227,14 @@
 								<enum name="nearby_collision_filter" value="enemy" overrideParent="True" />
 							</template_reference>
 						</list>
+					</template_reference>
+					<template_reference name="required" value="requirements\required_in_territory" List.ItemID="178996336" List.ListAction="Append">
+						<enum name="reason" value="usage" />
+						<locstring name="ui_name" value="0" overrideParent="True" />
+						<bool name="in_supply" value="True" />
+						<bool name="is_secured" value="False" />
+						<bool name="is_secured_by_checkpoint" value="False" />
+						<bool name="not_in_transition" value="False" />
 					</template_reference>
 				</list>
 			</template_reference>
@@ -477,6 +485,14 @@
 								<enum name="nearby_collision_filter" value="enemy" overrideParent="True" />
 							</template_reference>
 						</list>
+					</template_reference>
+					<template_reference name="required" value="requirements\required_in_territory" List.ItemID="-971660718" List.ListAction="Append">
+						<enum name="reason" value="usage" />
+						<locstring name="ui_name" value="0" />
+						<bool name="in_supply" value="True" />
+						<bool name="is_secured" value="False" />
+						<bool name="is_secured_by_checkpoint" value="False" />
+						<bool name="not_in_transition" value="False" />
 					</template_reference>
 				</list>
 			</template_reference>

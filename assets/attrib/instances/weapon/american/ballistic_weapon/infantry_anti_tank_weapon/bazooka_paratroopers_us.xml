@@ -37,9 +37,9 @@
 					<enum name="dynamic_radius_type" value="fixed" />
 				</template_reference>
 				<group name="damage">
-					<float name="far" value="0.5" overrideParent="True" />
+					<float name="far" value="0.1" overrideParent="True" />
 					<float name="near" value="0.5" overrideParent="True" />
-					<float name="mid" value="0.5" overrideParent="True" />
+					<float name="mid" value="0.25" overrideParent="True" />
 				</group>
 				<group name="damage_friendly">
 					<float name="far" value="0.025" overrideParent="True" />
@@ -58,7 +58,7 @@
 					<float name="mid" value="1" overrideParent="True" />
 					<float name="near" value="1" overrideParent="True" />
 				</template_reference>
-				<int name="damage_max_members_per_squad" value="3" overrideParent="True" />
+				<int name="damage_max_members_per_squad" value="1" overrideParent="True" />
 			</group>
 			<group name="behaviour">
 				<bool name="can_be_offhanded" value="True" overrideParent="True" />
@@ -124,7 +124,7 @@
 					<float name="max" value="4.5" overrideParent="True" />
 					<float name="min" value="3.6" overrideParent="True" />
 				</group>
-				<bool name="require_reload_after_switch" value="True" overrideParent="True" />
+				<bool name="require_reload_after_switch" value="False" overrideParent="True" />
 				<bool name="persistent_reloadticks" value="True" overrideParent="True" />
 			</group>
 			<group name="scatter">

@@ -72,8 +72,8 @@
 				</group>
 			</group>
 			<group name="damage">
-				<float name="max" value="160" overrideParent="True" />
-				<float name="min" value="160" overrideParent="True" />
+				<float name="max" value="80" overrideParent="True" />
+				<float name="min" value="80" overrideParent="True" />
 				<enum name="damage_type" value="ballistic" overrideParent="True" />
 				<list name="on_penetrated_state_trees">
 					<group name="container" List.ItemID="1051607498" List.ListAction="Append">

@@ -7,6 +7,13 @@
 			<group name="behaviour">
 				<float name="aa_range_multiplier" value="2.7" overrideParent="True" />
 			</group>
+			<list name="target_type_table">
+				<group name="target_unit_type_multipliers" List.ItemID="1273456046" List.ParentItemID="1273456046">
+					<group name="weapon_multipliers">
+						<float name="damage_multiplier" value="1.75" overrideParent="True" />
+					</group>
+				</group>
+			</list>
 		</group>
 		<uniqueid name="pbgid" value="2104881" />
 		<instance_reference name="parent_pbg" value="weapon\afrika_korps\ballistic_weapon\tank_gun\20mm_halftrack_flak_ak" />

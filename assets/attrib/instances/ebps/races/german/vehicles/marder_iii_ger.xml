@@ -59,10 +59,13 @@
 				<enum name="map_rotation_type_override" value="no_override" overrideParent="True" />
 			</template_reference>
 			<template_reference name="exts" value="ebpextensions\moving_ext" List.ItemID="-1164819730" List.ParentItemID="-1164819730">
-				<float name="acceleration" value="3" overrideParent="True" />
+				<float name="acceleration" value="1.5" overrideParent="True" />
 				<float name="deceleration" value="3" overrideParent="True" />
 				<float name="rotation_rate" value="32" overrideParent="True" />
 				<float name="on_land_overturn_scale" value="0.03" overrideParent="True" />
+				<enum_table name="speed_scaling_table">
+					<float name="max_speed" value="5" overrideParent="True" />
+				</enum_table>
 			</template_reference>
 			<template_reference name="exts" value="ebpextensions\combat_ext" List.ItemID="-1137803893" List.ParentItemID="-1137803893">
 				<list name="hardpoints">

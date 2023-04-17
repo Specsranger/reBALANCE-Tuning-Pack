@@ -58,7 +58,7 @@
 					<float name="mid" value="1" overrideParent="True" />
 					<float name="near" value="1" overrideParent="True" />
 				</template_reference>
-				<int name="damage_max_members_per_squad" value="3" overrideParent="True" />
+				<int name="damage_max_members_per_squad" value="1" overrideParent="True" />
 			</group>
 			<group name="behaviour">
 				<bool name="can_be_offhanded" value="True" overrideParent="True" />
@@ -208,7 +208,7 @@
 					<enum name="unit_type" value="infantry" />
 					<group name="weapon_multipliers">
 						<float name="accuracy_multiplier" value="0" />
-						<float name="damage_multiplier" value="0.5" />
+						<float name="damage_multiplier" value="0.25" overrideParent="True" />
 						<float name="penetration_multiplier" value="1" />
 						<float name="suppression_multiplier" value="1" />
 					</group>

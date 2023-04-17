@@ -1,0 +1,21 @@
+<instance version="5" description="" template="abilities">
+	<variant name="default">
+		<uniqueid name="pbgid" value="182838" />
+		<instance_reference name="parent_pbg" value="abilities\races\common\infantry\satchel_charge_parent" />
+		<group name="ability_bag">
+			<group name="ability_active_state_tree_group">
+				<state_tree_node name="ability_activate_squad_tree" value="ability_throw_grenade_squad" overrideParent="True" />
+			</group>
+			<bool name="initial_recharge" value="True" overrideParent="True" />
+		</group>
+	</variant>
+	<variant name="sp">
+		<uniqueid name="pbgid" value="182838" />
+		<instance_reference name="parent_pbg" value="abilities\races\common\infantry\satchel_charge_parent" />
+		<group name="ability_bag">
+			<group name="ability_active_state_tree_group">
+				<state_tree_node name="ability_activate_squad_tree" value="sp_ability_throw_grenade_squad" overrideParent="True" />
+			</group>
+		</group>
+	</variant>
+</instance>

@@ -5,8 +5,8 @@
 			<bool name="can_target_in_fow" value="True" overrideParent="True" />
 			<enum_table name="cost_to_player">
 				<float name="popcap" value="13" overrideParent="True" />
-				<float name="manpower" value="340" overrideParent="True" />
-				<float name="fuel" value="20" overrideParent="True" />
+				<float name="manpower" value="420" overrideParent="True" />
+				<float name="fuel" value="10" overrideParent="True" />
 			</enum_table>
 			<bool name="facing_ignore" value="True" overrideParent="True" />
 			<bool name="range_ignore" value="True" overrideParent="True" />

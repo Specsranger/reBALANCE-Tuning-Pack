@@ -365,6 +365,14 @@
 							</template_reference>
 						</list>
 					</template_reference>
+					<template_reference name="required" value="requirements\required_in_territory" List.ItemID="-882286230" List.ListAction="Append">
+						<enum name="reason" value="usage" />
+						<locstring name="ui_name" value="0" />
+						<bool name="in_supply" value="True" />
+						<bool name="is_secured" value="False" />
+						<bool name="is_secured_by_checkpoint" value="False" />
+						<bool name="not_in_transition" value="False" />
+					</template_reference>
 				</list>
 			</template_reference>
 			<template_reference name="exts" value="ebpextensions\hold_ext" List.ItemID="-670425630" List.ParentItemID="-670425630">
@@ -743,6 +751,14 @@
 								<enum name="nearby_collision_filter" value="all" />
 							</template_reference>
 						</list>
+					</template_reference>
+					<template_reference name="required" value="requirements\required_in_territory" List.ItemID="225271019" List.ListAction="Append">
+						<enum name="reason" value="usage" />
+						<locstring name="ui_name" value="0" />
+						<bool name="in_supply" value="True" />
+						<bool name="is_secured" value="False" />
+						<bool name="is_secured_by_checkpoint" value="False" />
+						<bool name="not_in_transition" value="False" />
 					</template_reference>
 				</list>
 			</template_reference>

@@ -47,9 +47,9 @@
 					<float name="mid" value="2.8" />
 				</group>
 				<group name="damage">
-					<float name="far" value="0.2" />
+					<float name="far" value="0.25" />
 					<float name="near" value="1" />
-					<float name="mid" value="0.5" />
+					<float name="mid" value="0.625" />
 				</group>
 				<group name="damage_friendly">
 					<float name="far" value="0.25" />
@@ -133,8 +133,8 @@
 			<group name="burst">
 				<bool name="can_burst" value="True" />
 				<group name="duration">
-					<float name="max" value="2" />
-					<float name="min" value="1.8" />
+					<float name="max" value="6" />
+					<float name="min" value="5" />
 				</group>
 				<group name="incremental_target_table">
 					<float name="accuracy_multiplier" value="1" />
@@ -145,8 +145,8 @@
 					</group>
 				</group>
 				<group name="rate_of_fire">
-					<float name="max" value="14" />
-					<float name="min" value="14" />
+					<float name="max" value="24" />
+					<float name="min" value="24" />
 				</group>
 				<group name="duration_multiplier">
 					<float name="near" value="1" />
@@ -186,8 +186,8 @@
 				</list>
 			</group>
 			<group name="deflection">
-				<float name="deflection_damage_multiplier" value="0.35" />
-				<bool name="has_deflection_damage" value="True" />
+				<float name="deflection_damage_multiplier" value="0" />
+				<bool name="has_deflection_damage" value="False" />
 			</group>
 			<group name="fire">
 				<float name="wind_down" value="0" />
@@ -371,8 +371,8 @@
 				<group name="target_unit_type_multipliers" List.ItemID="1790978569">
 					<enum name="unit_type" value="aircraft" />
 					<group name="weapon_multipliers">
-						<float name="accuracy_multiplier" value="1.25" />
-						<float name="damage_multiplier" value="2" />
+						<float name="accuracy_multiplier" value="1" />
+						<float name="damage_multiplier" value="1" />
 						<float name="penetration_multiplier" value="5" />
 						<float name="suppression_multiplier" value="1" />
 					</group>

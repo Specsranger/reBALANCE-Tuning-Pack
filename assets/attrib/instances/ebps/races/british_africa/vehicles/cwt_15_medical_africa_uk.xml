@@ -462,10 +462,10 @@
 							<template_reference name="required" value="requirements\required_in_state" List.ItemID="894687329">
 								<enum name="reason" value="usage" />
 								<locstring name="ui_name" value="0" />
-								<float name="was_attacked_within_seconds" value="10" overrideParent="True" />
+								<float name="was_attacked_within_seconds" value="6" overrideParent="True" />
 								<list name="check_states">
 								</list>
-								<float name="was_attacking_within_seconds" value="10" overrideParent="True" />
+								<float name="was_attacking_within_seconds" value="6" overrideParent="True" />
 							</template_reference>
 						</list>
 					</template_reference>
@@ -479,7 +479,7 @@
 								<list name="near_entity_requirement">
 								</list>
 								<template_reference name="area_option" value="options\area_info_options\circle_area_option">
-									<float name="outer_radius" value="60" overrideParent="True" />
+									<float name="outer_radius" value="40" overrideParent="True" />
 									<float name="inner_radius" value="0" />
 									<bool name="is_two_dimensional" value="True" />
 									<enum name="dynamic_radius_type" value="fixed" />
@@ -487,6 +487,14 @@
 								<enum name="nearby_collision_filter" value="enemy" overrideParent="True" />
 							</template_reference>
 						</list>
+					</template_reference>
+					<template_reference name="required" value="requirements\required_in_territory" List.ItemID="-493150583">
+						<enum name="reason" value="usage" />
+						<locstring name="ui_name" value="0" />
+						<bool name="in_supply" value="True" />
+						<bool name="is_secured" value="False" />
+						<bool name="is_secured_by_checkpoint" value="False" />
+						<bool name="not_in_transition" value="False" />
 					</template_reference>
 				</list>
 				<bool name="spawn_to_hold_try_first" value="False" />
@@ -1070,6 +1078,14 @@
 								<enum name="nearby_collision_filter" value="enemy" overrideParent="True" />
 							</template_reference>
 						</list>
+					</template_reference>
+					<template_reference name="required" value="requirements\required_in_territory" List.ItemID="-1890883593">
+						<enum name="reason" value="usage" />
+						<locstring name="ui_name" value="0" />
+						<bool name="in_supply" value="True" />
+						<bool name="is_secured" value="False" />
+						<bool name="is_secured_by_checkpoint" value="False" />
+						<bool name="not_in_transition" value="False" />
 					</template_reference>
 				</list>
 				<bool name="spawn_to_hold_try_first" value="False" />

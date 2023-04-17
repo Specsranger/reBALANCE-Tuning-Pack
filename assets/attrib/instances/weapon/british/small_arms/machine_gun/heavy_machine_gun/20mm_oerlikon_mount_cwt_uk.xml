@@ -149,8 +149,8 @@
 					</group>
 				</group>
 				<group name="rate_of_fire">
-					<float name="max" value="6" />
-					<float name="min" value="6" />
+					<float name="max" value="4" />
+					<float name="min" value="4" />
 				</group>
 				<group name="duration_multiplier">
 					<float name="near" value="1" />
@@ -265,7 +265,7 @@
 			<group name="reload">
 				<group name="duration">
 					<float name="max" value="1" />
-					<float name="min" value="0.8" />
+					<float name="min" value="1" />
 				</group>
 				<group name="duration_multiplier">
 					<float name="far" value="1" />
@@ -273,14 +273,14 @@
 					<float name="mid" value="1" />
 				</group>
 				<group name="frequency">
-					<float name="max" value="9" />
-					<float name="min" value="9" />
+					<float name="max" value="10" />
+					<float name="min" value="10" />
 				</group>
 				<bool name="require_reload_after_switch" value="False" />
 				<bool name="persistent_reloadticks" value="False" />
 			</group>
 			<group name="scatter">
-				<float name="angle_scatter" value="8" />
+				<float name="angle_scatter" value="10" />
 				<bool name="burst_pattern_enable" value="True" />
 				<float name="delay_bracket_change_chance" value="0.3" />
 				<float name="distance_bracket_count_air" value="5" />
@@ -372,6 +372,16 @@
 			<string name="fx_aoe_munition_name" value="" />
 			<string name="speech_code" value="" />
 			<list name="target_type_table">
+				<group name="target_unit_type_multipliers" List.ItemID="90469">
+					<enum name="unit_type" value="aircraft" />
+					<group name="weapon_multipliers">
+						<float name="accuracy_multiplier" value="1" />
+						<float name="damage_multiplier" value="2" />
+						<float name="penetration_multiplier" value="1" />
+						<float name="suppression_multiplier" value="1" />
+					</group>
+					<float name="base_damage_modifier" value="0" />
+				</group>
 			</list>
 			<enum_table name="cover_table">
 				<template_reference name="tp_defcover" value="weapon_cover_info">
@@ -855,6 +865,16 @@
 			<string name="fx_aoe_munition_name" value="" />
 			<string name="speech_code" value="" />
 			<list name="target_type_table">
+				<group name="target_unit_type_multipliers" List.ItemID="-27597553">
+					<enum name="unit_type" value="aircraft" />
+					<group name="weapon_multipliers">
+						<float name="accuracy_multiplier" value="1" />
+						<float name="damage_multiplier" value="1" />
+						<float name="penetration_multiplier" value="1" />
+						<float name="suppression_multiplier" value="1" />
+					</group>
+					<float name="base_damage_modifier" value="0" />
+				</group>
 			</list>
 			<enum_table name="cover_table">
 				<template_reference name="tp_defcover" value="weapon_cover_info">

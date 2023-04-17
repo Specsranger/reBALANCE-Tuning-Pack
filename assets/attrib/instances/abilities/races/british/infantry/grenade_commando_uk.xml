@@ -1,0 +1,63 @@
+<instance version="5" description="" template="abilities">
+	<variant name="default">
+		<group name="ability_bag">
+			<group name="ui_info">
+				<file name="icon_name" value="legacy\abilities\ability_british_mills_grenade" overrideParent="True" />
+			</group>
+			<list name="requirements">
+				<template_reference name="required" value="requirements\required_not" List.ItemID="504571400" List.ListAction="Append">
+					<enum name="reason" value="usage" />
+					<locstring name="ui_name" value="11230850" />
+					<list name="requirement_table">
+						<template_reference name="required" value="requirements\required_in_state" List.ItemID="-197698864">
+							<enum name="reason" value="usage" />
+							<locstring name="ui_name" value="0" />
+							<float name="was_attacked_within_seconds" value="-1" />
+							<list name="check_states">
+								<enum name="state_requirement_type" value="pinned" List.ItemID="-1455757928" />
+							</list>
+							<float name="was_attacking_within_seconds" value="-1" />
+						</template_reference>
+					</list>
+				</template_reference>
+			</list>
+			<group name="ability_active_state_tree_group">
+				<state_tree_node name="ability_activate_entity_tree" value="grenade_commando_uk" overrideParent="True" />
+			</group>
+			<float name="min_range" value="5" overrideParent="True" />
+			<bool name="initial_recharge" value="True" overrideParent="True" />
+		</group>
+		<uniqueid name="pbgid" value="2029899" />
+		<instance_reference name="parent_pbg" value="abilities\races\common\infantry\grenade_parent" />
+	</variant>
+	<variant name="sp">
+		<group name="ability_bag">
+			<group name="ui_info">
+				<file name="icon_name" value="legacy\abilities\ability_british_mills_grenade" overrideParent="True" />
+			</group>
+			<list name="requirements">
+				<template_reference name="required" value="requirements\required_not" List.ItemID="994333781" List.ListAction="Append">
+					<enum name="reason" value="usage" />
+					<locstring name="ui_name" value="11230850" />
+					<list name="requirement_table">
+						<template_reference name="required" value="requirements\required_in_state" List.ItemID="-1355327151">
+							<enum name="reason" value="usage" />
+							<locstring name="ui_name" value="0" />
+							<float name="was_attacked_within_seconds" value="-1" />
+							<list name="check_states">
+								<enum name="state_requirement_type" value="pinned" List.ItemID="1988729278" />
+							</list>
+							<float name="was_attacking_within_seconds" value="-1" />
+						</template_reference>
+					</list>
+				</template_reference>
+			</list>
+			<group name="ability_active_state_tree_group">
+				<state_tree_node name="ability_activate_entity_tree" value="sp_grenade_commando_uk" overrideParent="True" />
+			</group>
+			<float name="min_range" value="5" overrideParent="True" />
+		</group>
+		<uniqueid name="pbgid" value="2029899" />
+		<instance_reference name="parent_pbg" value="abilities\races\common\infantry\grenade_parent" />
+	</variant>
+</instance>

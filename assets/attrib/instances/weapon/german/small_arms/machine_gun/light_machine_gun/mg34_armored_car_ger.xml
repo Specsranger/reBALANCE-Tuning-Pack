@@ -127,7 +127,7 @@
 				<bool name="can_abort_winddown_on_move_command" value="False" />
 				<bool name="share_parent_anim" value="False" />
 				<bool name="copy_transform_on_equip" value="True" />
-				<float name="aa_range_multiplier" value="6" />
+				<float name="aa_range_multiplier" value="2.7" />
 				<bool name="can_only_fire_once_while_out_of_control" value="False" />
 			</group>
 			<group name="burst">
@@ -373,6 +373,16 @@
 					<group name="weapon_multipliers">
 						<float name="accuracy_multiplier" value="1.5" />
 						<float name="damage_multiplier" value="1" />
+						<float name="penetration_multiplier" value="1" />
+						<float name="suppression_multiplier" value="1" />
+					</group>
+					<float name="base_damage_modifier" value="0" />
+				</group>
+				<group name="target_unit_type_multipliers" List.ItemID="-292776241">
+					<enum name="unit_type" value="aircraft" />
+					<group name="weapon_multipliers">
+						<float name="accuracy_multiplier" value="1" />
+						<float name="damage_multiplier" value="1.25" />
 						<float name="penetration_multiplier" value="1" />
 						<float name="suppression_multiplier" value="1" />
 					</group>
@@ -865,6 +875,16 @@
 					<enum name="unit_type" value="sniper" />
 					<group name="weapon_multipliers">
 						<float name="accuracy_multiplier" value="1.5" />
+						<float name="damage_multiplier" value="1" />
+						<float name="penetration_multiplier" value="1" />
+						<float name="suppression_multiplier" value="1" />
+					</group>
+					<float name="base_damage_modifier" value="0" />
+				</group>
+				<group name="target_unit_type_multipliers" List.ItemID="1182814878">
+					<enum name="unit_type" value="aircraft" />
+					<group name="weapon_multipliers">
+						<float name="accuracy_multiplier" value="1" />
 						<float name="damage_multiplier" value="1" />
 						<float name="penetration_multiplier" value="1" />
 						<float name="suppression_multiplier" value="1" />

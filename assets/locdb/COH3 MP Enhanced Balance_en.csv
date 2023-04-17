@@ -23,3 +23,16 @@
 22,,,brief_text,,,Upgrades the squad with a MG 42 Light Machine Gun.
 23,,,help_text,,,Disables Movement
 24,,,ui_name,,,Barracks
+25,,,screen_name,,,MG 34 Heavy Machine Gun
+26,,,screen_name,,,MG 42 Heavy Machine Gun 
+27,,,screen_name,,,MG 34 Machine Gun Team
+28,,,ui_name,,,Must be out of range from enemy
+29,,,ui_name,,,Must be out of range from enemy
+30,,,ui_name,,,Must be out of range from enemy
+31,,,ui_name,,,Must be out of range from enemy
+32,,,ui_name,,,Must be out of range from enemy
+33,,,ui_name,,,Must be out of range from enemy
+34,,,ui_name,,,Must be out of combat
+35,,,ui_name,,,Must be in territory
+36,,,ui_name,,,Must be out of combat
+37,,,ui_name,,,Must be out of range from enemy
