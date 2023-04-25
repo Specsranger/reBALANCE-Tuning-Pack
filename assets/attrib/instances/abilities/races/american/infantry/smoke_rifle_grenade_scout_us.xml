@@ -9,11 +9,11 @@
 				<file name="icon_name" value="common\abilities\ability_german_m23_rifle_smoke_grenade" overrideParent="True" />
 			</group>
 			<list name="requirements">
-				<template_reference name="required" value="requirements\required_any_in_list" List.ItemID="-1179534482" List.ListAction="Append">
+				<template_reference name="required" value="requirements\required_any_in_list" List.ItemID="1436177822" List.ListAction="Append">
 					<enum name="reason" value="usage" />
 					<locstring name="ui_name" value="11233748" />
 					<list name="requirements">
-						<template_reference name="requirement" value="requirements\required_squad_upgrade" List.ItemID="2147382799">
+						<template_reference name="requirement" value="requirements\required_squad_upgrade" List.ItemID="1225201491">
 							<enum name="reason" value="usage_and_display" />
 							<locstring name="ui_name" value="0" />
 							<bool name="include_queued" value="False" />
@@ -27,7 +27,7 @@
 							</group>
 							<bool name="include_completed" value="True" />
 						</template_reference>
-						<template_reference name="requirement" value="requirements\required_player_upgrade" List.ItemID="-350928423">
+						<template_reference name="requirement" value="requirements\required_player_upgrade" List.ItemID="745348789">
 							<enum name="reason" value="usage_and_display" />
 							<locstring name="ui_name" value="0" />
 							<bool name="is_present" value="True" />
@@ -43,7 +43,7 @@
 						</template_reference>
 					</list>
 				</template_reference>
-				<template_reference name="required" value="requirements\required_ability_state" List.ItemID="-178171366" List.ListAction="Append">
+				<template_reference name="required" value="requirements\required_ability_state" List.ItemID="867528798" List.ListAction="Append">
 					<enum name="reason" value="usage" />
 					<locstring name="ui_name" value="0" />
 					<bool name="is_active" value="False" />
@@ -71,11 +71,11 @@
 				<file name="icon_name" value="common\abilities\ability_german_m23_rifle_smoke_grenade" overrideParent="True" />
 			</group>
 			<list name="requirements">
-				<template_reference name="required" value="requirements\required_any_in_list" List.ItemID="-798861059" List.ListAction="Append">
+				<template_reference name="required" value="requirements\required_any_in_list" List.ItemID="-470528011" List.ListAction="Append">
 					<enum name="reason" value="usage" />
 					<locstring name="ui_name" value="11233748" />
 					<list name="requirements">
-						<template_reference name="requirement" value="requirements\required_squad_upgrade" List.ItemID="-1039321206">
+						<template_reference name="requirement" value="requirements\required_squad_upgrade" List.ItemID="59164184">
 							<enum name="reason" value="usage_and_display" />
 							<locstring name="ui_name" value="0" />
 							<bool name="include_queued" value="False" />
@@ -89,7 +89,7 @@
 							</group>
 							<bool name="include_completed" value="True" />
 						</template_reference>
-						<template_reference name="requirement" value="requirements\required_player_upgrade" List.ItemID="448307956">
+						<template_reference name="requirement" value="requirements\required_player_upgrade" List.ItemID="-2067596961">
 							<enum name="reason" value="usage_and_display" />
 							<locstring name="ui_name" value="0" />
 							<bool name="is_present" value="True" />
@@ -103,7 +103,7 @@
 								<bool name="include_parent_pbgs" value="False" />
 							</group>
 						</template_reference>
-						<template_reference name="requirement" value="requirements\required_player_upgrade" List.ItemID="1623224788">
+						<template_reference name="requirement" value="requirements\required_player_upgrade" List.ItemID="33590628">
 							<enum name="reason" value="usage_and_display" />
 							<locstring name="ui_name" value="0" />
 							<bool name="is_present" value="True" />
@@ -119,7 +119,7 @@
 						</template_reference>
 					</list>
 				</template_reference>
-				<template_reference name="required" value="requirements\required_ability_state" List.ItemID="-2089988304" List.ListAction="Append">
+				<template_reference name="required" value="requirements\required_ability_state" List.ItemID="807748572" List.ListAction="Append">
 					<enum name="reason" value="usage" />
 					<locstring name="ui_name" value="0" />
 					<bool name="is_active" value="False" />

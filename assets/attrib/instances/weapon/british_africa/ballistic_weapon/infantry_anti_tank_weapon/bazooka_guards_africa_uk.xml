@@ -1,4 +1,4 @@
-<instance version="5" description="M9 Bazooka used by the Bazooka Team" template="weapon">
+<instance version="5" description="M9 Bazooka used by the Guards" template="weapon">
 	<variant name="default">
 		<group name="weapon_bag">
 			<group name="accuracy">
@@ -13,8 +13,8 @@
 				</group>
 				<float name="post_firing_aim_time_seconds" value="1.25" overrideParent="True" />
 				<group name="ready_aim_time">
-					<float name="max" value="1.25" overrideParent="True" />
-					<float name="min" value="1" overrideParent="True" />
+					<float name="max" value="1" overrideParent="True" />
+					<float name="min" value="0.5" overrideParent="True" />
 				</group>
 				<group name="aim_time_multiplier">
 					<float name="near" value="0.85" overrideParent="True" />
@@ -75,8 +75,8 @@
 			</group>
 			<group name="cooldown" comment="Original bazooka was all reload and no cooldown. Changed this because we shifted suppression to affect cooldown but not reload.">
 				<group name="duration">
-					<float name="max" value="2" overrideParent="True" />
-					<float name="min" value="1.75" overrideParent="True" />
+					<float name="max" value="4.5" overrideParent="True" />
+					<float name="min" value="3.75" overrideParent="True" />
 				</group>
 			</group>
 			<group name="damage">
@@ -88,7 +88,7 @@
 				<float name="deflection_damage_multiplier" value="0.15" overrideParent="True" />
 				<bool name="has_deflection_damage" value="False" overrideParent="True" />
 			</group>
-			<float name="flinch_radius" value="2" overrideParent="True" />
+			<float name="flinch_radius" value="10" overrideParent="True" />
 			<bool name="fx_always_visible" value="True" overrideParent="True" />
 			<string name="fx_munition_name" value="\cannon\shell_small" overrideParent="True" />
 			<bool name="fx_use_building_panel_normal" value="True" overrideParent="True" />
@@ -119,13 +119,22 @@
 					<float name="mid" value="22.5" overrideParent="True" />
 				</group>
 			</group>
-			<group name="reload" comment="NOTE: Eventually this should be moved into the wind down. This way it will always play a cooldown after every shot which can be modified by suppression. This has to be done because everytime a weapon reloads, it skips cooldown.">
+			<group name="reload" comment="NOTE: Eventually this should be moved into the wind down. This way it will always play a cooldown after every shot which can be modified by suppression. This has to be done because everytime a weapon reloads, it skips cooldown." overrideParent="True">
 				<group name="duration">
-					<float name="max" value="5.5" overrideParent="True" />
-					<float name="min" value="4.75" overrideParent="True" />
+					<float name="max" value="4.5" overrideParent="True" />
+					<float name="min" value="3.6" overrideParent="True" />
 				</group>
 				<bool name="require_reload_after_switch" value="False" overrideParent="True" />
 				<bool name="persistent_reloadticks" value="True" overrideParent="True" />
+				<group name="duration_multiplier">
+					<float name="far" value="1" />
+					<float name="near" value="1" />
+					<float name="mid" value="1" />
+				</group>
+				<group name="frequency">
+					<float name="max" value="0" />
+					<float name="min" value="0" />
+				</group>
 			</group>
 			<group name="scatter">
 				<float name="angle_scatter" value="7" overrideParent="True" />
@@ -175,7 +184,7 @@
 			</group>
 			<enum name="weapon_class" value="bazooka" overrideParent="True" />
 			<list name="target_type_table" comment="Has a target type table, unique (note for cloning).">
-				<group name="target_unit_type_multipliers" List.ItemID="-698482587" List.ListAction="Append">
+				<group name="target_unit_type_multipliers" List.ItemID="-479588388" List.ListAction="Append">
 					<enum name="unit_type" value="building" />
 					<group name="weapon_multipliers">
 						<float name="accuracy_multiplier" value="10" />
@@ -185,7 +194,7 @@
 					</group>
 					<float name="base_damage_modifier" value="0" />
 				</group>
-				<group name="target_unit_type_multipliers" List.ItemID="1888180630" List.ListAction="Append">
+				<group name="target_unit_type_multipliers" List.ItemID="-1521603907" List.ListAction="Append">
 					<enum name="unit_type" value="bunker" />
 					<group name="weapon_multipliers">
 						<float name="accuracy_multiplier" value="10" />
@@ -195,11 +204,11 @@
 					</group>
 					<float name="base_damage_modifier" value="0" />
 				</group>
-				<group name="target_unit_type_multipliers" List.ItemID="238007457" List.ListAction="Append">
+				<group name="target_unit_type_multipliers" List.ItemID="-569654203" List.ListAction="Append">
 					<enum name="unit_type" value="infantry" />
 					<group name="weapon_multipliers">
 						<float name="accuracy_multiplier" value="0" />
-						<float name="damage_multiplier" value="0.5" />
+						<float name="damage_multiplier" value="1" />
 						<float name="penetration_multiplier" value="1" />
 						<float name="suppression_multiplier" value="1" />
 					</group>
@@ -233,15 +242,15 @@
 			<enum name="default_attack_type" value="ballistic" overrideParent="True" />
 			<template_reference name="animation_role_option" value="options\animation_role\animation_role_flavour_option" overrideParent="True">
 				<list name="squad_animation_roles">
-					<group name="flavour" List.ItemID="1074931907">
+					<group name="flavour" List.ItemID="-894798530">
 						<list name="squad_contents">
-							<group name="squad_member" List.ItemID="-1986185002">
+							<group name="squad_member" List.ItemID="-2019307515">
 								<list name="animation_variants">
-									<instance_reference name="animation_role" value="animation_role\soldier\s_bazooka_gunner" List.ItemID="1008865065" />
+									<instance_reference name="animation_role" value="animation_role\soldier\s_bazooka_gunner" List.ItemID="1557236115" />
 								</list>
 							</group>
 						</list>
-						<enum name="key" value="american" />
+						<enum name="key" value="british" />
 					</group>
 				</list>
 			</template_reference>
@@ -258,7 +267,7 @@
 				</group>
 			</group>
 		</group>
-		<uniqueid name="pbgid" value="172843" />
+		<uniqueid name="pbgid" value="2071792" />
 		<instance_reference name="parent_pbg" value="weapon\common\parent\ballistic_parent" />
 	</variant>
 	<variant name="sp">
@@ -275,8 +284,8 @@
 				</group>
 				<float name="post_firing_aim_time_seconds" value="1.25" overrideParent="True" />
 				<group name="ready_aim_time">
-					<float name="max" value="1.25" overrideParent="True" />
-					<float name="min" value="1" overrideParent="True" />
+					<float name="max" value="1" overrideParent="True" />
+					<float name="min" value="0.5" overrideParent="True" />
 				</group>
 				<group name="aim_time_multiplier">
 					<float name="near" value="0.85" overrideParent="True" />
@@ -337,8 +346,8 @@
 			</group>
 			<group name="cooldown" comment="Original bazooka was all reload and no cooldown. Changed this because we shifted suppression to affect cooldown but not reload.">
 				<group name="duration">
-					<float name="max" value="2" overrideParent="True" />
-					<float name="min" value="1.75" overrideParent="True" />
+					<float name="max" value="4.5" overrideParent="True" />
+					<float name="min" value="3.75" overrideParent="True" />
 				</group>
 			</group>
 			<group name="damage">
@@ -350,7 +359,7 @@
 				<float name="deflection_damage_multiplier" value="0.15" overrideParent="True" />
 				<bool name="has_deflection_damage" value="False" overrideParent="True" />
 			</group>
-			<float name="flinch_radius" value="2" overrideParent="True" />
+			<float name="flinch_radius" value="10" overrideParent="True" />
 			<bool name="fx_always_visible" value="True" overrideParent="True" />
 			<string name="fx_munition_name" value="\cannon\shell_small" overrideParent="True" />
 			<bool name="fx_use_building_panel_normal" value="True" overrideParent="True" />
@@ -381,13 +390,22 @@
 					<float name="mid" value="22.5" overrideParent="True" />
 				</group>
 			</group>
-			<group name="reload" comment="NOTE: Eventually this should be moved into the wind down. This way it will always play a cooldown after every shot which can be modified by suppression. This has to be done because everytime a weapon reloads, it skips cooldown.">
+			<group name="reload" comment="NOTE: Eventually this should be moved into the wind down. This way it will always play a cooldown after every shot which can be modified by suppression. This has to be done because everytime a weapon reloads, it skips cooldown." overrideParent="True">
 				<group name="duration">
-					<float name="max" value="5.5" overrideParent="True" />
-					<float name="min" value="4.75" overrideParent="True" />
+					<float name="max" value="4.5" overrideParent="True" />
+					<float name="min" value="3.6" overrideParent="True" />
 				</group>
-				<bool name="require_reload_after_switch" value="True" overrideParent="True" />
+				<bool name="require_reload_after_switch" value="False" overrideParent="True" />
 				<bool name="persistent_reloadticks" value="True" overrideParent="True" />
+				<group name="duration_multiplier">
+					<float name="far" value="1" />
+					<float name="near" value="1" />
+					<float name="mid" value="1" />
+				</group>
+				<group name="frequency">
+					<float name="max" value="0" />
+					<float name="min" value="0" />
+				</group>
 			</group>
 			<group name="scatter">
 				<float name="angle_scatter" value="7" overrideParent="True" />
@@ -437,7 +455,7 @@
 			</group>
 			<enum name="weapon_class" value="bazooka" overrideParent="True" />
 			<list name="target_type_table" comment="Has a target type table, unique (note for cloning).">
-				<group name="target_unit_type_multipliers" List.ItemID="-162854982" List.ListAction="Append">
+				<group name="target_unit_type_multipliers" List.ItemID="1719949266" List.ListAction="Append">
 					<enum name="unit_type" value="building" />
 					<group name="weapon_multipliers">
 						<float name="accuracy_multiplier" value="10" />
@@ -447,7 +465,7 @@
 					</group>
 					<float name="base_damage_modifier" value="0" />
 				</group>
-				<group name="target_unit_type_multipliers" List.ItemID="-721199118" List.ListAction="Append">
+				<group name="target_unit_type_multipliers" List.ItemID="252654619" List.ListAction="Append">
 					<enum name="unit_type" value="bunker" />
 					<group name="weapon_multipliers">
 						<float name="accuracy_multiplier" value="10" />
@@ -457,11 +475,11 @@
 					</group>
 					<float name="base_damage_modifier" value="0" />
 				</group>
-				<group name="target_unit_type_multipliers" List.ItemID="-509038980" List.ListAction="Append">
+				<group name="target_unit_type_multipliers" List.ItemID="-1317499618" List.ListAction="Append">
 					<enum name="unit_type" value="infantry" />
 					<group name="weapon_multipliers">
 						<float name="accuracy_multiplier" value="0" />
-						<float name="damage_multiplier" value="0.5" />
+						<float name="damage_multiplier" value="1" />
 						<float name="penetration_multiplier" value="1" />
 						<float name="suppression_multiplier" value="1" />
 					</group>
@@ -495,15 +513,15 @@
 			<enum name="default_attack_type" value="ballistic" overrideParent="True" />
 			<template_reference name="animation_role_option" value="options\animation_role\animation_role_flavour_option" overrideParent="True">
 				<list name="squad_animation_roles">
-					<group name="flavour" List.ItemID="-833443784">
+					<group name="flavour" List.ItemID="-688063150">
 						<list name="squad_contents">
-							<group name="squad_member" List.ItemID="-292948717">
+							<group name="squad_member" List.ItemID="1281506424">
 								<list name="animation_variants">
-									<instance_reference name="animation_role" value="animation_role\soldier\s_bazooka_gunner" List.ItemID="-1855278514" />
+									<instance_reference name="animation_role" value="animation_role\soldier\s_bazooka_gunner" List.ItemID="-1212128843" />
 								</list>
 							</group>
 						</list>
-						<enum name="key" value="american" />
+						<enum name="key" value="british" />
 					</group>
 				</list>
 			</template_reference>
@@ -520,7 +538,7 @@
 				</group>
 			</group>
 		</group>
-		<uniqueid name="pbgid" value="172843" />
+		<uniqueid name="pbgid" value="2071792" />
 		<instance_reference name="parent_pbg" value="weapon\common\parent\ballistic_parent" />
 	</variant>
 </instance>

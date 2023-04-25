@@ -201,7 +201,7 @@
 					<group name="race_mapping" List.ItemID="479605961" List.ListAction="Append">
 						<instance_reference name="race_key" value="racebps\americans" />
 						<instance_reference name="presentation_entity_override" value="ebps\races\american\vehicles\halftrack_us" overrideParent="True" />
-						<instance_reference name="presentation_squad_override" value="sbps\races\american\vehicles\halftrack_us" overrideParent="True" />
+						<instance_reference name="presentation_squad_override" value="sbps\races\american\vehicles\halftrack_us" mod="9239c1ca0dd047c28f698b95e2071674" overrideParent="True" />
 					</group>
 					<group name="race_mapping" List.ItemID="-2145622097" List.ListAction="Append">
 						<instance_reference name="race_key" value="racebps\british" />
@@ -210,13 +210,13 @@
 					</group>
 					<group name="race_mapping" List.ItemID="1769618110" List.ListAction="Append">
 						<instance_reference name="race_key" value="racebps\germans" />
-						<instance_reference name="presentation_entity_override" value="ebps\races\german\vehicles\armored_car_8_rad_ger" mod="9239c1ca0dd047c28f698b95e2071674" />
+						<instance_reference name="presentation_entity_override" value="" />
 						<instance_reference name="presentation_squad_override" value="sbps\races\german\vehicles\armored_car_8_rad_ger" />
 					</group>
 					<group name="race_mapping" List.ItemID="93268893" List.ListAction="Append">
 						<instance_reference name="race_key" value="racebps\afrika_korps" />
 						<instance_reference name="presentation_entity_override" value="ebps\races\afrika_korps\vehicles\recovery_halftrack_ak" overrideParent="True" />
-						<instance_reference name="presentation_squad_override" value="sbps\races\afrika_korps\vehicles\halftrack_recovery_ak" overrideParent="True" />
+						<instance_reference name="presentation_squad_override" value="" overrideParent="True" />
 					</group>
 				</list>
 			</template_reference>
@@ -579,7 +579,7 @@
 					<group name="race_mapping" List.ItemID="-1117460252" List.ListAction="Append">
 						<instance_reference name="race_key" value="racebps\americans" />
 						<instance_reference name="presentation_entity_override" value="ebps\races\american\vehicles\halftrack_us" overrideParent="True" />
-						<instance_reference name="presentation_squad_override" value="sbps\races\american\vehicles\halftrack_us" overrideParent="True" />
+						<instance_reference name="presentation_squad_override" value="sbps\races\american\vehicles\halftrack_us" mod="9239c1ca0dd047c28f698b95e2071674" overrideParent="True" />
 					</group>
 					<group name="race_mapping" List.ItemID="543297973" List.ListAction="Append">
 						<instance_reference name="race_key" value="racebps\british" />
@@ -588,13 +588,13 @@
 					</group>
 					<group name="race_mapping" List.ItemID="901585805" List.ListAction="Append">
 						<instance_reference name="race_key" value="racebps\germans" />
-						<instance_reference name="presentation_entity_override" value="ebps\races\german\vehicles\armored_car_8_rad_ger" mod="9239c1ca0dd047c28f698b95e2071674" />
+						<instance_reference name="presentation_entity_override" value="" />
 						<instance_reference name="presentation_squad_override" value="sbps\races\german\vehicles\armored_car_8_rad_ger" />
 					</group>
 					<group name="race_mapping" List.ItemID="1994297427" List.ListAction="Append">
 						<instance_reference name="race_key" value="racebps\afrika_korps" />
 						<instance_reference name="presentation_entity_override" value="ebps\races\afrika_korps\vehicles\recovery_halftrack_ak" overrideParent="True" />
-						<instance_reference name="presentation_squad_override" value="sbps\races\afrika_korps\vehicles\halftrack_recovery_ak" overrideParent="True" />
+						<instance_reference name="presentation_squad_override" value="" overrideParent="True" />
 					</group>
 				</list>
 			</template_reference>

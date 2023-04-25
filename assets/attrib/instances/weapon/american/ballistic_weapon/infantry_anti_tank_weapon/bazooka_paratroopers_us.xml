@@ -37,9 +37,9 @@
 					<enum name="dynamic_radius_type" value="fixed" />
 				</template_reference>
 				<group name="damage">
-					<float name="far" value="0.1" overrideParent="True" />
+					<float name="far" value="0.5" overrideParent="True" />
 					<float name="near" value="0.5" overrideParent="True" />
-					<float name="mid" value="0.25" overrideParent="True" />
+					<float name="mid" value="0.5" overrideParent="True" />
 				</group>
 				<group name="damage_friendly">
 					<float name="far" value="0.025" overrideParent="True" />
@@ -58,7 +58,7 @@
 					<float name="mid" value="1" overrideParent="True" />
 					<float name="near" value="1" overrideParent="True" />
 				</template_reference>
-				<int name="damage_max_members_per_squad" value="1" overrideParent="True" />
+				<int name="damage_max_members_per_squad" value="3" overrideParent="True" />
 			</group>
 			<group name="behaviour">
 				<bool name="can_be_offhanded" value="True" overrideParent="True" />
@@ -175,7 +175,7 @@
 			</group>
 			<enum name="weapon_class" value="bazooka" overrideParent="True" />
 			<list name="target_type_table" comment="Has a target type table, unique (note for cloning).">
-				<group name="target_unit_type_multipliers" List.ItemID="1693772811" List.ListAction="Append">
+				<group name="target_unit_type_multipliers" List.ItemID="1030727946" List.ListAction="Append">
 					<enum name="unit_type" value="building" />
 					<group name="weapon_multipliers">
 						<float name="accuracy_multiplier" value="10" />
@@ -185,7 +185,7 @@
 					</group>
 					<float name="base_damage_modifier" value="0" />
 				</group>
-				<group name="target_unit_type_multipliers" List.ItemID="1229911354" List.ListAction="Append">
+				<group name="target_unit_type_multipliers" List.ItemID="-2013864632" List.ListAction="Append">
 					<enum name="unit_type" value="bunker" />
 					<group name="weapon_multipliers">
 						<float name="accuracy_multiplier" value="10" />
@@ -195,11 +195,11 @@
 					</group>
 					<float name="base_damage_modifier" value="0" />
 				</group>
-				<group name="target_unit_type_multipliers" List.ItemID="1731521328" List.ListAction="Append">
+				<group name="target_unit_type_multipliers" List.ItemID="204367131" List.ListAction="Append">
 					<enum name="unit_type" value="infantry" />
 					<group name="weapon_multipliers">
 						<float name="accuracy_multiplier" value="0.01" />
-						<float name="damage_multiplier" value="0.25" overrideParent="True" />
+						<float name="damage_multiplier" value="0.5" />
 						<float name="penetration_multiplier" value="1" />
 						<float name="suppression_multiplier" value="1" />
 					</group>
@@ -233,11 +233,11 @@
 			<enum name="default_attack_type" value="ballistic" overrideParent="True" />
 			<template_reference name="animation_role_option" value="options\animation_role\animation_role_flavour_option" overrideParent="True">
 				<list name="squad_animation_roles">
-					<group name="flavour" List.ItemID="-127772124">
+					<group name="flavour" List.ItemID="2084022067">
 						<list name="squad_contents">
-							<group name="squad_member" List.ItemID="801459162">
+							<group name="squad_member" List.ItemID="-88284619">
 								<list name="animation_variants">
-									<instance_reference name="animation_role" value="animation_role\soldier\s_bazooka_gunner" List.ItemID="1515986314" />
+									<instance_reference name="animation_role" value="animation_role\soldier\s_bazooka_gunner" List.ItemID="-1764678179" />
 								</list>
 							</group>
 						</list>
@@ -342,8 +342,8 @@
 				</group>
 			</group>
 			<group name="damage">
-				<float name="max" value="60" overrideParent="True" />
-				<float name="min" value="60" overrideParent="True" />
+				<float name="max" value="75" overrideParent="True" />
+				<float name="min" value="75" overrideParent="True" />
 				<enum name="damage_type" value="ballistic" overrideParent="True" />
 			</group>
 			<group name="deflection">
@@ -437,7 +437,7 @@
 			</group>
 			<enum name="weapon_class" value="bazooka" overrideParent="True" />
 			<list name="target_type_table" comment="Has a target type table, unique (note for cloning).">
-				<group name="target_unit_type_multipliers" List.ItemID="270569461" List.ListAction="Append">
+				<group name="target_unit_type_multipliers" List.ItemID="-1147848985" List.ListAction="Append">
 					<enum name="unit_type" value="building" />
 					<group name="weapon_multipliers">
 						<float name="accuracy_multiplier" value="10" />
@@ -447,7 +447,7 @@
 					</group>
 					<float name="base_damage_modifier" value="0" />
 				</group>
-				<group name="target_unit_type_multipliers" List.ItemID="-2261682" List.ListAction="Append">
+				<group name="target_unit_type_multipliers" List.ItemID="232834801" List.ListAction="Append">
 					<enum name="unit_type" value="bunker" />
 					<group name="weapon_multipliers">
 						<float name="accuracy_multiplier" value="10" />
@@ -457,7 +457,7 @@
 					</group>
 					<float name="base_damage_modifier" value="0" />
 				</group>
-				<group name="target_unit_type_multipliers" List.ItemID="310416320" List.ListAction="Append">
+				<group name="target_unit_type_multipliers" List.ItemID="-390791166" List.ListAction="Append">
 					<enum name="unit_type" value="infantry" />
 					<group name="weapon_multipliers">
 						<float name="accuracy_multiplier" value="0.01" />
@@ -495,11 +495,11 @@
 			<enum name="default_attack_type" value="ballistic" overrideParent="True" />
 			<template_reference name="animation_role_option" value="options\animation_role\animation_role_flavour_option" overrideParent="True">
 				<list name="squad_animation_roles">
-					<group name="flavour" List.ItemID="74770985">
+					<group name="flavour" List.ItemID="-1824699234">
 						<list name="squad_contents">
-							<group name="squad_member" List.ItemID="2035241869">
+							<group name="squad_member" List.ItemID="187147825">
 								<list name="animation_variants">
-									<instance_reference name="animation_role" value="animation_role\soldier\s_bazooka_gunner" List.ItemID="1915544291" />
+									<instance_reference name="animation_role" value="animation_role\soldier\s_bazooka_gunner" List.ItemID="-1488760089" />
 								</list>
 							</group>
 						</list>

@@ -3,14 +3,14 @@
 		<group name="weapon_bag">
 			<group name="accuracy">
 				<float name="near" value="0.15" overrideParent="True" />
-				<float name="far" value="0.035" overrideParent="True" />
-				<float name="mid" value="0.055" overrideParent="True" />
+				<float name="far" value="0.05" overrideParent="True" />
+				<float name="mid" value="0.059" overrideParent="True" />
 			</group>
 			<group name="aim">
 				<float name="post_firing_aim_time_seconds" value="4" overrideParent="True" />
 				<group name="ready_aim_time">
-					<float name="max" value="0.125" overrideParent="True" />
-					<float name="min" value="0.125" overrideParent="True" />
+					<float name="max" value="0" overrideParent="True" />
+					<float name="min" value="0" overrideParent="True" />
 				</group>
 			</group>
 			<group name="anim_table">
@@ -18,9 +18,9 @@
 			</group>
 			<group name="area_effect">
 				<group name="accuracy">
-					<float name="far" value="1" overrideParent="True" />
-					<float name="near" value="1" overrideParent="True" />
-					<float name="mid" value="1" overrideParent="True" />
+					<float name="far" value="5" overrideParent="True" />
+					<float name="near" value="5" overrideParent="True" />
+					<float name="mid" value="5" overrideParent="True" />
 				</group>
 				<group name="damage">
 					<float name="far" value="0.15" overrideParent="True" />
@@ -33,15 +33,15 @@
 					<float name="mid" value="0.075" overrideParent="True" />
 				</group>
 				<group name="distance">
-					<float name="far" value="1.75" overrideParent="True" />
-					<float name="near" value="0.5" overrideParent="True" />
-					<float name="mid" value="1" overrideParent="True" />
+					<float name="far" value="0.25" overrideParent="True" />
+					<float name="near" value="0.15" overrideParent="True" />
+					<float name="mid" value="0.2" overrideParent="True" />
 				</group>
 				<bool name="has_friendly_fire" value="True" overrideParent="True" />
 				<template_reference name="aoe_penetration" value="tables\range_table">
-					<float name="far" value="17.5" overrideParent="True" />
-					<float name="mid" value="22.5" overrideParent="True" />
-					<float name="near" value="27.5" overrideParent="True" />
+					<float name="far" value="95" overrideParent="True" />
+					<float name="mid" value="100" overrideParent="True" />
+					<float name="near" value="105" overrideParent="True" />
 				</template_reference>
 				<template_reference name="area_info" value="options\area_info_options\circle_area_option" overrideParent="True">
 					<float name="outer_radius" value="1.75" overrideParent="True" />
@@ -49,13 +49,13 @@
 					<bool name="is_two_dimensional" value="True" />
 					<enum name="dynamic_radius_type" value="fixed" />
 				</template_reference>
-				<int name="damage_max_members_per_squad" value="3" overrideParent="True" />
+				<int name="damage_max_members_per_squad" value="1" overrideParent="True" />
 			</group>
 			<group name="behaviour">
 				<float name="combat_slot_offset" value="0" overrideParent="True" />
 				<bool name="enable_auto_target_search" value="True" overrideParent="True" />
 				<float name="ground_hit_rate" value="1" overrideParent="True" />
-				<float name="reaction_radius" value="2.5" overrideParent="True" />
+				<float name="reaction_radius" value="0.5" overrideParent="True" />
 				<enum name="attack_ground_type" value="anywhere" overrideParent="True" />
 				<bool name="can_damage_allies" value="True" overrideParent="True" />
 			</group>
@@ -66,7 +66,7 @@
 			</group>
 			<group name="deflection">
 				<float name="deflection_damage_multiplier" value="0.15" overrideParent="True" />
-				<bool name="has_deflection_damage" value="True" overrideParent="True" />
+				<bool name="has_deflection_damage" value="False" overrideParent="True" />
 			</group>
 			<group name="fire">
 				<float name="wind_down" value="0.75" overrideParent="True" />

@@ -2,9 +2,9 @@
 	<variant name="default">
 		<group name="weapon_bag">
 			<group name="accuracy">
-				<float name="near" value="0.4" overrideParent="True" />
-				<float name="far" value="0.3" overrideParent="True" />
-				<float name="mid" value="0.35" overrideParent="True" />
+				<float name="near" value="0.44" overrideParent="True" />
+				<float name="far" value="0.36" overrideParent="True" />
+				<float name="mid" value="0.42" overrideParent="True" />
 			</group>
 			<group name="aim">
 				<group name="fire_aim_time">
@@ -15,6 +15,7 @@
 					<float name="max" value="0.5" overrideParent="True" />
 					<float name="min" value="0.25" overrideParent="True" />
 				</group>
+				<float name="post_firing_aim_time_seconds" value="4" overrideParent="True" />
 			</group>
 			<group name="anim_table">
 				<string name="state_name" value="main_weapon_state" overrideParent="True" />
@@ -73,8 +74,8 @@
 			<group name="burst">
 				<bool name="can_burst" value="True" overrideParent="True" />
 				<group name="duration">
-					<float name="max" value="2.5" overrideParent="True" />
-					<float name="min" value="1.75" overrideParent="True" />
+					<float name="max" value="4" overrideParent="True" />
+					<float name="min" value="3.5" overrideParent="True" />
 				</group>
 				<group name="incremental_target_table">
 					<float name="accuracy_multiplier" value="1.25" overrideParent="True" />
@@ -95,8 +96,11 @@
 			</group>
 			<group name="cooldown">
 				<group name="duration">
-					<float name="max" value="2.5" overrideParent="True" />
-					<float name="min" value="2" overrideParent="True" />
+					<float name="max" value="1.5" overrideParent="True" />
+					<float name="min" value="1.5" overrideParent="True" />
+				</group>
+				<group name="duration_multiplier">
+					<float name="far" value="1.5" overrideParent="True" />
 				</group>
 			</group>
 			<group name="damage">
@@ -104,13 +108,13 @@
 				<float name="min" value="5" overrideParent="True" />
 				<enum name="damage_type" value="ballistic" overrideParent="True" />
 				<list name="on_penetrated_state_trees">
-					<group name="container" List.ItemID="472483023" List.ListAction="Append">
+					<group name="container" List.ItemID="-1786537076" List.ListAction="Append">
 						<state_tree_node name="state_tree" value="7_halftrack_ap_rounds_ak" />
 					</group>
 				</list>
 			</group>
 			<group name="deflection">
-				<float name="deflection_damage_multiplier" value="0.35" overrideParent="True" />
+				<float name="deflection_damage_multiplier" value="0.15" overrideParent="True" />
 				<bool name="has_deflection_damage" value="False" overrideParent="True" />
 			</group>
 			<float name="flinch_radius" value="2" overrideParent="True" />
@@ -158,7 +162,7 @@
 				</group>
 			</group>
 			<group name="scatter">
-				<float name="angle_scatter" value="8" overrideParent="True" />
+				<float name="angle_scatter" value="3" overrideParent="True" />
 				<bool name="burst_pattern_enable" value="True" overrideParent="True" />
 				<float name="delay_bracket_change_chance" value="1" overrideParent="True" />
 				<float name="distance_bracket_count_ground" value="8" overrideParent="True" />
@@ -201,9 +205,10 @@
 				<float name="fire_cone_angle" value="5" overrideParent="True" />
 				<group name="normal">
 					<float name="max_right" value="180" overrideParent="True" />
-					<float name="max_up" value="30" overrideParent="True" />
-					<float name="speed_horizontal" value="85" overrideParent="True" />
+					<float name="max_up" value="55" overrideParent="True" />
+					<float name="speed_horizontal" value="100" overrideParent="True" />
 					<float name="speed_vertical" value="35" overrideParent="True" />
+					<float name="max_down" value="-10" overrideParent="True" />
 				</group>
 			</group>
 			<group name="penetration">
@@ -349,7 +354,7 @@
 				<float name="min" value="5" overrideParent="True" />
 				<enum name="damage_type" value="ballistic" overrideParent="True" />
 				<list name="on_penetrated_state_trees">
-					<group name="container" List.ItemID="-1055233694" List.ListAction="Append">
+					<group name="container" List.ItemID="354578505" List.ListAction="Append">
 						<state_tree_node name="state_tree" value="sp_7_halftrack_ap_rounds_ak" />
 					</group>
 				</list>

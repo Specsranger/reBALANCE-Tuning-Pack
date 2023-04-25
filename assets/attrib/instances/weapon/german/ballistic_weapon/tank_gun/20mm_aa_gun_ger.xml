@@ -212,8 +212,8 @@
 				<group name="target_unit_type_multipliers" List.ItemID="-2005278752" List.ListAction="Append">
 					<enum name="unit_type" value="aircraft" />
 					<group name="weapon_multipliers">
-						<float name="accuracy_multiplier" value="1.25" />
-						<float name="damage_multiplier" value="1" />
+						<float name="accuracy_multiplier" value="1.25" overrideParent="True" />
+						<float name="damage_multiplier" value="1.25" overrideParent="True" />
 						<float name="penetration_multiplier" value="5" />
 						<float name="suppression_multiplier" value="1" />
 					</group>

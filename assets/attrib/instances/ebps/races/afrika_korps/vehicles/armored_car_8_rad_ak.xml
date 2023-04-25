@@ -270,7 +270,7 @@
 					<group name="race_mapping" List.ItemID="-181872919" List.ListAction="Append">
 						<instance_reference name="race_key" value="racebps\americans" />
 						<instance_reference name="presentation_entity_override" value="ebps\races\american\vehicles\halftrack_us" overrideParent="True" />
-						<instance_reference name="presentation_squad_override" value="sbps\races\american\vehicles\halftrack_us" overrideParent="True" />
+						<instance_reference name="presentation_squad_override" value="sbps\races\american\vehicles\halftrack_us" mod="9239c1ca0dd047c28f698b95e2071674" overrideParent="True" />
 					</group>
 					<group name="race_mapping" List.ItemID="-1451186726" List.ListAction="Append">
 						<instance_reference name="race_key" value="racebps\british" />
@@ -564,7 +564,7 @@
 					<group name="race_mapping" List.ItemID="-676062070" List.ListAction="Append">
 						<instance_reference name="race_key" value="racebps\americans" />
 						<instance_reference name="presentation_entity_override" value="ebps\races\american\vehicles\halftrack_us" overrideParent="True" />
-						<instance_reference name="presentation_squad_override" value="sbps\races\american\vehicles\halftrack_us" overrideParent="True" />
+						<instance_reference name="presentation_squad_override" value="sbps\races\american\vehicles\halftrack_us" mod="9239c1ca0dd047c28f698b95e2071674" overrideParent="True" />
 					</group>
 					<group name="race_mapping" List.ItemID="1932258504" List.ListAction="Append">
 						<instance_reference name="race_key" value="racebps\british" />

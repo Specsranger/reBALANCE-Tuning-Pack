@@ -17,7 +17,7 @@
 					<float name="front_armor" value="50" overrideParent="True" />
 					<float name="rear_armor" value="10" overrideParent="True" />
 					<float name="side_armor" value="25" overrideParent="True" />
-					<float name="rear_damage_multiplier" value="1.25" overrideParent="True" />
+					<float name="rear_damage_multiplier" value="1" overrideParent="True" />
 				</template_reference>
 				<enum_table name="armor_scaler_by_damage_type">
 					<float name="flame" value="1" overrideParent="True" />
@@ -26,8 +26,8 @@
 			<template_reference name="exts" value="ebpextensions\cost_ext" List.ItemID="-1776010655" List.ParentItemID="-1776010655">
 				<group name="time_cost">
 					<enum_table name="cost">
-						<float name="fuel" value="35" overrideParent="True" />
-						<float name="manpower" value="280" overrideParent="True" />
+						<float name="fuel" value="45" overrideParent="True" />
+						<float name="manpower" value="320" overrideParent="True" />
 					</enum_table>
 					<float name="time_seconds" value="37.5" overrideParent="True" />
 				</group>
@@ -44,12 +44,12 @@
 			</template_reference>
 			<template_reference name="exts" value="ebpextensions\type_ext" List.ItemID="652038711" List.ParentItemID="652038711">
 				<list name="unit_type_list">
-					<enum name="unit_type" value="marder_iii_ger" List.ItemID="-798474404" List.ListAction="Append" />
-					<enum name="unit_type" value="allow_track_damage_when_immobilized" List.ItemID="1127036153" List.ListAction="Append" />
-					<enum name="unit_type" value="fixed_turret" List.ItemID="-1191990385" List.ListAction="Append" />
+					<enum name="unit_type" value="marder_iii_ger" List.ItemID="-1787855868" List.ListAction="Append" />
+					<enum name="unit_type" value="allow_track_damage_when_immobilized" List.ItemID="187082112" List.ListAction="Append" />
+					<enum name="unit_type" value="fixed_turret" List.ItemID="-502408670" List.ListAction="Append" />
 				</list>
 				<list name="race_type_list" removedIds="464986086">
-					<instance_reference name="race_type" value="racebps\germans" List.ItemID="-1504073766" List.ListAction="Append" />
+					<instance_reference name="race_type" value="racebps\germans" List.ItemID="244118344" List.ListAction="Append" />
 				</list>
 			</template_reference>
 			<template_reference name="exts" value="ebpextensions\ui_ext" List.ItemID="-1350927259" List.ParentItemID="-1350927259">
@@ -61,18 +61,15 @@
 			<template_reference name="exts" value="ebpextensions\moving_ext" List.ItemID="-1164819730" List.ParentItemID="-1164819730">
 				<float name="acceleration" value="1.5" overrideParent="True" />
 				<float name="deceleration" value="3" overrideParent="True" />
-				<float name="rotation_rate" value="32" overrideParent="True" />
+				<float name="rotation_rate" value="30" overrideParent="True" />
 				<float name="on_land_overturn_scale" value="0.03" overrideParent="True" />
-				<enum_table name="speed_scaling_table">
-					<float name="max_speed" value="5" overrideParent="True" />
-				</enum_table>
 			</template_reference>
 			<template_reference name="exts" value="ebpextensions\combat_ext" List.ItemID="-1137803893" List.ParentItemID="-1137803893">
 				<list name="hardpoints">
-					<group name="hardpoint" List.ItemID="524422432" List.ListAction="Append">
+					<group name="hardpoint" List.ItemID="1097986123" List.ListAction="Append">
 						<float name="parent_hardpoint" value="-1" />
 						<list name="weapon_table">
-							<group name="weapon" List.ItemID="967721772">
+							<group name="weapon" List.ItemID="789724863">
 								<group name="heading">
 									<float name="x" value="0" />
 									<float name="y" value="0" />
@@ -119,10 +116,10 @@
 						<string name="offhand_marker" value="" />
 						<bool name="initialize_weapons_on_creation" value="True" />
 					</group>
-					<group name="hardpoint" comment="smoke launcher" List.ItemID="-411550364" List.ListAction="Append">
+					<group name="hardpoint" comment="smoke launcher" List.ItemID="-1269218659" List.ListAction="Append">
 						<float name="parent_hardpoint" value="-1" />
 						<list name="weapon_table">
-							<group name="weapon" List.ItemID="-1805711724">
+							<group name="weapon" List.ItemID="-1833073580">
 								<group name="heading">
 									<float name="x" value="0" />
 									<float name="y" value="0" />
@@ -170,9 +167,6 @@
 						<bool name="initialize_weapons_on_creation" value="True" />
 					</group>
 				</list>
-				<group name="attack_move">
-					<float name="attack_move_targeting_range" value="30" overrideParent="True" />
-				</group>
 			</template_reference>
 			<template_reference name="exts" value="ebpextensions\population_ext" List.ItemID="1973119980" List.ParentItemID="1973119980">
 				<float name="personnel_pop" value="7" overrideParent="True" />
@@ -185,11 +179,11 @@
 			</template_reference>
 			<template_reference name="exts" value="ebpextensions\crew_ext" List.ItemID="2123400154" List.ParentItemID="2123400154">
 				<list name="race_list">
-					<group name="race_data" List.ItemID="-190605997" List.ListAction="Append">
+					<group name="race_data" List.ItemID="406843950" List.ListAction="Append">
 						<instance_reference name="ext_key" value="" />
 						<group name="info">
 							<list name="role_list">
-								<group name="role" List.ItemID="106288180">
+								<group name="role" List.ItemID="-593768320">
 									<string name="name" value="gunner" />
 									<bool name="spawn_crew_on_create" value="True" />
 									<template_reference name="entity_attach_data" value="attachments\attach_data_entity">
@@ -219,7 +213,7 @@
 									<string name="setup_marker_override" value="" />
 									<bool name="can_ragdoll" value="True" />
 								</group>
-								<group name="role" List.ItemID="-1287552108">
+								<group name="role" List.ItemID="-1364244070">
 									<string name="name" value="loader" />
 									<bool name="spawn_crew_on_create" value="True" />
 									<template_reference name="entity_attach_data" value="attachments\attach_data_entity">
@@ -292,11 +286,11 @@
 							<bool name="add_attachment_dynamics_to_crew_and_apply_root_motion" value="False" />
 						</group>
 					</group>
-					<group name="race_data" List.ItemID="-835147689" List.ListAction="Append">
+					<group name="race_data" List.ItemID="1400502089" List.ListAction="Append">
 						<instance_reference name="ext_key" value="racebps\americans" />
 						<group name="info">
 							<list name="role_list">
-								<group name="role" List.ItemID="-1573858385">
+								<group name="role" List.ItemID="-253595290">
 									<string name="name" value="gunner" />
 									<bool name="spawn_crew_on_create" value="True" />
 									<template_reference name="entity_attach_data" value="attachments\attach_data_entity">
@@ -326,7 +320,7 @@
 									<string name="setup_marker_override" value="" />
 									<bool name="can_ragdoll" value="True" />
 								</group>
-								<group name="role" List.ItemID="937551496">
+								<group name="role" List.ItemID="350078485">
 									<string name="name" value="loader" />
 									<bool name="spawn_crew_on_create" value="True" />
 									<template_reference name="entity_attach_data" value="attachments\attach_data_entity">
@@ -399,11 +393,11 @@
 							<bool name="add_attachment_dynamics_to_crew_and_apply_root_motion" value="False" />
 						</group>
 					</group>
-					<group name="race_data" List.ItemID="1174306771" List.ListAction="Append">
+					<group name="race_data" List.ItemID="-1656955510" List.ListAction="Append">
 						<instance_reference name="ext_key" value="racebps\afrika_korps" />
 						<group name="info">
 							<list name="role_list">
-								<group name="role" List.ItemID="-260058346">
+								<group name="role" List.ItemID="1402654639">
 									<string name="name" value="gunner" />
 									<bool name="spawn_crew_on_create" value="True" />
 									<template_reference name="entity_attach_data" value="attachments\attach_data_entity">
@@ -433,7 +427,7 @@
 									<string name="setup_marker_override" value="" />
 									<bool name="can_ragdoll" value="True" />
 								</group>
-								<group name="role" List.ItemID="-611282672">
+								<group name="role" List.ItemID="-1818578562">
 									<string name="name" value="loader" />
 									<bool name="spawn_crew_on_create" value="True" />
 									<template_reference name="entity_attach_data" value="attachments\attach_data_entity">
@@ -506,11 +500,11 @@
 							<bool name="add_attachment_dynamics_to_crew_and_apply_root_motion" value="False" />
 						</group>
 					</group>
-					<group name="race_data" List.ItemID="1333619068" List.ListAction="Append">
+					<group name="race_data" List.ItemID="1765734784" List.ListAction="Append">
 						<instance_reference name="ext_key" value="racebps\british_africa" />
 						<group name="info">
 							<list name="role_list">
-								<group name="role" List.ItemID="1025538159">
+								<group name="role" List.ItemID="-3636627">
 									<string name="name" value="gunner" />
 									<bool name="spawn_crew_on_create" value="True" />
 									<template_reference name="entity_attach_data" value="attachments\attach_data_entity">
@@ -540,7 +534,7 @@
 									<string name="setup_marker_override" value="" />
 									<bool name="can_ragdoll" value="True" />
 								</group>
-								<group name="role" List.ItemID="-1089482978">
+								<group name="role" List.ItemID="-1696376203">
 									<string name="name" value="loader" />
 									<bool name="spawn_crew_on_create" value="True" />
 									<template_reference name="entity_attach_data" value="attachments\attach_data_entity">
@@ -628,32 +622,32 @@
 			</template_reference>
 			<template_reference name="exts" value="ebpextensions\presentation_override_ext" List.ItemID="1259435531" List.ParentItemID="1259435531">
 				<list name="race_mapping_list">
-					<group name="race_mapping" List.ItemID="912582472" List.ListAction="Append">
+					<group name="race_mapping" List.ItemID="2086554725" List.ListAction="Append">
 						<instance_reference name="race_key" value="racebps\americans" />
 						<instance_reference name="presentation_entity_override" value="ebps\races\american\vehicles\sherman_us" />
 						<instance_reference name="presentation_squad_override" value="sbps\races\american\vehicles\sherman_us" />
 					</group>
-					<group name="race_mapping" List.ItemID="1437370868" List.ListAction="Append">
+					<group name="race_mapping" List.ItemID="-1324333156" List.ListAction="Append">
 						<instance_reference name="race_key" value="racebps\british" />
 						<instance_reference name="presentation_entity_override" value="ebps\races\british\vehicles\bishop_uk" />
 						<instance_reference name="presentation_squad_override" value="sbps\races\british\vehicles\bishop_uk" />
 					</group>
-					<group name="race_mapping" List.ItemID="-1254380291" List.ListAction="Append">
+					<group name="race_mapping" List.ItemID="-1325233650" List.ListAction="Append">
 						<instance_reference name="race_key" value="racebps\british_africa" />
 						<instance_reference name="presentation_entity_override" value="ebps\races\british_africa\vehicles\bishop_africa_uk" />
 						<instance_reference name="presentation_squad_override" value="sbps\races\british_africa\vehicles\bishop_africa_uk" />
 					</group>
-					<group name="race_mapping" List.ItemID="775222261" List.ListAction="Append">
+					<group name="race_mapping" List.ItemID="344165746" List.ListAction="Append">
 						<instance_reference name="race_key" value="racebps\afrika_korps" />
 						<instance_reference name="presentation_entity_override" value="ebps\races\afrika_korps\vehicles\panzer_iii_37mm_ak" />
 						<instance_reference name="presentation_squad_override" value="sbps\races\afrika_korps\vehicles\panzer_iii_37mm_ak" />
 					</group>
 				</list>
 			</template_reference>
-			<template_reference name="exts" value="ebpextensions\attention_ext" List.ItemID="421264009" List.ListAction="Append">
+			<template_reference name="exts" value="ebpextensions\attention_ext" List.ItemID="1193387982" List.ListAction="Append">
 				<bool name="should_face_target" value="True" />
 			</template_reference>
-			<template_reference name="exts" value="ebpextensions\trench_crossing_ext" List.ItemID="2083106840" List.ListAction="Append">
+			<template_reference name="exts" value="ebpextensions\trench_crossing_ext" List.ItemID="-643449111" List.ListAction="Append">
 			</template_reference>
 		</list>
 		<uniqueid name="pbgid" value="188651" />
@@ -677,7 +671,7 @@
 					<float name="front_armor" value="50" overrideParent="True" />
 					<float name="rear_armor" value="10" overrideParent="True" />
 					<float name="side_armor" value="25" overrideParent="True" />
-					<float name="rear_damage_multiplier" value="1.25" overrideParent="True" />
+					<float name="rear_damage_multiplier" value="1" overrideParent="True" />
 				</template_reference>
 				<enum_table name="armor_scaler_by_damage_type">
 					<float name="flame" value="1" overrideParent="True" />
@@ -686,7 +680,7 @@
 			<template_reference name="exts" value="ebpextensions\cost_ext" List.ItemID="-1776010655" List.ParentItemID="-1776010655">
 				<group name="time_cost">
 					<enum_table name="cost">
-						<float name="fuel" value="40" overrideParent="True" />
+						<float name="fuel" value="25" overrideParent="True" />
 						<float name="manpower" value="280" overrideParent="True" />
 					</enum_table>
 					<float name="time_seconds" value="37.5" overrideParent="True" />
@@ -704,12 +698,12 @@
 			</template_reference>
 			<template_reference name="exts" value="ebpextensions\type_ext" List.ItemID="652038711" List.ParentItemID="652038711">
 				<list name="unit_type_list">
-					<enum name="unit_type" value="marder_iii_ger" List.ItemID="-1442249398" List.ListAction="Append" />
-					<enum name="unit_type" value="allow_track_damage_when_immobilized" List.ItemID="-1798991078" List.ListAction="Append" />
-					<enum name="unit_type" value="fixed_turret" List.ItemID="-1611654618" List.ListAction="Append" />
+					<enum name="unit_type" value="marder_iii_ger" List.ItemID="-1209220583" List.ListAction="Append" />
+					<enum name="unit_type" value="allow_track_damage_when_immobilized" List.ItemID="1476130720" List.ListAction="Append" />
+					<enum name="unit_type" value="fixed_turret" List.ItemID="-41536209" List.ListAction="Append" />
 				</list>
 				<list name="race_type_list" removedIds="464986086">
-					<instance_reference name="race_type" value="racebps\germans" List.ItemID="-257872919" List.ListAction="Append" />
+					<instance_reference name="race_type" value="racebps\germans" List.ItemID="-671614823" List.ListAction="Append" />
 				</list>
 			</template_reference>
 			<template_reference name="exts" value="ebpextensions\ui_ext" List.ItemID="-1350927259" List.ParentItemID="-1350927259">
@@ -726,10 +720,10 @@
 			</template_reference>
 			<template_reference name="exts" value="ebpextensions\combat_ext" List.ItemID="-1137803893" List.ParentItemID="-1137803893">
 				<list name="hardpoints">
-					<group name="hardpoint" List.ItemID="1795364259" List.ListAction="Append">
+					<group name="hardpoint" List.ItemID="-686355281" List.ListAction="Append">
 						<float name="parent_hardpoint" value="-1" />
 						<list name="weapon_table">
-							<group name="weapon" List.ItemID="752438317">
+							<group name="weapon" List.ItemID="1284582053">
 								<group name="heading">
 									<float name="x" value="0" />
 									<float name="y" value="0" />
@@ -776,10 +770,10 @@
 						<string name="offhand_marker" value="" />
 						<bool name="initialize_weapons_on_creation" value="True" />
 					</group>
-					<group name="hardpoint" comment="smoke launcher" List.ItemID="1706017728" List.ListAction="Append">
+					<group name="hardpoint" comment="smoke launcher" List.ItemID="1033837431" List.ListAction="Append">
 						<float name="parent_hardpoint" value="-1" />
 						<list name="weapon_table">
-							<group name="weapon" List.ItemID="980160077">
+							<group name="weapon" List.ItemID="1544783447">
 								<group name="heading">
 									<float name="x" value="0" />
 									<float name="y" value="0" />
@@ -827,9 +821,6 @@
 						<bool name="initialize_weapons_on_creation" value="True" />
 					</group>
 				</list>
-				<group name="attack_move">
-					<float name="attack_move_targeting_range" value="30" overrideParent="True" />
-				</group>
 			</template_reference>
 			<template_reference name="exts" value="ebpextensions\population_ext" List.ItemID="1973119980" List.ParentItemID="1973119980">
 				<float name="personnel_pop" value="7" overrideParent="True" />
@@ -842,11 +833,11 @@
 			</template_reference>
 			<template_reference name="exts" value="ebpextensions\crew_ext" List.ItemID="2123400154" List.ParentItemID="2123400154">
 				<list name="race_list">
-					<group name="race_data" List.ItemID="-1707435242" List.ListAction="Append">
+					<group name="race_data" List.ItemID="-2130288005" List.ListAction="Append">
 						<instance_reference name="ext_key" value="" />
 						<group name="info">
 							<list name="role_list">
-								<group name="role" List.ItemID="-1818407426">
+								<group name="role" List.ItemID="1583171544">
 									<string name="name" value="gunner" />
 									<bool name="spawn_crew_on_create" value="True" />
 									<template_reference name="entity_attach_data" value="attachments\attach_data_entity">
@@ -876,7 +867,7 @@
 									<string name="setup_marker_override" value="" />
 									<bool name="can_ragdoll" value="True" />
 								</group>
-								<group name="role" List.ItemID="-529836734">
+								<group name="role" List.ItemID="-964089056">
 									<string name="name" value="loader" />
 									<bool name="spawn_crew_on_create" value="True" />
 									<template_reference name="entity_attach_data" value="attachments\attach_data_entity">
@@ -949,11 +940,11 @@
 							<bool name="add_attachment_dynamics_to_crew_and_apply_root_motion" value="False" />
 						</group>
 					</group>
-					<group name="race_data" List.ItemID="-843681131" List.ListAction="Append">
+					<group name="race_data" List.ItemID="1555163653" List.ListAction="Append">
 						<instance_reference name="ext_key" value="racebps\americans" />
 						<group name="info">
 							<list name="role_list">
-								<group name="role" List.ItemID="-31623394">
+								<group name="role" List.ItemID="2138117163">
 									<string name="name" value="gunner" />
 									<bool name="spawn_crew_on_create" value="True" />
 									<template_reference name="entity_attach_data" value="attachments\attach_data_entity">
@@ -983,7 +974,7 @@
 									<string name="setup_marker_override" value="" />
 									<bool name="can_ragdoll" value="True" />
 								</group>
-								<group name="role" List.ItemID="-1710063109">
+								<group name="role" List.ItemID="534078451">
 									<string name="name" value="loader" />
 									<bool name="spawn_crew_on_create" value="True" />
 									<template_reference name="entity_attach_data" value="attachments\attach_data_entity">
@@ -1056,11 +1047,11 @@
 							<bool name="add_attachment_dynamics_to_crew_and_apply_root_motion" value="False" />
 						</group>
 					</group>
-					<group name="race_data" List.ItemID="-1960767338" List.ListAction="Append">
+					<group name="race_data" List.ItemID="1411618311" List.ListAction="Append">
 						<instance_reference name="ext_key" value="racebps\afrika_korps" />
 						<group name="info">
 							<list name="role_list">
-								<group name="role" List.ItemID="146558014">
+								<group name="role" List.ItemID="468845711">
 									<string name="name" value="gunner" />
 									<bool name="spawn_crew_on_create" value="True" />
 									<template_reference name="entity_attach_data" value="attachments\attach_data_entity">
@@ -1090,7 +1081,7 @@
 									<string name="setup_marker_override" value="" />
 									<bool name="can_ragdoll" value="True" />
 								</group>
-								<group name="role" List.ItemID="1581556819">
+								<group name="role" List.ItemID="-1536288431">
 									<string name="name" value="loader" />
 									<bool name="spawn_crew_on_create" value="True" />
 									<template_reference name="entity_attach_data" value="attachments\attach_data_entity">
@@ -1163,11 +1154,11 @@
 							<bool name="add_attachment_dynamics_to_crew_and_apply_root_motion" value="False" />
 						</group>
 					</group>
-					<group name="race_data" List.ItemID="-168813061" List.ListAction="Append">
+					<group name="race_data" List.ItemID="-958292893" List.ListAction="Append">
 						<instance_reference name="ext_key" value="racebps\british_africa" />
 						<group name="info">
 							<list name="role_list">
-								<group name="role" List.ItemID="-967502971">
+								<group name="role" List.ItemID="-82831737">
 									<string name="name" value="gunner" />
 									<bool name="spawn_crew_on_create" value="True" />
 									<template_reference name="entity_attach_data" value="attachments\attach_data_entity">
@@ -1197,7 +1188,7 @@
 									<string name="setup_marker_override" value="" />
 									<bool name="can_ragdoll" value="True" />
 								</group>
-								<group name="role" List.ItemID="-771985417">
+								<group name="role" List.ItemID="-2147432076">
 									<string name="name" value="loader" />
 									<bool name="spawn_crew_on_create" value="True" />
 									<template_reference name="entity_attach_data" value="attachments\attach_data_entity">
@@ -1285,32 +1276,32 @@
 			</template_reference>
 			<template_reference name="exts" value="ebpextensions\presentation_override_ext" List.ItemID="1259435531" List.ParentItemID="1259435531">
 				<list name="race_mapping_list">
-					<group name="race_mapping" List.ItemID="-1956344311" List.ListAction="Append">
+					<group name="race_mapping" List.ItemID="879335621" List.ListAction="Append">
 						<instance_reference name="race_key" value="racebps\americans" />
 						<instance_reference name="presentation_entity_override" value="ebps\races\american\vehicles\sherman_us" />
 						<instance_reference name="presentation_squad_override" value="sbps\races\american\vehicles\sherman_us" />
 					</group>
-					<group name="race_mapping" List.ItemID="-262050851" List.ListAction="Append">
+					<group name="race_mapping" List.ItemID="944331441" List.ListAction="Append">
 						<instance_reference name="race_key" value="racebps\british" />
 						<instance_reference name="presentation_entity_override" value="ebps\races\british\vehicles\bishop_uk" />
 						<instance_reference name="presentation_squad_override" value="sbps\races\british\vehicles\bishop_uk" />
 					</group>
-					<group name="race_mapping" List.ItemID="-1235038448" List.ListAction="Append">
+					<group name="race_mapping" List.ItemID="1781380274" List.ListAction="Append">
 						<instance_reference name="race_key" value="racebps\british_africa" />
 						<instance_reference name="presentation_entity_override" value="ebps\races\british_africa\vehicles\bishop_africa_uk" />
 						<instance_reference name="presentation_squad_override" value="sbps\races\british_africa\vehicles\bishop_africa_uk" />
 					</group>
-					<group name="race_mapping" List.ItemID="-1337180985" List.ListAction="Append">
+					<group name="race_mapping" List.ItemID="120483657" List.ListAction="Append">
 						<instance_reference name="race_key" value="racebps\afrika_korps" />
 						<instance_reference name="presentation_entity_override" value="ebps\races\afrika_korps\vehicles\panzer_iii_37mm_ak" />
 						<instance_reference name="presentation_squad_override" value="sbps\races\afrika_korps\vehicles\panzer_iii_37mm_ak" />
 					</group>
 				</list>
 			</template_reference>
-			<template_reference name="exts" value="ebpextensions\attention_ext" List.ItemID="204358055" List.ListAction="Append">
+			<template_reference name="exts" value="ebpextensions\attention_ext" List.ItemID="1642970385" List.ListAction="Append">
 				<bool name="should_face_target" value="True" />
 			</template_reference>
-			<template_reference name="exts" value="ebpextensions\trench_crossing_ext" List.ItemID="804186619" List.ListAction="Append">
+			<template_reference name="exts" value="ebpextensions\trench_crossing_ext" List.ItemID="-1142645941" List.ListAction="Append">
 			</template_reference>
 		</list>
 		<uniqueid name="pbgid" value="188651" />

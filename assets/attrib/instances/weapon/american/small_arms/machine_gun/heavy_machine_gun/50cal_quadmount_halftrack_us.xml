@@ -352,8 +352,8 @@
 			<instance_reference name="ui_setfacing" value="" />
 			<group name="penetration">
 				<float name="near" value="2.5" />
-				<float name="far" value="1.5" />
-				<float name="mid" value="2" />
+				<float name="far" value="1.25" />
+				<float name="mid" value="1.5" />
 			</group>
 			<group name="ui_map_colour">
 				<int name="red" value="0" />
@@ -368,11 +368,11 @@
 			<string name="fx_aoe_munition_name" value="bullet_hvy" />
 			<string name="speech_code" value="" />
 			<list name="target_type_table">
-				<group name="target_unit_type_multipliers" List.ItemID="1790978569">
+				<group name="target_unit_type_multipliers" List.ItemID="-338774970">
 					<enum name="unit_type" value="aircraft" />
 					<group name="weapon_multipliers">
 						<float name="accuracy_multiplier" value="1" />
-						<float name="damage_multiplier" value="1" />
+						<float name="damage_multiplier" value="0.225" />
 						<float name="penetration_multiplier" value="5" />
 						<float name="suppression_multiplier" value="1" />
 					</group>
@@ -861,7 +861,7 @@
 			<string name="fx_aoe_munition_name" value="bullet_hvy" />
 			<string name="speech_code" value="" />
 			<list name="target_type_table">
-				<group name="target_unit_type_multipliers" List.ItemID="-1090797932">
+				<group name="target_unit_type_multipliers" List.ItemID="440050307">
 					<enum name="unit_type" value="aircraft" />
 					<group name="weapon_multipliers">
 						<float name="accuracy_multiplier" value="1.25" />

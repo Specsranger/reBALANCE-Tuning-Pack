@@ -6,11 +6,12 @@
 					<instance_reference name="ability" value="abilities\races\american\vehicles\healing_aura_halftrack_us" List.ItemID="1175938485" List.ListAction="Append" />
 					<instance_reference name="ability" value="abilities\races\common\vehicles\auto_reinforce_halftrack" List.ItemID="-230035054" List.ListAction="Append" />
 					<instance_reference name="ability" value="abilities\races\american\vehicles\recrew_team_weapon_halftrack_us" List.ItemID="-1829218414" List.ListAction="Append" />
-					<instance_reference name="ability" value="abilities\races\common\vehicles\vehicle_handbrake" List.ItemID="-352638176" List.ListAction="Append" />
+					<instance_reference name="ability" value="abilities\races\common\vehicles\vehicle_handbrake" mod="9239c1ca0dd047c28f698b95e2071674" List.ItemID="-352638176" List.ListAction="Append" />
 					<instance_reference name="ability" value="abilities\races\afrika_korps\vehicles\veterancy_abilities\combat_readiness_medical_truck_ak" List.ItemID="-162739936" List.ListAction="Append" />
 					<instance_reference name="ability" value="abilities\races\common\veterancy\vehicle\common_shared_veterancy_dummy_parent" overrideParent="True" List.ItemID="75180517" List.ListAction="Append" />
 					<instance_reference name="ability" value="abilities\races\common\vehicles\towing_drop" List.ItemID="431345836" List.ListAction="Append" />
 					<instance_reference name="ability" value="abilities\races\common\vehicles\towing_pickup" overrideParent="True" List.ItemID="-1852315969" List.ListAction="Append" />
+					<instance_reference name="ability" value="abilities\races\common\vehicles\vehicle_handbrake" overrideParent="True" List.ItemID="1376610779" List.ListAction="Append" />
 				</list>
 				<group name="squad_orders">
 					<group name="attack_ground">
@@ -126,6 +127,7 @@
 										</template_reference>
 									</group>
 									<locstring name="brief_text" value="11243410" overrideParent="True" />
+									<locstring name="screen_name" value="11243733" overrideParent="True" />
 								</group>
 								<group name="veterancy_rank" List.ItemID="1804371674" List.ParentItemID="1804371674">
 									<float name="veterancy_value" value="3600" overrideParent="True" />
@@ -194,13 +196,14 @@
 					<instance_reference name="ability" value="abilities\races\american\vehicles\healing_aura_halftrack_us" List.ItemID="-711304694" List.ListAction="Append" />
 					<instance_reference name="ability" value="abilities\races\common\vehicles\auto_reinforce_halftrack" List.ItemID="-898019407" List.ListAction="Append" />
 					<instance_reference name="ability" value="abilities\races\american\vehicles\recrew_team_weapon_halftrack_us" List.ItemID="533470798" List.ListAction="Append" />
-					<instance_reference name="ability" value="abilities\races\common\vehicles\vehicle_handbrake" List.ItemID="-2034107376" List.ListAction="Append" />
+					<instance_reference name="ability" value="abilities\races\common\vehicles\vehicle_handbrake" mod="9239c1ca0dd047c28f698b95e2071674" List.ItemID="-2034107376" List.ListAction="Append" />
 					<instance_reference name="ability" value="abilities\races\afrika_korps\vehicles\veterancy_abilities\combat_readiness_medical_truck_ak" List.ItemID="-1268659883" List.ListAction="Append" />
 					<instance_reference name="ability" value="abilities\races\common\veterancy\vehicle\common_shared_veterancy_dummy_parent" overrideParent="True" List.ItemID="-1850201665" List.ListAction="Append" />
 					<instance_reference name="ability" value="abilities\races\common\vehicles\towing_drop" overrideParent="True" List.ItemID="-1546758431" List.ListAction="Append" />
 					<instance_reference name="ability" value="abilities\races\common\vehicles\towing_pickup" overrideParent="True" List.ItemID="823503972" List.ListAction="Append" />
-					<instance_reference name="ability" value="abilities\races\common\vehicles\towing_drop" List.ItemID="-325635741" List.ListAction="Append" />
+					<instance_reference name="ability" value="abilities\races\common\vehicles\vehicle_handbrake" overrideParent="True" List.ItemID="-325635741" List.ListAction="Append" />
 					<instance_reference name="ability" value="abilities\races\common\vehicles\towing_drop" List.ItemID="2089010517" List.ListAction="Append" />
+					<instance_reference name="ability" value="abilities\races\common\vehicles\vehicle_handbrake" mod="9239c1ca0dd047c28f698b95e2071674" List.ItemID="-1242618459" List.ListAction="Append" />
 				</list>
 				<group name="squad_orders">
 					<group name="attack_ground">
@@ -316,6 +319,7 @@
 										</template_reference>
 									</group>
 									<locstring name="brief_text" value="11243410" overrideParent="True" />
+									<locstring name="screen_name" value="11243733" overrideParent="True" />
 								</group>
 								<group name="veterancy_rank" List.ItemID="1804371674" List.ParentItemID="1804371674">
 									<float name="veterancy_value" value="3600" overrideParent="True" />

@@ -17,7 +17,7 @@
 					<float name="front_armor" value="50" overrideParent="True" />
 					<float name="rear_armor" value="10" overrideParent="True" />
 					<float name="side_armor" value="25" overrideParent="True" />
-					<float name="rear_damage_multiplier" value="1.25" overrideParent="True" />
+					<float name="rear_damage_multiplier" value="1" overrideParent="True" />
 				</template_reference>
 				<enum_table name="armor_scaler_by_damage_type">
 					<float name="flame" value="1" overrideParent="True" />
@@ -26,8 +26,8 @@
 			<template_reference name="exts" value="ebpextensions\cost_ext" List.ItemID="-1776010655" List.ParentItemID="-1776010655">
 				<group name="time_cost">
 					<enum_table name="cost">
-						<float name="fuel" value="35" overrideParent="True" />
-						<float name="manpower" value="280" overrideParent="True" />
+						<float name="fuel" value="45" overrideParent="True" />
+						<float name="manpower" value="320" overrideParent="True" />
 					</enum_table>
 					<float name="time_seconds" value="37.5" overrideParent="True" />
 				</group>
@@ -40,700 +40,13 @@
 			</template_reference>
 			<template_reference name="exts" value="ebpextensions\type_ext" List.ItemID="652038711" List.ParentItemID="652038711">
 				<list name="unit_type_list">
-					<enum name="unit_type" value="marder_iii_ger" List.ItemID="562146990" List.ListAction="Append" />
-					<enum name="unit_type" value="vehicle_treaded" List.ItemID="-1136953446" List.ListAction="Append" />
-					<enum name="unit_type" value="allow_track_damage_when_immobilized" List.ItemID="2008970398" List.ListAction="Append" />
-					<enum name="unit_type" value="fixed_turret" List.ItemID="-1163532001" List.ListAction="Append" />
+					<enum name="unit_type" value="marder_iii_ger" List.ItemID="519678020" List.ListAction="Append" />
+					<enum name="unit_type" value="vehicle_treaded" List.ItemID="-544336728" List.ListAction="Append" />
+					<enum name="unit_type" value="allow_track_damage_when_immobilized" List.ItemID="-1519939865" List.ListAction="Append" />
+					<enum name="unit_type" value="fixed_turret" List.ItemID="174505252" List.ListAction="Append" />
 				</list>
 				<list name="race_type_list" removedIds="464986086">
-					<instance_reference name="race_type" value="racebps\afrika_korps" List.ItemID="-2103780256" List.ListAction="Append" />
-				</list>
-			</template_reference>
-			<template_reference name="exts" value="ebpextensions\ui_ext" List.ItemID="-1350927259" List.ParentItemID="-1350927259">
-				<float name="decorator_height" value="5" overrideParent="True" />
-				<enum name="kill_type" value="medium_armour" overrideParent="True" />
-				<float name="minimap_icon_scale" value="0.5" overrideParent="True" />
-				<enum name="map_rotation_type_override" value="no_override" overrideParent="True" />
-			</template_reference>
-			<template_reference name="exts" value="ebpextensions\moving_ext" List.ItemID="-1164819730" List.ParentItemID="-1164819730">
-				<float name="acceleration" value="1.5" overrideParent="True" />
-				<float name="deceleration" value="3" overrideParent="True" />
-				<float name="rotation_rate" value="32" overrideParent="True" />
-				<float name="on_land_overturn_scale" value="0.03" overrideParent="True" />
-				<enum_table name="speed_levels">
-					<float name="speed_level_0" value="5" overrideParent="True" />
-					<float name="speed_level_1" value="5" overrideParent="True" />
-					<float name="speed_level_3" value="5" overrideParent="True" />
-					<float name="speed_level_4" value="5" overrideParent="True" />
-				</enum_table>
-				<float name="pivot_rate" value="0" overrideParent="True" />
-				<enum_table name="speed_scaling_table">
-					<float name="max_speed" value="5" overrideParent="True" />
-				</enum_table>
-			</template_reference>
-			<template_reference name="exts" value="ebpextensions\combat_ext" List.ItemID="-1137803893" List.ParentItemID="-1137803893">
-				<list name="hardpoints">
-					<group name="hardpoint" List.ItemID="-940626862" List.ListAction="Append">
-						<float name="parent_hardpoint" value="-1" />
-						<list name="weapon_table">
-							<group name="weapon" List.ItemID="-1914422534">
-								<group name="heading">
-									<float name="x" value="0" />
-									<float name="y" value="0" />
-									<float name="z" value="4.752" />
-								</group>
-								<float name="length" value="0" />
-								<group name="origin">
-									<float name="x" value="0.42" />
-									<float name="y" value="1.71" />
-									<float name="z" value="1" />
-								</group>
-								<enum name="type" value="default" />
-								<template_reference name="weapon_entity_attachment" value="options\attachment_types\entity_create_attachment">
-									<template_reference name="entity_attach_data" value="attachments\attach_data_entity">
-										<template_reference name="attach_data" value="attachments\attach_data">
-											<string name="marker_name_parent" value="" />
-											<string name="parent_rigidbody_target_name" value="" />
-											<enum name="game_object_attachment_type" value="scenegraph" />
-										</template_reference>
-										<instance_reference name="ebp" value="ebps\races\afrika_korps\weapons\ballistic_weapon\tank_gun\w_75mm_marder_iii_ak" />
-										<group name="attachment_flags">
-											<bool name="sim_only" value="False" />
-											<bool name="no_pathfinding" value="True" />
-											<bool name="not_snappable" value="False" />
-											<bool name="restore_snap_to_ground_on_detach" value="False" />
-											<bool name="no_sim_update" value="False" />
-											<bool name="join_parent_squad" value="False" />
-											<bool name="redirect_damage_to_parent_entity" value="True" />
-											<bool name="receive_parent_animations" value="True" />
-											<bool name="receive_parent_death" value="False" />
-										</group>
-									</template_reference>
-								</template_reference>
-								<template_reference name="non_entity_weapon_wrapper" value="">
-								</template_reference>
-							</group>
-						</list>
-						<bool name="receives_attack_commands" value="True" />
-						<string name="base_marker" value="loc_turret" />
-						<list name="preferred_inventory_item_categories">
-						</list>
-						<list name="firing_offset_markers">
-						</list>
-						<string name="offhand_marker" value="" />
-						<bool name="initialize_weapons_on_creation" value="True" />
-					</group>
-					<group name="hardpoint" comment="Smoke discharge" List.ItemID="-1946649299" List.ListAction="Append">
-						<float name="parent_hardpoint" value="-1" overrideParent="True" />
-						<list name="weapon_table">
-							<group name="weapon" List.ItemID="654891299">
-								<group name="heading">
-									<float name="x" value="0" />
-									<float name="y" value="0" />
-									<float name="z" value="1" />
-								</group>
-								<float name="length" value="0" />
-								<group name="origin">
-									<float name="x" value="0" />
-									<float name="y" value="0.5" />
-									<float name="z" value="0" />
-								</group>
-								<enum name="type" value="default" />
-								<template_reference name="weapon_entity_attachment" value="options\attachment_types\entity_create_attachment">
-									<template_reference name="entity_attach_data" value="attachments\attach_data_entity">
-										<template_reference name="attach_data" value="attachments\attach_data">
-											<string name="marker_name_parent" value="" />
-											<string name="parent_rigidbody_target_name" value="" />
-											<enum name="game_object_attachment_type" value="scenegraph" />
-										</template_reference>
-										<instance_reference name="ebp" value="ebps\races\afrika_korps\weapons\explosive_weapons\mortar\w_vehicle_smoke_ak" overrideParent="True" />
-										<group name="attachment_flags">
-											<bool name="sim_only" value="False" />
-											<bool name="no_pathfinding" value="True" />
-											<bool name="not_snappable" value="False" />
-											<bool name="restore_snap_to_ground_on_detach" value="False" />
-											<bool name="no_sim_update" value="False" />
-											<bool name="join_parent_squad" value="False" />
-											<bool name="redirect_damage_to_parent_entity" value="True" />
-											<bool name="receive_parent_animations" value="False" />
-											<bool name="receive_parent_death" value="False" />
-										</group>
-									</template_reference>
-								</template_reference>
-								<template_reference name="non_entity_weapon_wrapper" value="">
-								</template_reference>
-							</group>
-						</list>
-						<bool name="receives_attack_commands" value="False" />
-						<string name="base_marker" value="loc_smoke_r_launcher" />
-						<list name="preferred_inventory_item_categories">
-						</list>
-						<list name="firing_offset_markers">
-						</list>
-						<string name="offhand_marker" value="" />
-						<bool name="initialize_weapons_on_creation" value="True" />
-					</group>
-				</list>
-			</template_reference>
-			<template_reference name="exts" value="ebpextensions\population_ext" List.ItemID="1973119980" List.ParentItemID="1973119980">
-				<float name="personnel_pop" value="7" overrideParent="True" />
-				<enum_table name="upkeep_per_pop_per_minute_override">
-					<float name="manpower" value="1.5" overrideParent="True" />
-				</enum_table>
-			</template_reference>
-			<template_reference name="exts" value="ebpextensions\camouflage_ext" List.ItemID="1525857700" List.ParentItemID="1525857700">
-				<float name="detection_radius" value="15" overrideParent="True" />
-			</template_reference>
-			<template_reference name="exts" value="ebpextensions\crew_ext" List.ItemID="2123400154" List.ParentItemID="2123400154">
-				<list name="race_list">
-					<group name="race_data" List.ItemID="1990248020" List.ListAction="Append">
-						<instance_reference name="ext_key" value="" />
-						<group name="info">
-							<list name="role_list">
-								<group name="role" List.ItemID="1201405621">
-									<string name="name" value="gunner" />
-									<bool name="spawn_crew_on_create" value="True" />
-									<template_reference name="entity_attach_data" value="attachments\attach_data_entity">
-										<template_reference name="attach_data" value="attachments\attach_data">
-											<string name="marker_name_parent" value="loc_gunner" />
-											<string name="parent_rigidbody_target_name" value="" />
-											<enum name="game_object_attachment_type" value="scenegraph" />
-										</template_reference>
-										<instance_reference name="ebp" value="ebps\races\afrika_korps\vehicles\crew\gunner_marder_ak" />
-										<group name="attachment_flags">
-											<bool name="sim_only" value="False" />
-											<bool name="no_pathfinding" value="True" />
-											<bool name="not_snappable" value="True" />
-											<bool name="restore_snap_to_ground_on_detach" value="False" />
-											<bool name="no_sim_update" value="False" />
-											<bool name="join_parent_squad" value="False" />
-											<bool name="redirect_damage_to_parent_entity" value="False" />
-											<bool name="receive_parent_animations" value="True" />
-											<bool name="receive_parent_death" value="False" overrideParent="True" />
-										</group>
-									</template_reference>
-									<instance_reference name="animation_role" value="animation_role\vehicle_turret\dak_marder_iii\vt_marder_iii_gunner" />
-									<string name="parent_inventory_slot" value="hard_point_0" />
-									<bool name="invulnerable" value="True" />
-									<template_reference name="weapon_override" value="">
-									</template_reference>
-									<string name="setup_marker_override" value="" />
-									<bool name="can_ragdoll" value="True" />
-								</group>
-								<group name="role" List.ItemID="1057771883">
-									<string name="name" value="loader" />
-									<bool name="spawn_crew_on_create" value="True" />
-									<template_reference name="entity_attach_data" value="attachments\attach_data_entity">
-										<template_reference name="attach_data" value="attachments\attach_data">
-											<string name="marker_name_parent" value="loc_loader" />
-											<string name="parent_rigidbody_target_name" value="" />
-											<enum name="game_object_attachment_type" value="scenegraph" />
-										</template_reference>
-										<instance_reference name="ebp" value="ebps\races\afrika_korps\vehicles\crew\gunner_marder_ak" />
-										<group name="attachment_flags">
-											<bool name="sim_only" value="False" />
-											<bool name="no_pathfinding" value="True" />
-											<bool name="not_snappable" value="True" />
-											<bool name="restore_snap_to_ground_on_detach" value="False" />
-											<bool name="no_sim_update" value="False" />
-											<bool name="join_parent_squad" value="False" />
-											<bool name="redirect_damage_to_parent_entity" value="False" />
-											<bool name="receive_parent_animations" value="True" />
-											<bool name="receive_parent_death" value="False" overrideParent="True" />
-										</group>
-									</template_reference>
-									<instance_reference name="animation_role" value="animation_role\vehicle_turret\dak_marder_iii\vt_marder_iii_loader" />
-									<string name="parent_inventory_slot" value="hard_point_0" />
-									<bool name="invulnerable" value="True" />
-									<template_reference name="weapon_override" value="weapon_choice">
-										<group name="weapon_choice">
-											<enum name="type" value="dummy" />
-											<template_reference name="non_entity_weapon_wrapper" value="">
-											</template_reference>
-											<template_reference name="weapon_entity_attachment" value="options\attachment_types\entity_create_attachment">
-												<template_reference name="entity_attach_data" value="attachments\attach_data_entity">
-													<template_reference name="attach_data" value="attachments\attach_data">
-														<string name="marker_name_parent" value="loc_weapon_01_r" />
-														<string name="parent_rigidbody_target_name" value="" />
-														<enum name="game_object_attachment_type" value="scenegraph" />
-													</template_reference>
-													<instance_reference name="ebp" value="ebps\races\american\weapons\special\w_76mm_shell" />
-													<group name="attachment_flags">
-														<bool name="sim_only" value="False" />
-														<bool name="no_pathfinding" value="True" />
-														<bool name="not_snappable" value="False" />
-														<bool name="restore_snap_to_ground_on_detach" value="False" />
-														<bool name="no_sim_update" value="False" />
-														<bool name="join_parent_squad" value="False" />
-														<bool name="redirect_damage_to_parent_entity" value="True" />
-														<bool name="receive_parent_animations" value="False" />
-														<bool name="receive_parent_death" value="False" />
-													</group>
-												</template_reference>
-											</template_reference>
-											<group name="heading">
-												<float name="x" value="0" />
-												<float name="y" value="0" />
-												<float name="z" value="0" />
-											</group>
-											<float name="length" value="0" />
-											<group name="origin">
-												<float name="x" value="0" />
-												<float name="y" value="0" />
-												<float name="z" value="0" />
-											</group>
-										</group>
-									</template_reference>
-									<string name="setup_marker_override" value="" />
-									<bool name="can_ragdoll" value="True" />
-								</group>
-							</list>
-							<template_reference name="additional_crew_option" value="options\none">
-							</template_reference>
-							<bool name="add_attachment_dynamics_to_crew_and_apply_root_motion" value="False" />
-						</group>
-					</group>
-					<group name="race_data" List.ItemID="398506942" List.ListAction="Append">
-						<instance_reference name="ext_key" value="racebps\americans" />
-						<group name="info">
-							<list name="role_list">
-								<group name="role" List.ItemID="-1614351389">
-									<string name="name" value="gunner" />
-									<bool name="spawn_crew_on_create" value="True" />
-									<template_reference name="entity_attach_data" value="attachments\attach_data_entity">
-										<template_reference name="attach_data" value="attachments\attach_data">
-											<string name="marker_name_parent" value="loc_gunner" />
-											<string name="parent_rigidbody_target_name" value="" />
-											<enum name="game_object_attachment_type" value="scenegraph" />
-										</template_reference>
-										<instance_reference name="ebp" value="ebps\races\american\vehicles\crew\vehicle_crew_us" />
-										<group name="attachment_flags">
-											<bool name="sim_only" value="False" />
-											<bool name="no_pathfinding" value="True" />
-											<bool name="not_snappable" value="True" />
-											<bool name="restore_snap_to_ground_on_detach" value="False" />
-											<bool name="no_sim_update" value="False" />
-											<bool name="join_parent_squad" value="False" />
-											<bool name="redirect_damage_to_parent_entity" value="False" />
-											<bool name="receive_parent_animations" value="True" />
-											<bool name="receive_parent_death" value="False" overrideParent="True" />
-										</group>
-									</template_reference>
-									<instance_reference name="animation_role" value="animation_role\vehicle_turret\dak_marder_iii\vt_marder_iii_gunner" />
-									<string name="parent_inventory_slot" value="hard_point_0" />
-									<bool name="invulnerable" value="True" />
-									<template_reference name="weapon_override" value="">
-									</template_reference>
-									<string name="setup_marker_override" value="" />
-									<bool name="can_ragdoll" value="True" />
-								</group>
-								<group name="role" List.ItemID="-1501379327">
-									<string name="name" value="loader" />
-									<bool name="spawn_crew_on_create" value="True" />
-									<template_reference name="entity_attach_data" value="attachments\attach_data_entity">
-										<template_reference name="attach_data" value="attachments\attach_data">
-											<string name="marker_name_parent" value="loc_loader" />
-											<string name="parent_rigidbody_target_name" value="" />
-											<enum name="game_object_attachment_type" value="scenegraph" />
-										</template_reference>
-										<instance_reference name="ebp" value="ebps\races\american\vehicles\crew\vehicle_crew_us" />
-										<group name="attachment_flags">
-											<bool name="sim_only" value="False" />
-											<bool name="no_pathfinding" value="True" />
-											<bool name="not_snappable" value="True" />
-											<bool name="restore_snap_to_ground_on_detach" value="False" />
-											<bool name="no_sim_update" value="False" />
-											<bool name="join_parent_squad" value="False" />
-											<bool name="redirect_damage_to_parent_entity" value="False" />
-											<bool name="receive_parent_animations" value="True" />
-											<bool name="receive_parent_death" value="False" overrideParent="True" />
-										</group>
-									</template_reference>
-									<instance_reference name="animation_role" value="animation_role\vehicle_turret\dak_marder_iii\vt_marder_iii_loader" />
-									<string name="parent_inventory_slot" value="hard_point_0" />
-									<bool name="invulnerable" value="True" />
-									<template_reference name="weapon_override" value="weapon_choice">
-										<group name="weapon_choice">
-											<enum name="type" value="dummy" />
-											<template_reference name="non_entity_weapon_wrapper" value="">
-											</template_reference>
-											<template_reference name="weapon_entity_attachment" value="options\attachment_types\entity_create_attachment">
-												<template_reference name="entity_attach_data" value="attachments\attach_data_entity">
-													<template_reference name="attach_data" value="attachments\attach_data">
-														<string name="marker_name_parent" value="loc_weapon_01_r" />
-														<string name="parent_rigidbody_target_name" value="" />
-														<enum name="game_object_attachment_type" value="scenegraph" />
-													</template_reference>
-													<instance_reference name="ebp" value="ebps\races\american\weapons\special\w_76mm_shell" />
-													<group name="attachment_flags">
-														<bool name="sim_only" value="False" />
-														<bool name="no_pathfinding" value="True" />
-														<bool name="not_snappable" value="False" />
-														<bool name="restore_snap_to_ground_on_detach" value="False" />
-														<bool name="no_sim_update" value="False" />
-														<bool name="join_parent_squad" value="False" />
-														<bool name="redirect_damage_to_parent_entity" value="True" />
-														<bool name="receive_parent_animations" value="False" />
-														<bool name="receive_parent_death" value="False" />
-													</group>
-												</template_reference>
-											</template_reference>
-											<group name="heading">
-												<float name="x" value="0" />
-												<float name="y" value="0" />
-												<float name="z" value="0" />
-											</group>
-											<float name="length" value="0" />
-											<group name="origin">
-												<float name="x" value="0" />
-												<float name="y" value="0" />
-												<float name="z" value="0" />
-											</group>
-										</group>
-									</template_reference>
-									<string name="setup_marker_override" value="" />
-									<bool name="can_ragdoll" value="True" />
-								</group>
-							</list>
-							<template_reference name="additional_crew_option" value="options\none">
-							</template_reference>
-							<bool name="add_attachment_dynamics_to_crew_and_apply_root_motion" value="False" />
-						</group>
-					</group>
-					<group name="race_data" List.ItemID="1052021739" List.ListAction="Append">
-						<instance_reference name="ext_key" value="racebps\germans" />
-						<group name="info">
-							<list name="role_list">
-								<group name="role" List.ItemID="-1585797212">
-									<string name="name" value="gunner" />
-									<bool name="spawn_crew_on_create" value="True" />
-									<template_reference name="entity_attach_data" value="attachments\attach_data_entity">
-										<template_reference name="attach_data" value="attachments\attach_data">
-											<string name="marker_name_parent" value="loc_gunner" />
-											<string name="parent_rigidbody_target_name" value="" />
-											<enum name="game_object_attachment_type" value="scenegraph" />
-										</template_reference>
-										<instance_reference name="ebp" value="ebps\races\german\vehicles\crew\vehicle_crew_ger" />
-										<group name="attachment_flags">
-											<bool name="sim_only" value="False" />
-											<bool name="no_pathfinding" value="True" />
-											<bool name="not_snappable" value="True" />
-											<bool name="restore_snap_to_ground_on_detach" value="False" />
-											<bool name="no_sim_update" value="False" />
-											<bool name="join_parent_squad" value="False" />
-											<bool name="redirect_damage_to_parent_entity" value="False" />
-											<bool name="receive_parent_animations" value="True" />
-											<bool name="receive_parent_death" value="False" overrideParent="True" />
-										</group>
-									</template_reference>
-									<instance_reference name="animation_role" value="animation_role\vehicle_turret\dak_marder_iii\vt_marder_iii_gunner" />
-									<string name="parent_inventory_slot" value="hard_point_0" />
-									<bool name="invulnerable" value="True" />
-									<template_reference name="weapon_override" value="">
-									</template_reference>
-									<string name="setup_marker_override" value="" />
-									<bool name="can_ragdoll" value="True" />
-								</group>
-								<group name="role" List.ItemID="-238056130">
-									<string name="name" value="loader" />
-									<bool name="spawn_crew_on_create" value="True" />
-									<template_reference name="entity_attach_data" value="attachments\attach_data_entity">
-										<template_reference name="attach_data" value="attachments\attach_data">
-											<string name="marker_name_parent" value="loc_loader" />
-											<string name="parent_rigidbody_target_name" value="" />
-											<enum name="game_object_attachment_type" value="scenegraph" />
-										</template_reference>
-										<instance_reference name="ebp" value="ebps\races\german\vehicles\crew\vehicle_crew_ger" />
-										<group name="attachment_flags">
-											<bool name="sim_only" value="False" />
-											<bool name="no_pathfinding" value="True" />
-											<bool name="not_snappable" value="True" />
-											<bool name="restore_snap_to_ground_on_detach" value="False" />
-											<bool name="no_sim_update" value="False" />
-											<bool name="join_parent_squad" value="False" />
-											<bool name="redirect_damage_to_parent_entity" value="False" />
-											<bool name="receive_parent_animations" value="True" />
-											<bool name="receive_parent_death" value="False" overrideParent="True" />
-										</group>
-									</template_reference>
-									<instance_reference name="animation_role" value="animation_role\vehicle_turret\dak_marder_iii\vt_marder_iii_loader" />
-									<string name="parent_inventory_slot" value="hard_point_0" />
-									<bool name="invulnerable" value="True" />
-									<template_reference name="weapon_override" value="weapon_choice">
-										<group name="weapon_choice">
-											<enum name="type" value="dummy" />
-											<template_reference name="non_entity_weapon_wrapper" value="">
-											</template_reference>
-											<template_reference name="weapon_entity_attachment" value="options\attachment_types\entity_create_attachment">
-												<template_reference name="entity_attach_data" value="attachments\attach_data_entity">
-													<template_reference name="attach_data" value="attachments\attach_data">
-														<string name="marker_name_parent" value="loc_weapon_01_r" />
-														<string name="parent_rigidbody_target_name" value="" />
-														<enum name="game_object_attachment_type" value="scenegraph" />
-													</template_reference>
-													<instance_reference name="ebp" value="ebps\races\american\weapons\special\w_76mm_shell" />
-													<group name="attachment_flags">
-														<bool name="sim_only" value="False" />
-														<bool name="no_pathfinding" value="True" />
-														<bool name="not_snappable" value="False" />
-														<bool name="restore_snap_to_ground_on_detach" value="False" />
-														<bool name="no_sim_update" value="False" />
-														<bool name="join_parent_squad" value="False" />
-														<bool name="redirect_damage_to_parent_entity" value="True" />
-														<bool name="receive_parent_animations" value="False" />
-														<bool name="receive_parent_death" value="False" />
-													</group>
-												</template_reference>
-											</template_reference>
-											<group name="heading">
-												<float name="x" value="0" />
-												<float name="y" value="0" />
-												<float name="z" value="0" />
-											</group>
-											<float name="length" value="0" />
-											<group name="origin">
-												<float name="x" value="0" />
-												<float name="y" value="0" />
-												<float name="z" value="0" />
-											</group>
-										</group>
-									</template_reference>
-									<string name="setup_marker_override" value="" />
-									<bool name="can_ragdoll" value="True" />
-								</group>
-							</list>
-							<template_reference name="additional_crew_option" value="options\none">
-							</template_reference>
-							<bool name="add_attachment_dynamics_to_crew_and_apply_root_motion" value="False" />
-						</group>
-					</group>
-					<group name="race_data" List.ItemID="-1402232298" List.ListAction="Append">
-						<instance_reference name="ext_key" value="racebps\british_africa" />
-						<group name="info">
-							<list name="role_list">
-								<group name="role" List.ItemID="-896806083">
-									<string name="name" value="gunner" />
-									<bool name="spawn_crew_on_create" value="True" />
-									<template_reference name="entity_attach_data" value="attachments\attach_data_entity">
-										<template_reference name="attach_data" value="attachments\attach_data">
-											<string name="marker_name_parent" value="loc_gunner" />
-											<string name="parent_rigidbody_target_name" value="" />
-											<enum name="game_object_attachment_type" value="scenegraph" />
-										</template_reference>
-										<instance_reference name="ebp" value="ebps\races\british_africa\vehicles\crew\vehicle_crew_africa_uk" />
-										<group name="attachment_flags">
-											<bool name="sim_only" value="False" />
-											<bool name="no_pathfinding" value="True" />
-											<bool name="not_snappable" value="True" />
-											<bool name="restore_snap_to_ground_on_detach" value="False" />
-											<bool name="no_sim_update" value="False" />
-											<bool name="join_parent_squad" value="False" />
-											<bool name="redirect_damage_to_parent_entity" value="False" />
-											<bool name="receive_parent_animations" value="True" />
-											<bool name="receive_parent_death" value="False" overrideParent="True" />
-										</group>
-									</template_reference>
-									<instance_reference name="animation_role" value="animation_role\vehicle_turret\dak_marder_iii\vt_marder_iii_gunner" />
-									<string name="parent_inventory_slot" value="hard_point_0" />
-									<bool name="invulnerable" value="True" />
-									<template_reference name="weapon_override" value="">
-									</template_reference>
-									<string name="setup_marker_override" value="" />
-									<bool name="can_ragdoll" value="True" />
-								</group>
-								<group name="role" List.ItemID="-1310806913">
-									<string name="name" value="loader" />
-									<bool name="spawn_crew_on_create" value="True" />
-									<template_reference name="entity_attach_data" value="attachments\attach_data_entity">
-										<template_reference name="attach_data" value="attachments\attach_data">
-											<string name="marker_name_parent" value="loc_loader" />
-											<string name="parent_rigidbody_target_name" value="" />
-											<enum name="game_object_attachment_type" value="scenegraph" />
-										</template_reference>
-										<instance_reference name="ebp" value="ebps\races\british_africa\vehicles\crew\vehicle_crew_africa_uk" />
-										<group name="attachment_flags">
-											<bool name="sim_only" value="False" />
-											<bool name="no_pathfinding" value="True" />
-											<bool name="not_snappable" value="True" />
-											<bool name="restore_snap_to_ground_on_detach" value="False" />
-											<bool name="no_sim_update" value="False" />
-											<bool name="join_parent_squad" value="False" />
-											<bool name="redirect_damage_to_parent_entity" value="False" />
-											<bool name="receive_parent_animations" value="True" />
-											<bool name="receive_parent_death" value="False" overrideParent="True" />
-										</group>
-									</template_reference>
-									<instance_reference name="animation_role" value="animation_role\vehicle_turret\dak_marder_iii\vt_marder_iii_loader" />
-									<string name="parent_inventory_slot" value="hard_point_0" />
-									<bool name="invulnerable" value="True" />
-									<template_reference name="weapon_override" value="weapon_choice">
-										<group name="weapon_choice">
-											<enum name="type" value="dummy" />
-											<template_reference name="non_entity_weapon_wrapper" value="">
-											</template_reference>
-											<template_reference name="weapon_entity_attachment" value="options\attachment_types\entity_create_attachment">
-												<template_reference name="entity_attach_data" value="attachments\attach_data_entity">
-													<template_reference name="attach_data" value="attachments\attach_data">
-														<string name="marker_name_parent" value="loc_weapon_01_r" />
-														<string name="parent_rigidbody_target_name" value="" />
-														<enum name="game_object_attachment_type" value="scenegraph" />
-													</template_reference>
-													<instance_reference name="ebp" value="ebps\races\american\weapons\special\w_76mm_shell" />
-													<group name="attachment_flags">
-														<bool name="sim_only" value="False" />
-														<bool name="no_pathfinding" value="True" />
-														<bool name="not_snappable" value="False" />
-														<bool name="restore_snap_to_ground_on_detach" value="False" />
-														<bool name="no_sim_update" value="False" />
-														<bool name="join_parent_squad" value="False" />
-														<bool name="redirect_damage_to_parent_entity" value="True" />
-														<bool name="receive_parent_animations" value="False" />
-														<bool name="receive_parent_death" value="False" />
-													</group>
-												</template_reference>
-											</template_reference>
-											<group name="heading">
-												<float name="x" value="0" />
-												<float name="y" value="0" />
-												<float name="z" value="0" />
-											</group>
-											<float name="length" value="0" />
-											<group name="origin">
-												<float name="x" value="0" />
-												<float name="y" value="0" />
-												<float name="z" value="0" />
-											</group>
-										</group>
-									</template_reference>
-									<string name="setup_marker_override" value="" />
-									<bool name="can_ragdoll" value="True" />
-								</group>
-							</list>
-							<template_reference name="additional_crew_option" value="options\none">
-							</template_reference>
-							<bool name="add_attachment_dynamics_to_crew_and_apply_root_motion" value="False" />
-						</group>
-					</group>
-				</list>
-			</template_reference>
-			<template_reference name="exts" value="ebpextensions\animation_role_ext" List.ItemID="-741368874" List.ParentItemID="-741368874">
-				<instance_reference name="default_role" value="animation_role\vehicle\dak_marder_iii\v_marder_iii_chassis" overrideParent="True" />
-				<enum name="flavour_key" value="afrika_korps" overrideParent="True" />
-			</template_reference>
-			<template_reference name="exts" value="ebpextensions\cover_ext" List.ItemID="-773928275" List.ParentItemID="-773928275">
-				<enum_table name="cover_types">
-					<template_reference name="tp_trench_cover" value="cover_ext_cover_type">
-						<float name="speed_multiplier" value="1" overrideParent="True" />
-					</template_reference>
-				</enum_table>
-			</template_reference>
-			<template_reference name="exts" value="ebpextensions\presentation_override_ext" List.ItemID="1259435531" List.ParentItemID="1259435531">
-				<list name="race_mapping_list">
-					<group name="race_mapping" List.ItemID="-357221742" List.ListAction="Append">
-						<instance_reference name="race_key" value="racebps\americans" />
-						<instance_reference name="presentation_entity_override" value="ebps\races\american\vehicles\sherman_us" />
-						<instance_reference name="presentation_squad_override" value="sbps\races\american\vehicles\sherman_us" />
-					</group>
-					<group name="race_mapping" List.ItemID="-124622796" List.ListAction="Append">
-						<instance_reference name="race_key" value="racebps\british" />
-						<instance_reference name="presentation_entity_override" value="ebps\races\british\vehicles\bishop_uk" />
-						<instance_reference name="presentation_squad_override" value="sbps\races\british\vehicles\bishop_uk" />
-					</group>
-					<group name="race_mapping" List.ItemID="-554149420" List.ListAction="Append">
-						<instance_reference name="race_key" value="racebps\british_africa" />
-						<instance_reference name="presentation_entity_override" value="ebps\races\british_africa\vehicles\bishop_africa_uk" />
-						<instance_reference name="presentation_squad_override" value="sbps\races\british_africa\vehicles\bishop_africa_uk" />
-					</group>
-					<group name="race_mapping" overrideParent="True" List.ItemID="331975127" List.ListAction="Append">
-						<instance_reference name="race_key" value="racebps\germans" />
-						<instance_reference name="presentation_entity_override" value="ebps\races\german\vehicles\panzer_iv_ger" />
-						<instance_reference name="presentation_squad_override" value="sbps\races\german\vehicles\panzer_iv_ger" />
-					</group>
-				</list>
-			</template_reference>
-			<template_reference name="exts" value="ebpextensions\spawner_ext" List.ItemID="811362880" List.ListAction="Append">
-				<bool name="must_be_in_supply" value="False" />
-				<float name="reinforce_radius" value="0" />
-				<list name="spawn_items">
-				</list>
-				<list name="bonus_xp_from_hold_list">
-				</list>
-				<list name="reinforce_requirements">
-				</list>
-				<bool name="spawn_to_hold_try_first" value="False" />
-				<list name="queue_requirements">
-				</list>
-				<bool name="can_rally" value="True" />
-				<template_reference name="animated_spawn_option" value="options\none">
-				</template_reference>
-				<int name="max_queue_size_override" value="-1" />
-				<state_tree_node name="queue_requirements_openingbranch" value="" />
-				<state_tree_node name="reinforce_requirements_openingbranch" value="" />
-				<state_tree_node name="production_item_completed_openingbranch" value="" />
-				<bool name="enforce_minimum_clearance_at_spawn_positions" value="False" />
-				<bool name="enforce_minimum_clearance_if_entities_blocking" value="True" />
-				<float name="enforce_minimum_clearance_at_spawn_positions_search_range" value="0" />
-				<instance_reference name="rally_pass_type" value="" />
-				<int name="parallel_production_count" value="1" />
-				<template_reference name="default_rally_point_offset" value="">
-				</template_reference>
-				<bool name="always_paradrop_spawn" value="False" />
-				<bool name="shared_team_production" value="False" />
-			</template_reference>
-			<template_reference name="exts" value="ebpextensions\trench_crossing_ext" List.ItemID="-1821181854" List.ListAction="Append">
-			</template_reference>
-		</list>
-		<uniqueid name="pbgid" value="198286" />
-		<instance_reference name="parent_pbg" value="ebps\races\common\parent\vehicle_parent" />
-	</variant>
-	<variant name="sp">
-		<list name="extensions" removedIds="650727839">
-			<template_reference name="exts" value="ebpextensions\entity_blueprint_ext" List.ItemID="2016925706" List.ParentItemID="2016925706">
-				<file name="alternate_sua" value="art\armies\dak\vehicles\marder_iii\body\chassis\chassis" overrideParent="True" />
-				<instance_reference name="animator_attachments" value="attachments\attachment_lists\races\afrika_korps\vehicles\marder_iii_ak" overrideParent="True" />
-			</template_reference>
-			<template_reference name="exts" value="ebpextensions\health_ext" List.ItemID="433366582" List.ParentItemID="433366582">
-				<float name="hitpoints" value="360" overrideParent="True" />
-				<float name="target_size" value="18" overrideParent="True" />
-				<template_reference name="wreck_entity_option" value="options\ebpextensions\healthext\wreck_table">
-					<enum_table name="wreck_entities">
-						<instance_reference name="default" value="ebps\races\afrika_korps\wrecks\marder_iii_wreck_ak" overrideParent="True" />
-					</enum_table>
-				</template_reference>
-				<template_reference name="armor_layout_option" value="options\ebpextensions\healthext\armor_layouts\armor_layout_front_rear_side">
-					<float name="front_armor" value="50" overrideParent="True" />
-					<float name="rear_armor" value="10" overrideParent="True" />
-					<float name="side_armor" value="25" overrideParent="True" />
-					<float name="rear_damage_multiplier" value="1.25" overrideParent="True" />
-				</template_reference>
-				<enum_table name="armor_scaler_by_damage_type">
-					<float name="flame" value="1" overrideParent="True" />
-				</enum_table>
-			</template_reference>
-			<template_reference name="exts" value="ebpextensions\cost_ext" List.ItemID="-1776010655" List.ParentItemID="-1776010655">
-				<group name="time_cost">
-					<enum_table name="cost">
-						<float name="fuel" value="40" overrideParent="True" />
-						<float name="manpower" value="280" overrideParent="True" />
-					</enum_table>
-					<float name="time_seconds" value="37.5" overrideParent="True" />
-				</group>
-			</template_reference>
-			<template_reference name="exts" value="ebpextensions\speech_ext" List.ItemID="1213515032" List.ParentItemID="1213515032">
-				<group name="speech_parameters">
-					<string name="class_code" value="" overrideParent="True" />
-					<string name="name_code" value="" overrideParent="True" />
-				</group>
-			</template_reference>
-			<template_reference name="exts" value="ebpextensions\type_ext" List.ItemID="652038711" List.ParentItemID="652038711">
-				<list name="unit_type_list">
-					<enum name="unit_type" value="marder_iii_ger" List.ItemID="1858537168" List.ListAction="Append" />
-					<enum name="unit_type" value="vehicle_treaded" List.ItemID="456531015" List.ListAction="Append" />
-					<enum name="unit_type" value="allow_track_damage_when_immobilized" List.ItemID="165162787" List.ListAction="Append" />
-					<enum name="unit_type" value="fixed_turret" List.ItemID="750002973" List.ListAction="Append" />
-				</list>
-				<list name="race_type_list" removedIds="464986086">
-					<instance_reference name="race_type" value="racebps\afrika_korps" List.ItemID="-451237353" List.ListAction="Append" />
+					<instance_reference name="race_type" value="racebps\afrika_korps" List.ItemID="-1428114052" List.ListAction="Append" />
 				</list>
 			</template_reference>
 			<template_reference name="exts" value="ebpextensions\ui_ext" List.ItemID="-1350927259" List.ParentItemID="-1350927259">
@@ -757,10 +70,10 @@
 			</template_reference>
 			<template_reference name="exts" value="ebpextensions\combat_ext" List.ItemID="-1137803893" List.ParentItemID="-1137803893">
 				<list name="hardpoints">
-					<group name="hardpoint" List.ItemID="-1285763095" List.ListAction="Append">
+					<group name="hardpoint" List.ItemID="-486421234" List.ListAction="Append">
 						<float name="parent_hardpoint" value="-1" />
 						<list name="weapon_table">
-							<group name="weapon" List.ItemID="-2105460286">
+							<group name="weapon" List.ItemID="-731549244">
 								<group name="heading">
 									<float name="x" value="0" />
 									<float name="y" value="0" />
@@ -807,10 +120,10 @@
 						<string name="offhand_marker" value="" />
 						<bool name="initialize_weapons_on_creation" value="True" />
 					</group>
-					<group name="hardpoint" comment="Smoke discharge" List.ItemID="1935008741" List.ListAction="Append">
+					<group name="hardpoint" comment="Smoke discharge" List.ItemID="-377172177" List.ListAction="Append">
 						<float name="parent_hardpoint" value="-1" overrideParent="True" />
 						<list name="weapon_table">
-							<group name="weapon" List.ItemID="392536127">
+							<group name="weapon" List.ItemID="-546750812">
 								<group name="heading">
 									<float name="x" value="0" />
 									<float name="y" value="0" />
@@ -870,11 +183,11 @@
 			</template_reference>
 			<template_reference name="exts" value="ebpextensions\crew_ext" List.ItemID="2123400154" List.ParentItemID="2123400154">
 				<list name="race_list">
-					<group name="race_data" List.ItemID="2057412110" List.ListAction="Append">
+					<group name="race_data" List.ItemID="277016874" List.ListAction="Append">
 						<instance_reference name="ext_key" value="" />
 						<group name="info">
 							<list name="role_list">
-								<group name="role" List.ItemID="-1542606810">
+								<group name="role" List.ItemID="1704898315">
 									<string name="name" value="gunner" />
 									<bool name="spawn_crew_on_create" value="True" />
 									<template_reference name="entity_attach_data" value="attachments\attach_data_entity">
@@ -904,7 +217,7 @@
 									<string name="setup_marker_override" value="" />
 									<bool name="can_ragdoll" value="True" />
 								</group>
-								<group name="role" List.ItemID="1178828354">
+								<group name="role" List.ItemID="249077521">
 									<string name="name" value="loader" />
 									<bool name="spawn_crew_on_create" value="True" />
 									<template_reference name="entity_attach_data" value="attachments\attach_data_entity">
@@ -977,11 +290,11 @@
 							<bool name="add_attachment_dynamics_to_crew_and_apply_root_motion" value="False" />
 						</group>
 					</group>
-					<group name="race_data" List.ItemID="330730030" List.ListAction="Append">
+					<group name="race_data" List.ItemID="1800697825" List.ListAction="Append">
 						<instance_reference name="ext_key" value="racebps\americans" />
 						<group name="info">
 							<list name="role_list">
-								<group name="role" List.ItemID="-2057189367">
+								<group name="role" List.ItemID="-36783341">
 									<string name="name" value="gunner" />
 									<bool name="spawn_crew_on_create" value="True" />
 									<template_reference name="entity_attach_data" value="attachments\attach_data_entity">
@@ -1011,7 +324,7 @@
 									<string name="setup_marker_override" value="" />
 									<bool name="can_ragdoll" value="True" />
 								</group>
-								<group name="role" List.ItemID="1063338886">
+								<group name="role" List.ItemID="-1686545810">
 									<string name="name" value="loader" />
 									<bool name="spawn_crew_on_create" value="True" />
 									<template_reference name="entity_attach_data" value="attachments\attach_data_entity">
@@ -1084,11 +397,11 @@
 							<bool name="add_attachment_dynamics_to_crew_and_apply_root_motion" value="False" />
 						</group>
 					</group>
-					<group name="race_data" List.ItemID="-578625477" List.ListAction="Append">
+					<group name="race_data" List.ItemID="-615405565" List.ListAction="Append">
 						<instance_reference name="ext_key" value="racebps\germans" />
 						<group name="info">
 							<list name="role_list">
-								<group name="role" List.ItemID="-1168290246">
+								<group name="role" List.ItemID="-535300410">
 									<string name="name" value="gunner" />
 									<bool name="spawn_crew_on_create" value="True" />
 									<template_reference name="entity_attach_data" value="attachments\attach_data_entity">
@@ -1118,7 +431,7 @@
 									<string name="setup_marker_override" value="" />
 									<bool name="can_ragdoll" value="True" />
 								</group>
-								<group name="role" List.ItemID="-1682919439">
+								<group name="role" List.ItemID="634312971">
 									<string name="name" value="loader" />
 									<bool name="spawn_crew_on_create" value="True" />
 									<template_reference name="entity_attach_data" value="attachments\attach_data_entity">
@@ -1191,11 +504,11 @@
 							<bool name="add_attachment_dynamics_to_crew_and_apply_root_motion" value="False" />
 						</group>
 					</group>
-					<group name="race_data" List.ItemID="-1662316525" List.ListAction="Append">
+					<group name="race_data" List.ItemID="-1261960391" List.ListAction="Append">
 						<instance_reference name="ext_key" value="racebps\british_africa" />
 						<group name="info">
 							<list name="role_list">
-								<group name="role" List.ItemID="-1791056681">
+								<group name="role" List.ItemID="-541794313">
 									<string name="name" value="gunner" />
 									<bool name="spawn_crew_on_create" value="True" />
 									<template_reference name="entity_attach_data" value="attachments\attach_data_entity">
@@ -1225,7 +538,7 @@
 									<string name="setup_marker_override" value="" />
 									<bool name="can_ragdoll" value="True" />
 								</group>
-								<group name="role" List.ItemID="-1964900873">
+								<group name="role" List.ItemID="-1769674989">
 									<string name="name" value="loader" />
 									<bool name="spawn_crew_on_create" value="True" />
 									<template_reference name="entity_attach_data" value="attachments\attach_data_entity">
@@ -1313,29 +626,29 @@
 			</template_reference>
 			<template_reference name="exts" value="ebpextensions\presentation_override_ext" List.ItemID="1259435531" List.ParentItemID="1259435531">
 				<list name="race_mapping_list">
-					<group name="race_mapping" List.ItemID="950767864" List.ListAction="Append">
+					<group name="race_mapping" List.ItemID="1498173781" List.ListAction="Append">
 						<instance_reference name="race_key" value="racebps\americans" />
 						<instance_reference name="presentation_entity_override" value="ebps\races\american\vehicles\sherman_us" />
 						<instance_reference name="presentation_squad_override" value="sbps\races\american\vehicles\sherman_us" />
 					</group>
-					<group name="race_mapping" List.ItemID="-12013159" List.ListAction="Append">
+					<group name="race_mapping" List.ItemID="1962749360" List.ListAction="Append">
 						<instance_reference name="race_key" value="racebps\british" />
 						<instance_reference name="presentation_entity_override" value="ebps\races\british\vehicles\bishop_uk" />
 						<instance_reference name="presentation_squad_override" value="sbps\races\british\vehicles\bishop_uk" />
 					</group>
-					<group name="race_mapping" List.ItemID="-2147131930" List.ListAction="Append">
+					<group name="race_mapping" List.ItemID="442409562" List.ListAction="Append">
 						<instance_reference name="race_key" value="racebps\british_africa" />
 						<instance_reference name="presentation_entity_override" value="ebps\races\british_africa\vehicles\bishop_africa_uk" />
 						<instance_reference name="presentation_squad_override" value="sbps\races\british_africa\vehicles\bishop_africa_uk" />
 					</group>
-					<group name="race_mapping" overrideParent="True" List.ItemID="1200883367" List.ListAction="Append">
+					<group name="race_mapping" overrideParent="True" List.ItemID="816363082" List.ListAction="Append">
 						<instance_reference name="race_key" value="racebps\germans" />
 						<instance_reference name="presentation_entity_override" value="ebps\races\german\vehicles\panzer_iv_ger" />
 						<instance_reference name="presentation_squad_override" value="sbps\races\german\vehicles\panzer_iv_ger" />
 					</group>
 				</list>
 			</template_reference>
-			<template_reference name="exts" value="ebpextensions\spawner_ext" List.ItemID="1765173885" List.ListAction="Append">
+			<template_reference name="exts" value="ebpextensions\spawner_ext" List.ItemID="805257932" List.ListAction="Append">
 				<bool name="must_be_in_supply" value="False" />
 				<float name="reinforce_radius" value="0" />
 				<list name="spawn_items">
@@ -1364,7 +677,691 @@
 				<bool name="always_paradrop_spawn" value="False" />
 				<bool name="shared_team_production" value="False" />
 			</template_reference>
-			<template_reference name="exts" value="ebpextensions\trench_crossing_ext" List.ItemID="1262775197" List.ListAction="Append">
+			<template_reference name="exts" value="ebpextensions\trench_crossing_ext" List.ItemID="1749355607" List.ListAction="Append">
+			</template_reference>
+		</list>
+		<uniqueid name="pbgid" value="198286" />
+		<instance_reference name="parent_pbg" value="ebps\races\common\parent\vehicle_parent" />
+	</variant>
+	<variant name="sp">
+		<list name="extensions" removedIds="650727839">
+			<template_reference name="exts" value="ebpextensions\entity_blueprint_ext" List.ItemID="2016925706" List.ParentItemID="2016925706">
+				<file name="alternate_sua" value="art\armies\dak\vehicles\marder_iii\body\chassis\chassis" overrideParent="True" />
+				<instance_reference name="animator_attachments" value="attachments\attachment_lists\races\afrika_korps\vehicles\marder_iii_ak" overrideParent="True" />
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\health_ext" List.ItemID="433366582" List.ParentItemID="433366582">
+				<float name="hitpoints" value="360" overrideParent="True" />
+				<float name="target_size" value="18" overrideParent="True" />
+				<template_reference name="wreck_entity_option" value="options\ebpextensions\healthext\wreck_table">
+					<enum_table name="wreck_entities">
+						<instance_reference name="default" value="ebps\races\afrika_korps\wrecks\marder_iii_wreck_ak" overrideParent="True" />
+					</enum_table>
+				</template_reference>
+				<template_reference name="armor_layout_option" value="options\ebpextensions\healthext\armor_layouts\armor_layout_front_rear_side">
+					<float name="front_armor" value="50" overrideParent="True" />
+					<float name="rear_armor" value="10" overrideParent="True" />
+					<float name="side_armor" value="25" overrideParent="True" />
+					<float name="rear_damage_multiplier" value="1" overrideParent="True" />
+				</template_reference>
+				<enum_table name="armor_scaler_by_damage_type">
+					<float name="flame" value="1" overrideParent="True" />
+				</enum_table>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\cost_ext" List.ItemID="-1776010655" List.ParentItemID="-1776010655">
+				<group name="time_cost">
+					<enum_table name="cost">
+						<float name="fuel" value="25" overrideParent="True" />
+						<float name="manpower" value="280" overrideParent="True" />
+					</enum_table>
+					<float name="time_seconds" value="37.5" overrideParent="True" />
+				</group>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\speech_ext" List.ItemID="1213515032" List.ParentItemID="1213515032">
+				<group name="speech_parameters">
+					<string name="class_code" value="" overrideParent="True" />
+					<string name="name_code" value="" overrideParent="True" />
+				</group>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\type_ext" List.ItemID="652038711" List.ParentItemID="652038711">
+				<list name="unit_type_list">
+					<enum name="unit_type" value="marder_iii_ger" List.ItemID="325392040" List.ListAction="Append" />
+					<enum name="unit_type" value="vehicle_treaded" List.ItemID="2142913149" List.ListAction="Append" />
+					<enum name="unit_type" value="allow_track_damage_when_immobilized" List.ItemID="-276066676" List.ListAction="Append" />
+					<enum name="unit_type" value="fixed_turret" List.ItemID="-1318911689" List.ListAction="Append" />
+				</list>
+				<list name="race_type_list" removedIds="464986086">
+					<instance_reference name="race_type" value="racebps\afrika_korps" List.ItemID="681120967" List.ListAction="Append" />
+				</list>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\ui_ext" List.ItemID="-1350927259" List.ParentItemID="-1350927259">
+				<float name="decorator_height" value="5" overrideParent="True" />
+				<enum name="kill_type" value="medium_armour" overrideParent="True" />
+				<float name="minimap_icon_scale" value="0.5" overrideParent="True" />
+				<enum name="map_rotation_type_override" value="no_override" overrideParent="True" />
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\moving_ext" List.ItemID="-1164819730" List.ParentItemID="-1164819730">
+				<float name="acceleration" value="3.4" overrideParent="True" />
+				<float name="deceleration" value="3.75" overrideParent="True" />
+				<float name="rotation_rate" value="30" overrideParent="True" />
+				<float name="on_land_overturn_scale" value="0.03" overrideParent="True" />
+				<enum_table name="speed_levels">
+					<float name="speed_level_0" value="5" overrideParent="True" />
+					<float name="speed_level_1" value="5" overrideParent="True" />
+					<float name="speed_level_3" value="5" overrideParent="True" />
+					<float name="speed_level_4" value="5" overrideParent="True" />
+				</enum_table>
+				<float name="pivot_rate" value="35" overrideParent="True" />
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\combat_ext" List.ItemID="-1137803893" List.ParentItemID="-1137803893">
+				<list name="hardpoints">
+					<group name="hardpoint" List.ItemID="-1704100542" List.ListAction="Append">
+						<float name="parent_hardpoint" value="-1" />
+						<list name="weapon_table">
+							<group name="weapon" List.ItemID="2083834017">
+								<group name="heading">
+									<float name="x" value="0" />
+									<float name="y" value="0" />
+									<float name="z" value="4.752" />
+								</group>
+								<float name="length" value="0" />
+								<group name="origin">
+									<float name="x" value="0.42" />
+									<float name="y" value="1.71" />
+									<float name="z" value="1" />
+								</group>
+								<enum name="type" value="default" />
+								<template_reference name="weapon_entity_attachment" value="options\attachment_types\entity_create_attachment">
+									<template_reference name="entity_attach_data" value="attachments\attach_data_entity">
+										<template_reference name="attach_data" value="attachments\attach_data">
+											<string name="marker_name_parent" value="" />
+											<string name="parent_rigidbody_target_name" value="" />
+											<enum name="game_object_attachment_type" value="scenegraph" />
+										</template_reference>
+										<instance_reference name="ebp" value="ebps\races\afrika_korps\weapons\ballistic_weapon\tank_gun\w_75mm_marder_iii_ak" />
+										<group name="attachment_flags">
+											<bool name="sim_only" value="False" />
+											<bool name="no_pathfinding" value="True" />
+											<bool name="not_snappable" value="False" />
+											<bool name="restore_snap_to_ground_on_detach" value="False" />
+											<bool name="no_sim_update" value="False" />
+											<bool name="join_parent_squad" value="False" />
+											<bool name="redirect_damage_to_parent_entity" value="True" />
+											<bool name="receive_parent_animations" value="True" />
+											<bool name="receive_parent_death" value="False" />
+										</group>
+									</template_reference>
+								</template_reference>
+								<template_reference name="non_entity_weapon_wrapper" value="">
+								</template_reference>
+							</group>
+						</list>
+						<bool name="receives_attack_commands" value="True" />
+						<string name="base_marker" value="loc_turret" />
+						<list name="preferred_inventory_item_categories">
+						</list>
+						<list name="firing_offset_markers">
+						</list>
+						<string name="offhand_marker" value="" />
+						<bool name="initialize_weapons_on_creation" value="True" />
+					</group>
+					<group name="hardpoint" comment="Smoke discharge" List.ItemID="-1320590187" List.ListAction="Append">
+						<float name="parent_hardpoint" value="-1" overrideParent="True" />
+						<list name="weapon_table">
+							<group name="weapon" List.ItemID="-1743114409">
+								<group name="heading">
+									<float name="x" value="0" />
+									<float name="y" value="0" />
+									<float name="z" value="1" />
+								</group>
+								<float name="length" value="0" />
+								<group name="origin">
+									<float name="x" value="0" />
+									<float name="y" value="0.5" />
+									<float name="z" value="0" />
+								</group>
+								<enum name="type" value="default" />
+								<template_reference name="weapon_entity_attachment" value="options\attachment_types\entity_create_attachment">
+									<template_reference name="entity_attach_data" value="attachments\attach_data_entity">
+										<template_reference name="attach_data" value="attachments\attach_data">
+											<string name="marker_name_parent" value="" />
+											<string name="parent_rigidbody_target_name" value="" />
+											<enum name="game_object_attachment_type" value="scenegraph" />
+										</template_reference>
+										<instance_reference name="ebp" value="ebps\races\afrika_korps\weapons\explosive_weapons\mortar\w_vehicle_smoke_ak" overrideParent="True" />
+										<group name="attachment_flags">
+											<bool name="sim_only" value="False" />
+											<bool name="no_pathfinding" value="True" />
+											<bool name="not_snappable" value="False" />
+											<bool name="restore_snap_to_ground_on_detach" value="False" />
+											<bool name="no_sim_update" value="False" />
+											<bool name="join_parent_squad" value="False" />
+											<bool name="redirect_damage_to_parent_entity" value="True" />
+											<bool name="receive_parent_animations" value="False" />
+											<bool name="receive_parent_death" value="False" />
+										</group>
+									</template_reference>
+								</template_reference>
+								<template_reference name="non_entity_weapon_wrapper" value="">
+								</template_reference>
+							</group>
+						</list>
+						<bool name="receives_attack_commands" value="False" />
+						<string name="base_marker" value="loc_smoke_r_launcher" />
+						<list name="preferred_inventory_item_categories">
+						</list>
+						<list name="firing_offset_markers">
+						</list>
+						<string name="offhand_marker" value="" />
+						<bool name="initialize_weapons_on_creation" value="True" />
+					</group>
+				</list>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\population_ext" List.ItemID="1973119980" List.ParentItemID="1973119980">
+				<float name="personnel_pop" value="7" overrideParent="True" />
+				<enum_table name="upkeep_per_pop_per_minute_override">
+					<float name="manpower" value="1.5" overrideParent="True" />
+				</enum_table>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\camouflage_ext" List.ItemID="1525857700" List.ParentItemID="1525857700">
+				<float name="detection_radius" value="15" overrideParent="True" />
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\crew_ext" List.ItemID="2123400154" List.ParentItemID="2123400154">
+				<list name="race_list">
+					<group name="race_data" List.ItemID="232599566" List.ListAction="Append">
+						<instance_reference name="ext_key" value="" />
+						<group name="info">
+							<list name="role_list">
+								<group name="role" List.ItemID="-733917669">
+									<string name="name" value="gunner" />
+									<bool name="spawn_crew_on_create" value="True" />
+									<template_reference name="entity_attach_data" value="attachments\attach_data_entity">
+										<template_reference name="attach_data" value="attachments\attach_data">
+											<string name="marker_name_parent" value="loc_gunner" />
+											<string name="parent_rigidbody_target_name" value="" />
+											<enum name="game_object_attachment_type" value="scenegraph" />
+										</template_reference>
+										<instance_reference name="ebp" value="ebps\races\afrika_korps\vehicles\crew\gunner_marder_ak" />
+										<group name="attachment_flags">
+											<bool name="sim_only" value="False" />
+											<bool name="no_pathfinding" value="True" />
+											<bool name="not_snappable" value="True" />
+											<bool name="restore_snap_to_ground_on_detach" value="False" />
+											<bool name="no_sim_update" value="False" />
+											<bool name="join_parent_squad" value="False" />
+											<bool name="redirect_damage_to_parent_entity" value="False" />
+											<bool name="receive_parent_animations" value="True" />
+											<bool name="receive_parent_death" value="False" overrideParent="True" />
+										</group>
+									</template_reference>
+									<instance_reference name="animation_role" value="animation_role\vehicle_turret\dak_marder_iii\vt_marder_iii_gunner" />
+									<string name="parent_inventory_slot" value="hard_point_0" />
+									<bool name="invulnerable" value="True" />
+									<template_reference name="weapon_override" value="">
+									</template_reference>
+									<string name="setup_marker_override" value="" />
+									<bool name="can_ragdoll" value="True" />
+								</group>
+								<group name="role" List.ItemID="-1758526221">
+									<string name="name" value="loader" />
+									<bool name="spawn_crew_on_create" value="True" />
+									<template_reference name="entity_attach_data" value="attachments\attach_data_entity">
+										<template_reference name="attach_data" value="attachments\attach_data">
+											<string name="marker_name_parent" value="loc_loader" />
+											<string name="parent_rigidbody_target_name" value="" />
+											<enum name="game_object_attachment_type" value="scenegraph" />
+										</template_reference>
+										<instance_reference name="ebp" value="ebps\races\afrika_korps\vehicles\crew\gunner_marder_ak" />
+										<group name="attachment_flags">
+											<bool name="sim_only" value="False" />
+											<bool name="no_pathfinding" value="True" />
+											<bool name="not_snappable" value="True" />
+											<bool name="restore_snap_to_ground_on_detach" value="False" />
+											<bool name="no_sim_update" value="False" />
+											<bool name="join_parent_squad" value="False" />
+											<bool name="redirect_damage_to_parent_entity" value="False" />
+											<bool name="receive_parent_animations" value="True" />
+											<bool name="receive_parent_death" value="False" overrideParent="True" />
+										</group>
+									</template_reference>
+									<instance_reference name="animation_role" value="animation_role\vehicle_turret\dak_marder_iii\vt_marder_iii_loader" />
+									<string name="parent_inventory_slot" value="hard_point_0" />
+									<bool name="invulnerable" value="True" />
+									<template_reference name="weapon_override" value="weapon_choice">
+										<group name="weapon_choice">
+											<enum name="type" value="dummy" />
+											<template_reference name="non_entity_weapon_wrapper" value="">
+											</template_reference>
+											<template_reference name="weapon_entity_attachment" value="options\attachment_types\entity_create_attachment">
+												<template_reference name="entity_attach_data" value="attachments\attach_data_entity">
+													<template_reference name="attach_data" value="attachments\attach_data">
+														<string name="marker_name_parent" value="loc_weapon_01_r" />
+														<string name="parent_rigidbody_target_name" value="" />
+														<enum name="game_object_attachment_type" value="scenegraph" />
+													</template_reference>
+													<instance_reference name="ebp" value="ebps\races\american\weapons\special\w_76mm_shell" />
+													<group name="attachment_flags">
+														<bool name="sim_only" value="False" />
+														<bool name="no_pathfinding" value="True" />
+														<bool name="not_snappable" value="False" />
+														<bool name="restore_snap_to_ground_on_detach" value="False" />
+														<bool name="no_sim_update" value="False" />
+														<bool name="join_parent_squad" value="False" />
+														<bool name="redirect_damage_to_parent_entity" value="True" />
+														<bool name="receive_parent_animations" value="False" />
+														<bool name="receive_parent_death" value="False" />
+													</group>
+												</template_reference>
+											</template_reference>
+											<group name="heading">
+												<float name="x" value="0" />
+												<float name="y" value="0" />
+												<float name="z" value="0" />
+											</group>
+											<float name="length" value="0" />
+											<group name="origin">
+												<float name="x" value="0" />
+												<float name="y" value="0" />
+												<float name="z" value="0" />
+											</group>
+										</group>
+									</template_reference>
+									<string name="setup_marker_override" value="" />
+									<bool name="can_ragdoll" value="True" />
+								</group>
+							</list>
+							<template_reference name="additional_crew_option" value="options\none">
+							</template_reference>
+							<bool name="add_attachment_dynamics_to_crew_and_apply_root_motion" value="False" />
+						</group>
+					</group>
+					<group name="race_data" List.ItemID="-427762851" List.ListAction="Append">
+						<instance_reference name="ext_key" value="racebps\americans" />
+						<group name="info">
+							<list name="role_list">
+								<group name="role" List.ItemID="602179196">
+									<string name="name" value="gunner" />
+									<bool name="spawn_crew_on_create" value="True" />
+									<template_reference name="entity_attach_data" value="attachments\attach_data_entity">
+										<template_reference name="attach_data" value="attachments\attach_data">
+											<string name="marker_name_parent" value="loc_gunner" />
+											<string name="parent_rigidbody_target_name" value="" />
+											<enum name="game_object_attachment_type" value="scenegraph" />
+										</template_reference>
+										<instance_reference name="ebp" value="ebps\races\american\vehicles\crew\vehicle_crew_us" />
+										<group name="attachment_flags">
+											<bool name="sim_only" value="False" />
+											<bool name="no_pathfinding" value="True" />
+											<bool name="not_snappable" value="True" />
+											<bool name="restore_snap_to_ground_on_detach" value="False" />
+											<bool name="no_sim_update" value="False" />
+											<bool name="join_parent_squad" value="False" />
+											<bool name="redirect_damage_to_parent_entity" value="False" />
+											<bool name="receive_parent_animations" value="True" />
+											<bool name="receive_parent_death" value="False" overrideParent="True" />
+										</group>
+									</template_reference>
+									<instance_reference name="animation_role" value="animation_role\vehicle_turret\dak_marder_iii\vt_marder_iii_gunner" />
+									<string name="parent_inventory_slot" value="hard_point_0" />
+									<bool name="invulnerable" value="True" />
+									<template_reference name="weapon_override" value="">
+									</template_reference>
+									<string name="setup_marker_override" value="" />
+									<bool name="can_ragdoll" value="True" />
+								</group>
+								<group name="role" List.ItemID="-1083201502">
+									<string name="name" value="loader" />
+									<bool name="spawn_crew_on_create" value="True" />
+									<template_reference name="entity_attach_data" value="attachments\attach_data_entity">
+										<template_reference name="attach_data" value="attachments\attach_data">
+											<string name="marker_name_parent" value="loc_loader" />
+											<string name="parent_rigidbody_target_name" value="" />
+											<enum name="game_object_attachment_type" value="scenegraph" />
+										</template_reference>
+										<instance_reference name="ebp" value="ebps\races\american\vehicles\crew\vehicle_crew_us" />
+										<group name="attachment_flags">
+											<bool name="sim_only" value="False" />
+											<bool name="no_pathfinding" value="True" />
+											<bool name="not_snappable" value="True" />
+											<bool name="restore_snap_to_ground_on_detach" value="False" />
+											<bool name="no_sim_update" value="False" />
+											<bool name="join_parent_squad" value="False" />
+											<bool name="redirect_damage_to_parent_entity" value="False" />
+											<bool name="receive_parent_animations" value="True" />
+											<bool name="receive_parent_death" value="False" overrideParent="True" />
+										</group>
+									</template_reference>
+									<instance_reference name="animation_role" value="animation_role\vehicle_turret\dak_marder_iii\vt_marder_iii_loader" />
+									<string name="parent_inventory_slot" value="hard_point_0" />
+									<bool name="invulnerable" value="True" />
+									<template_reference name="weapon_override" value="weapon_choice">
+										<group name="weapon_choice">
+											<enum name="type" value="dummy" />
+											<template_reference name="non_entity_weapon_wrapper" value="">
+											</template_reference>
+											<template_reference name="weapon_entity_attachment" value="options\attachment_types\entity_create_attachment">
+												<template_reference name="entity_attach_data" value="attachments\attach_data_entity">
+													<template_reference name="attach_data" value="attachments\attach_data">
+														<string name="marker_name_parent" value="loc_weapon_01_r" />
+														<string name="parent_rigidbody_target_name" value="" />
+														<enum name="game_object_attachment_type" value="scenegraph" />
+													</template_reference>
+													<instance_reference name="ebp" value="ebps\races\american\weapons\special\w_76mm_shell" />
+													<group name="attachment_flags">
+														<bool name="sim_only" value="False" />
+														<bool name="no_pathfinding" value="True" />
+														<bool name="not_snappable" value="False" />
+														<bool name="restore_snap_to_ground_on_detach" value="False" />
+														<bool name="no_sim_update" value="False" />
+														<bool name="join_parent_squad" value="False" />
+														<bool name="redirect_damage_to_parent_entity" value="True" />
+														<bool name="receive_parent_animations" value="False" />
+														<bool name="receive_parent_death" value="False" />
+													</group>
+												</template_reference>
+											</template_reference>
+											<group name="heading">
+												<float name="x" value="0" />
+												<float name="y" value="0" />
+												<float name="z" value="0" />
+											</group>
+											<float name="length" value="0" />
+											<group name="origin">
+												<float name="x" value="0" />
+												<float name="y" value="0" />
+												<float name="z" value="0" />
+											</group>
+										</group>
+									</template_reference>
+									<string name="setup_marker_override" value="" />
+									<bool name="can_ragdoll" value="True" />
+								</group>
+							</list>
+							<template_reference name="additional_crew_option" value="options\none">
+							</template_reference>
+							<bool name="add_attachment_dynamics_to_crew_and_apply_root_motion" value="False" />
+						</group>
+					</group>
+					<group name="race_data" List.ItemID="859074533" List.ListAction="Append">
+						<instance_reference name="ext_key" value="racebps\germans" />
+						<group name="info">
+							<list name="role_list">
+								<group name="role" List.ItemID="684213881">
+									<string name="name" value="gunner" />
+									<bool name="spawn_crew_on_create" value="True" />
+									<template_reference name="entity_attach_data" value="attachments\attach_data_entity">
+										<template_reference name="attach_data" value="attachments\attach_data">
+											<string name="marker_name_parent" value="loc_gunner" />
+											<string name="parent_rigidbody_target_name" value="" />
+											<enum name="game_object_attachment_type" value="scenegraph" />
+										</template_reference>
+										<instance_reference name="ebp" value="ebps\races\german\vehicles\crew\vehicle_crew_ger" />
+										<group name="attachment_flags">
+											<bool name="sim_only" value="False" />
+											<bool name="no_pathfinding" value="True" />
+											<bool name="not_snappable" value="True" />
+											<bool name="restore_snap_to_ground_on_detach" value="False" />
+											<bool name="no_sim_update" value="False" />
+											<bool name="join_parent_squad" value="False" />
+											<bool name="redirect_damage_to_parent_entity" value="False" />
+											<bool name="receive_parent_animations" value="True" />
+											<bool name="receive_parent_death" value="False" overrideParent="True" />
+										</group>
+									</template_reference>
+									<instance_reference name="animation_role" value="animation_role\vehicle_turret\dak_marder_iii\vt_marder_iii_gunner" />
+									<string name="parent_inventory_slot" value="hard_point_0" />
+									<bool name="invulnerable" value="True" />
+									<template_reference name="weapon_override" value="">
+									</template_reference>
+									<string name="setup_marker_override" value="" />
+									<bool name="can_ragdoll" value="True" />
+								</group>
+								<group name="role" List.ItemID="1637556823">
+									<string name="name" value="loader" />
+									<bool name="spawn_crew_on_create" value="True" />
+									<template_reference name="entity_attach_data" value="attachments\attach_data_entity">
+										<template_reference name="attach_data" value="attachments\attach_data">
+											<string name="marker_name_parent" value="loc_loader" />
+											<string name="parent_rigidbody_target_name" value="" />
+											<enum name="game_object_attachment_type" value="scenegraph" />
+										</template_reference>
+										<instance_reference name="ebp" value="ebps\races\german\vehicles\crew\vehicle_crew_ger" />
+										<group name="attachment_flags">
+											<bool name="sim_only" value="False" />
+											<bool name="no_pathfinding" value="True" />
+											<bool name="not_snappable" value="True" />
+											<bool name="restore_snap_to_ground_on_detach" value="False" />
+											<bool name="no_sim_update" value="False" />
+											<bool name="join_parent_squad" value="False" />
+											<bool name="redirect_damage_to_parent_entity" value="False" />
+											<bool name="receive_parent_animations" value="True" />
+											<bool name="receive_parent_death" value="False" overrideParent="True" />
+										</group>
+									</template_reference>
+									<instance_reference name="animation_role" value="animation_role\vehicle_turret\dak_marder_iii\vt_marder_iii_loader" />
+									<string name="parent_inventory_slot" value="hard_point_0" />
+									<bool name="invulnerable" value="True" />
+									<template_reference name="weapon_override" value="weapon_choice">
+										<group name="weapon_choice">
+											<enum name="type" value="dummy" />
+											<template_reference name="non_entity_weapon_wrapper" value="">
+											</template_reference>
+											<template_reference name="weapon_entity_attachment" value="options\attachment_types\entity_create_attachment">
+												<template_reference name="entity_attach_data" value="attachments\attach_data_entity">
+													<template_reference name="attach_data" value="attachments\attach_data">
+														<string name="marker_name_parent" value="loc_weapon_01_r" />
+														<string name="parent_rigidbody_target_name" value="" />
+														<enum name="game_object_attachment_type" value="scenegraph" />
+													</template_reference>
+													<instance_reference name="ebp" value="ebps\races\american\weapons\special\w_76mm_shell" />
+													<group name="attachment_flags">
+														<bool name="sim_only" value="False" />
+														<bool name="no_pathfinding" value="True" />
+														<bool name="not_snappable" value="False" />
+														<bool name="restore_snap_to_ground_on_detach" value="False" />
+														<bool name="no_sim_update" value="False" />
+														<bool name="join_parent_squad" value="False" />
+														<bool name="redirect_damage_to_parent_entity" value="True" />
+														<bool name="receive_parent_animations" value="False" />
+														<bool name="receive_parent_death" value="False" />
+													</group>
+												</template_reference>
+											</template_reference>
+											<group name="heading">
+												<float name="x" value="0" />
+												<float name="y" value="0" />
+												<float name="z" value="0" />
+											</group>
+											<float name="length" value="0" />
+											<group name="origin">
+												<float name="x" value="0" />
+												<float name="y" value="0" />
+												<float name="z" value="0" />
+											</group>
+										</group>
+									</template_reference>
+									<string name="setup_marker_override" value="" />
+									<bool name="can_ragdoll" value="True" />
+								</group>
+							</list>
+							<template_reference name="additional_crew_option" value="options\none">
+							</template_reference>
+							<bool name="add_attachment_dynamics_to_crew_and_apply_root_motion" value="False" />
+						</group>
+					</group>
+					<group name="race_data" List.ItemID="-1045311509" List.ListAction="Append">
+						<instance_reference name="ext_key" value="racebps\british_africa" />
+						<group name="info">
+							<list name="role_list">
+								<group name="role" List.ItemID="-2080435331">
+									<string name="name" value="gunner" />
+									<bool name="spawn_crew_on_create" value="True" />
+									<template_reference name="entity_attach_data" value="attachments\attach_data_entity">
+										<template_reference name="attach_data" value="attachments\attach_data">
+											<string name="marker_name_parent" value="loc_gunner" />
+											<string name="parent_rigidbody_target_name" value="" />
+											<enum name="game_object_attachment_type" value="scenegraph" />
+										</template_reference>
+										<instance_reference name="ebp" value="ebps\races\british_africa\vehicles\crew\vehicle_crew_africa_uk" />
+										<group name="attachment_flags">
+											<bool name="sim_only" value="False" />
+											<bool name="no_pathfinding" value="True" />
+											<bool name="not_snappable" value="True" />
+											<bool name="restore_snap_to_ground_on_detach" value="False" />
+											<bool name="no_sim_update" value="False" />
+											<bool name="join_parent_squad" value="False" />
+											<bool name="redirect_damage_to_parent_entity" value="False" />
+											<bool name="receive_parent_animations" value="True" />
+											<bool name="receive_parent_death" value="False" overrideParent="True" />
+										</group>
+									</template_reference>
+									<instance_reference name="animation_role" value="animation_role\vehicle_turret\dak_marder_iii\vt_marder_iii_gunner" />
+									<string name="parent_inventory_slot" value="hard_point_0" />
+									<bool name="invulnerable" value="True" />
+									<template_reference name="weapon_override" value="">
+									</template_reference>
+									<string name="setup_marker_override" value="" />
+									<bool name="can_ragdoll" value="True" />
+								</group>
+								<group name="role" List.ItemID="1960199074">
+									<string name="name" value="loader" />
+									<bool name="spawn_crew_on_create" value="True" />
+									<template_reference name="entity_attach_data" value="attachments\attach_data_entity">
+										<template_reference name="attach_data" value="attachments\attach_data">
+											<string name="marker_name_parent" value="loc_loader" />
+											<string name="parent_rigidbody_target_name" value="" />
+											<enum name="game_object_attachment_type" value="scenegraph" />
+										</template_reference>
+										<instance_reference name="ebp" value="ebps\races\british_africa\vehicles\crew\vehicle_crew_africa_uk" />
+										<group name="attachment_flags">
+											<bool name="sim_only" value="False" />
+											<bool name="no_pathfinding" value="True" />
+											<bool name="not_snappable" value="True" />
+											<bool name="restore_snap_to_ground_on_detach" value="False" />
+											<bool name="no_sim_update" value="False" />
+											<bool name="join_parent_squad" value="False" />
+											<bool name="redirect_damage_to_parent_entity" value="False" />
+											<bool name="receive_parent_animations" value="True" />
+											<bool name="receive_parent_death" value="False" overrideParent="True" />
+										</group>
+									</template_reference>
+									<instance_reference name="animation_role" value="animation_role\vehicle_turret\dak_marder_iii\vt_marder_iii_loader" />
+									<string name="parent_inventory_slot" value="hard_point_0" />
+									<bool name="invulnerable" value="True" />
+									<template_reference name="weapon_override" value="weapon_choice">
+										<group name="weapon_choice">
+											<enum name="type" value="dummy" />
+											<template_reference name="non_entity_weapon_wrapper" value="">
+											</template_reference>
+											<template_reference name="weapon_entity_attachment" value="options\attachment_types\entity_create_attachment">
+												<template_reference name="entity_attach_data" value="attachments\attach_data_entity">
+													<template_reference name="attach_data" value="attachments\attach_data">
+														<string name="marker_name_parent" value="loc_weapon_01_r" />
+														<string name="parent_rigidbody_target_name" value="" />
+														<enum name="game_object_attachment_type" value="scenegraph" />
+													</template_reference>
+													<instance_reference name="ebp" value="ebps\races\american\weapons\special\w_76mm_shell" />
+													<group name="attachment_flags">
+														<bool name="sim_only" value="False" />
+														<bool name="no_pathfinding" value="True" />
+														<bool name="not_snappable" value="False" />
+														<bool name="restore_snap_to_ground_on_detach" value="False" />
+														<bool name="no_sim_update" value="False" />
+														<bool name="join_parent_squad" value="False" />
+														<bool name="redirect_damage_to_parent_entity" value="True" />
+														<bool name="receive_parent_animations" value="False" />
+														<bool name="receive_parent_death" value="False" />
+													</group>
+												</template_reference>
+											</template_reference>
+											<group name="heading">
+												<float name="x" value="0" />
+												<float name="y" value="0" />
+												<float name="z" value="0" />
+											</group>
+											<float name="length" value="0" />
+											<group name="origin">
+												<float name="x" value="0" />
+												<float name="y" value="0" />
+												<float name="z" value="0" />
+											</group>
+										</group>
+									</template_reference>
+									<string name="setup_marker_override" value="" />
+									<bool name="can_ragdoll" value="True" />
+								</group>
+							</list>
+							<template_reference name="additional_crew_option" value="options\none">
+							</template_reference>
+							<bool name="add_attachment_dynamics_to_crew_and_apply_root_motion" value="False" />
+						</group>
+					</group>
+				</list>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\animation_role_ext" List.ItemID="-741368874" List.ParentItemID="-741368874">
+				<instance_reference name="default_role" value="animation_role\vehicle\dak_marder_iii\v_marder_iii_chassis" overrideParent="True" />
+				<enum name="flavour_key" value="afrika_korps" overrideParent="True" />
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\cover_ext" List.ItemID="-773928275" List.ParentItemID="-773928275">
+				<enum_table name="cover_types">
+					<template_reference name="tp_trench_cover" value="cover_ext_cover_type">
+						<float name="speed_multiplier" value="1" overrideParent="True" />
+					</template_reference>
+				</enum_table>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\presentation_override_ext" List.ItemID="1259435531" List.ParentItemID="1259435531">
+				<list name="race_mapping_list">
+					<group name="race_mapping" List.ItemID="767269981" List.ListAction="Append">
+						<instance_reference name="race_key" value="racebps\americans" />
+						<instance_reference name="presentation_entity_override" value="ebps\races\american\vehicles\sherman_us" />
+						<instance_reference name="presentation_squad_override" value="sbps\races\american\vehicles\sherman_us" />
+					</group>
+					<group name="race_mapping" List.ItemID="-1085126405" List.ListAction="Append">
+						<instance_reference name="race_key" value="racebps\british" />
+						<instance_reference name="presentation_entity_override" value="ebps\races\british\vehicles\bishop_uk" />
+						<instance_reference name="presentation_squad_override" value="sbps\races\british\vehicles\bishop_uk" />
+					</group>
+					<group name="race_mapping" List.ItemID="1913764330" List.ListAction="Append">
+						<instance_reference name="race_key" value="racebps\british_africa" />
+						<instance_reference name="presentation_entity_override" value="ebps\races\british_africa\vehicles\bishop_africa_uk" />
+						<instance_reference name="presentation_squad_override" value="sbps\races\british_africa\vehicles\bishop_africa_uk" />
+					</group>
+					<group name="race_mapping" overrideParent="True" List.ItemID="-2126196930" List.ListAction="Append">
+						<instance_reference name="race_key" value="racebps\germans" />
+						<instance_reference name="presentation_entity_override" value="ebps\races\german\vehicles\panzer_iv_ger" />
+						<instance_reference name="presentation_squad_override" value="sbps\races\german\vehicles\panzer_iv_ger" />
+					</group>
+				</list>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\spawner_ext" List.ItemID="-40770011" List.ListAction="Append">
+				<bool name="must_be_in_supply" value="False" />
+				<float name="reinforce_radius" value="0" />
+				<list name="spawn_items">
+				</list>
+				<list name="bonus_xp_from_hold_list">
+				</list>
+				<list name="reinforce_requirements">
+				</list>
+				<bool name="spawn_to_hold_try_first" value="False" />
+				<list name="queue_requirements">
+				</list>
+				<bool name="can_rally" value="True" />
+				<template_reference name="animated_spawn_option" value="options\none">
+				</template_reference>
+				<int name="max_queue_size_override" value="-1" />
+				<state_tree_node name="queue_requirements_openingbranch" value="" />
+				<state_tree_node name="reinforce_requirements_openingbranch" value="" />
+				<state_tree_node name="production_item_completed_openingbranch" value="" />
+				<bool name="enforce_minimum_clearance_at_spawn_positions" value="False" />
+				<bool name="enforce_minimum_clearance_if_entities_blocking" value="True" />
+				<float name="enforce_minimum_clearance_at_spawn_positions_search_range" value="0" />
+				<instance_reference name="rally_pass_type" value="" />
+				<int name="parallel_production_count" value="1" />
+				<template_reference name="default_rally_point_offset" value="">
+				</template_reference>
+				<bool name="always_paradrop_spawn" value="False" />
+				<bool name="shared_team_production" value="False" />
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\trench_crossing_ext" List.ItemID="1367783818" List.ListAction="Append">
 			</template_reference>
 		</list>
 		<uniqueid name="pbgid" value="198286" />

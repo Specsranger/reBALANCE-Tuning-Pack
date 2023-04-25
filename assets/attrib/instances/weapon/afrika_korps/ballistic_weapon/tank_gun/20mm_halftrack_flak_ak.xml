@@ -2,9 +2,9 @@
 	<variant name="default">
 		<group name="weapon_bag">
 			<group name="accuracy">
-				<float name="near" value="0.4" overrideParent="True" />
-				<float name="far" value="0.3" overrideParent="True" />
-				<float name="mid" value="0.35" overrideParent="True" />
+				<float name="near" value="0.44" overrideParent="True" />
+				<float name="far" value="0.36" overrideParent="True" />
+				<float name="mid" value="0.42" overrideParent="True" />
 			</group>
 			<group name="aim">
 				<group name="fire_aim_time">
@@ -15,6 +15,7 @@
 					<float name="max" value="0.5" overrideParent="True" />
 					<float name="min" value="0.25" overrideParent="True" />
 				</group>
+				<float name="post_firing_aim_time_seconds" value="4" overrideParent="True" />
 			</group>
 			<group name="anim_table">
 				<string name="state_name" value="main_weapon_state" overrideParent="True" />
@@ -73,8 +74,8 @@
 			<group name="burst">
 				<bool name="can_burst" value="True" overrideParent="True" />
 				<group name="duration">
-					<float name="max" value="2.5" overrideParent="True" />
-					<float name="min" value="1.75" overrideParent="True" />
+					<float name="max" value="4" overrideParent="True" />
+					<float name="min" value="3.5" overrideParent="True" />
 				</group>
 				<group name="incremental_target_table">
 					<float name="accuracy_multiplier" value="1.25" overrideParent="True" />
@@ -95,8 +96,11 @@
 			</group>
 			<group name="cooldown">
 				<group name="duration">
-					<float name="max" value="2.5" overrideParent="True" />
-					<float name="min" value="2" overrideParent="True" />
+					<float name="max" value="1.5" overrideParent="True" />
+					<float name="min" value="1.5" overrideParent="True" />
+				</group>
+				<group name="duration_multiplier">
+					<float name="far" value="1.5" overrideParent="True" />
 				</group>
 			</group>
 			<group name="damage">
@@ -153,7 +157,7 @@
 				</group>
 			</group>
 			<group name="scatter">
-				<float name="angle_scatter" value="8" overrideParent="True" />
+				<float name="angle_scatter" value="3" overrideParent="True" />
 				<bool name="burst_pattern_enable" value="True" overrideParent="True" />
 				<float name="delay_bracket_change_chance" value="1" overrideParent="True" />
 				<float name="distance_bracket_count_ground" value="8" overrideParent="True" />
@@ -190,7 +194,7 @@
 					<float name="penetration_multiplier" value="1" overrideParent="True" />
 					<float name="suppression_multiplier" value="0.5" overrideParent="True" />
 				</group>
-				<float name="amount" value="0.0321" overrideParent="True" />
+				<float name="amount" value="0.04" overrideParent="True" />
 			</group>
 			<group name="tracking">
 				<float name="fire_cone_angle" value="5" overrideParent="True" />
@@ -198,18 +202,18 @@
 					<float name="max_down" value="-10" overrideParent="True" />
 					<float name="max_right" value="180" overrideParent="True" />
 					<float name="max_up" value="55" overrideParent="True" />
-					<float name="speed_horizontal" value="85" overrideParent="True" />
+					<float name="speed_horizontal" value="100" overrideParent="True" />
 					<float name="speed_vertical" value="35" overrideParent="True" />
 				</group>
 			</group>
 			<group name="penetration">
-				<float name="near" value="20" overrideParent="True" />
-				<float name="far" value="17" overrideParent="True" />
-				<float name="mid" value="18" overrideParent="True" />
+				<float name="near" value="16" overrideParent="True" />
+				<float name="far" value="12" overrideParent="True" />
+				<float name="mid" value="14" overrideParent="True" />
 			</group>
 			<enum name="weapon_class" value="cannon_burst" overrideParent="True" />
 			<list name="target_type_table">
-				<group name="target_unit_type_multipliers" List.ItemID="1760603985" List.ListAction="Append">
+				<group name="target_unit_type_multipliers" List.ItemID="104463718" List.ListAction="Append">
 					<enum name="unit_type" value="building" />
 					<group name="weapon_multipliers">
 						<float name="accuracy_multiplier" value="1" />
@@ -219,11 +223,11 @@
 					</group>
 					<float name="base_damage_modifier" value="0" />
 				</group>
-				<group name="target_unit_type_multipliers" List.ItemID="-1350510083" List.ListAction="Append">
+				<group name="target_unit_type_multipliers" List.ItemID="-1472481095" List.ListAction="Append">
 					<enum name="unit_type" value="aircraft" />
 					<group name="weapon_multipliers">
 						<float name="accuracy_multiplier" value="1.25" />
-						<float name="damage_multiplier" value="1.75" overrideParent="True" />
+						<float name="damage_multiplier" value="1.5" />
 						<float name="penetration_multiplier" value="5" />
 						<float name="suppression_multiplier" value="1" />
 					</group>
@@ -259,6 +263,7 @@
 					<float name="height_threshold" value="3.5" overrideParent="True" />
 				</group>
 			</group>
+			<float name="fx_tracer_speed" value="200" overrideParent="True" />
 		</group>
 		<uniqueid name="pbgid" value="198408" />
 		<instance_reference name="parent_pbg" value="weapon\common\parent\ballistic_parent" />
@@ -472,7 +477,7 @@
 			</group>
 			<enum name="weapon_class" value="cannon_burst" overrideParent="True" />
 			<list name="target_type_table">
-				<group name="target_unit_type_multipliers" List.ItemID="-1062463678" List.ListAction="Append">
+				<group name="target_unit_type_multipliers" List.ItemID="369649710" List.ListAction="Append">
 					<enum name="unit_type" value="building" />
 					<group name="weapon_multipliers">
 						<float name="accuracy_multiplier" value="1" />
@@ -482,7 +487,7 @@
 					</group>
 					<float name="base_damage_modifier" value="0" />
 				</group>
-				<group name="target_unit_type_multipliers" List.ItemID="1878703597" List.ListAction="Append">
+				<group name="target_unit_type_multipliers" List.ItemID="-2128301087" List.ListAction="Append">
 					<enum name="unit_type" value="aircraft" />
 					<group name="weapon_multipliers">
 						<float name="accuracy_multiplier" value="1.25" />

@@ -143,9 +143,9 @@
 				<group name="incremental_target_table">
 					<float name="accuracy_multiplier" value="1" />
 					<group name="search_radius">
-						<float name="far" value="8" />
-						<float name="near" value="4" />
-						<float name="mid" value="6" />
+						<float name="far" value="10" />
+						<float name="near" value="6" />
+						<float name="mid" value="8" />
 					</group>
 				</group>
 				<group name="rate_of_fire">
@@ -167,8 +167,8 @@
 			</group>
 			<group name="cooldown">
 				<group name="duration">
-					<float name="max" value="0.05" />
-					<float name="min" value="0.05" />
+					<float name="max" value="0.125" />
+					<float name="min" value="0.125" />
 				</group>
 				<group name="duration_multiplier">
 					<float name="near" value="1" />
@@ -178,8 +178,8 @@
 				<bool name="persistent_cooldownticks" value="False" />
 			</group>
 			<group name="damage">
-				<float name="max" value="20" />
-				<float name="min" value="20" />
+				<float name="max" value="15" />
+				<float name="min" value="15" />
 				<enum name="damage_type" value="True Damage" />
 				<bool name="allow_overkill" value="False" />
 				<list name="on_penetrated_state_trees">
@@ -190,8 +190,8 @@
 				</list>
 			</group>
 			<group name="deflection">
-				<float name="deflection_damage_multiplier" value="0.15" />
-				<bool name="has_deflection_damage" value="True" />
+				<float name="deflection_damage_multiplier" value="0" />
+				<bool name="has_deflection_damage" value="False" />
 			</group>
 			<group name="fire">
 				<float name="wind_down" value="0.25" />
@@ -251,7 +251,7 @@
 				<float name="midair_detonation_height" value="0" />
 			</group>
 			<group name="range">
-				<float name="max" value="45" />
+				<float name="max" value="40" />
 				<float name="min" value="0" />
 				<group name="distance">
 					<float name="near" value="10" />
@@ -343,7 +343,7 @@
 					<float name="max_left" value="-130" />
 					<float name="max_right" value="130" />
 					<float name="max_up" value="30" />
-					<float name="speed_horizontal" value="120" />
+					<float name="speed_horizontal" value="160" />
 					<float name="speed_vertical" value="60" />
 				</group>
 				<float name="pivot_end_time" value="0" />
@@ -372,12 +372,12 @@
 			<string name="fx_aoe_munition_name" value="" />
 			<string name="speech_code" value="" />
 			<list name="target_type_table">
-				<group name="target_unit_type_multipliers" List.ItemID="90469">
+				<group name="target_unit_type_multipliers" List.ItemID="1818655620">
 					<enum name="unit_type" value="aircraft" />
 					<group name="weapon_multipliers">
 						<float name="accuracy_multiplier" value="1" />
-						<float name="damage_multiplier" value="2" />
-						<float name="penetration_multiplier" value="1" />
+						<float name="damage_multiplier" value="1.5" />
+						<float name="penetration_multiplier" value="5" />
 						<float name="suppression_multiplier" value="1" />
 					</group>
 					<float name="base_damage_modifier" value="0" />
@@ -865,16 +865,6 @@
 			<string name="fx_aoe_munition_name" value="" />
 			<string name="speech_code" value="" />
 			<list name="target_type_table">
-				<group name="target_unit_type_multipliers" List.ItemID="-27597553">
-					<enum name="unit_type" value="aircraft" />
-					<group name="weapon_multipliers">
-						<float name="accuracy_multiplier" value="1" />
-						<float name="damage_multiplier" value="1" />
-						<float name="penetration_multiplier" value="1" />
-						<float name="suppression_multiplier" value="1" />
-					</group>
-					<float name="base_damage_modifier" value="0" />
-				</group>
 			</list>
 			<enum_table name="cover_table">
 				<template_reference name="tp_defcover" value="weapon_cover_info">

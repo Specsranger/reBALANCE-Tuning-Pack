@@ -209,7 +209,7 @@
 			</group>
 			<enum name="weapon_class" value="cannon_burst" overrideParent="True" />
 			<list name="target_type_table">
-				<group name="target_unit_type_multipliers" List.ItemID="660367424" List.ListAction="Append">
+				<group name="target_unit_type_multipliers" List.ItemID="1722386672" List.ListAction="Append">
 					<enum name="unit_type" value="building" />
 					<group name="weapon_multipliers">
 						<float name="accuracy_multiplier" value="1" />
@@ -219,7 +219,7 @@
 					</group>
 					<float name="base_damage_modifier" value="0" />
 				</group>
-				<group name="target_unit_type_multipliers" List.ItemID="-819216589" List.ListAction="Append">
+				<group name="target_unit_type_multipliers" List.ItemID="-1250774556" List.ListAction="Append">
 					<enum name="unit_type" value="aircraft" />
 					<group name="weapon_multipliers">
 						<float name="accuracy_multiplier" value="1.25" />
@@ -470,7 +470,7 @@
 			</group>
 			<enum name="weapon_class" value="cannon_burst" overrideParent="True" />
 			<list name="target_type_table">
-				<group name="target_unit_type_multipliers" List.ItemID="-314903989" List.ListAction="Append">
+				<group name="target_unit_type_multipliers" List.ItemID="-44781799" List.ListAction="Append">
 					<enum name="unit_type" value="building" />
 					<group name="weapon_multipliers">
 						<float name="accuracy_multiplier" value="1" />
@@ -480,7 +480,7 @@
 					</group>
 					<float name="base_damage_modifier" value="0" />
 				</group>
-				<group name="target_unit_type_multipliers" List.ItemID="831318991" List.ListAction="Append">
+				<group name="target_unit_type_multipliers" List.ItemID="-1698741361" List.ListAction="Append">
 					<enum name="unit_type" value="aircraft" />
 					<group name="weapon_multipliers">
 						<float name="accuracy_multiplier" value="1.25" />

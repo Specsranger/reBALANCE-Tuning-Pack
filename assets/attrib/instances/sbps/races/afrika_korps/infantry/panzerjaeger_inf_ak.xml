@@ -176,7 +176,7 @@
 			</template_reference>
 			<template_reference name="squadexts" value="sbpextensions\squad_inventory_ext" List.ItemID="1456194728" List.ParentItemID="1456194728">
 				<enum_table name="category_capacity">
-					<int name="special" value="3" overrideParent="True" />
+					<int name="special" value="2" overrideParent="True" />
 				</enum_table>
 				<float name="pick_up_reach" value="3" overrideParent="True" />
 			</template_reference>

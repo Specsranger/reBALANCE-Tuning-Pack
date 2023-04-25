@@ -1,8 +1,8 @@
 <instance version="5" description="" template="abilities">
 	<variant name="default">
 		<group name="ability_bag">
-			<enum name="activation" value="targeted" />
-			<bool name="can_target_in_fow" value="True" />
+			<enum name="activation" value="toggle" />
+			<bool name="can_target_in_fow" value="False" />
 			<float name="caster_close_in_distance" value="0" />
 			<bool name="casters_can_evacuate" value="False" />
 			<enum_table name="cost_to_player">
@@ -11,7 +11,7 @@
 				<float name="popcap" value="0" />
 				<float name="fuel" value="0" />
 				<float name="munition" value="0" />
-				<float name="manpower" value="50" />
+				<float name="manpower" value="0" />
 				<float name="requisition" value="0" />
 				<float name="ultimate" value="0" />
 			</enum_table>
@@ -30,35 +30,35 @@
 			<bool name="garrison_target" value="False" />
 			<bool name="initial_recharge" value="False" />
 			<bool name="move_back" value="False" />
-			<float name="move_back_distance" value="0" />
-			<float name="range" value="20" />
+			<float name="move_back_distance" value="10" />
+			<float name="range" value="30" />
 			<bool name="range_ignore" value="False" />
-			<float name="recharge_time" value="30" />
+			<float name="recharge_time" value="0" />
 			<bool name="refundable" value="True" />
 			<bool name="require_no_shot_block" value="False" />
 			<enum name="shared_timer" value="" />
 			<bool name="shared_timer_player_wide" value="False" />
-			<enum name="squad_caster" value="squad" />
-			<enum name="target" value="tp_entity" />
+			<enum name="squad_caster" value="one_entity" />
+			<enum name="target" value="tp_squad" />
 			<float name="toggled_recharge_time_off" value="0" />
 			<float name="toggled_recharge_time_on" value="0" />
 			<group name="ui_cursor">
-				<string name="cursor_bad" value="modal_ability_cancel" />
-				<string name="cursor_good" value="modal_ability" />
-				<string name="cursor_nonmodal_good" value="modal_ability" />
+				<string name="cursor_bad" value="" />
+				<string name="cursor_good" value="modal_reinforce" />
+				<string name="cursor_nonmodal_good" value="" />
 			</group>
 			<group name="ui_info">
-				<locstring name="extra_text" value="0" />
-				<locstring name="help_text" value="11239537" />
-				<string name="hotkey_name" value="W" />
-				<file name="icon_name" value="races\common\abilities\recrew_weapon" />
+				<locstring name="extra_text" value="11215090" />
+				<locstring name="help_text" value="11225081" />
+				<string name="hotkey_name" value="a" />
+				<file name="icon_name" value="races\common\abilities\handbrake_off" />
 				<string name="overlay_name" value="" />
 				<bool name="reveal_for_decryption" value="False" />
-				<locstring name="screen_name" value="11198127" />
-				<file name="icon_alternate_name" value="" />
-				<locstring name="brief_text" value="11240384" />
+				<locstring name="screen_name" value="11220530" />
+				<file name="icon_alternate_name" value="races\common\abilities\handbrake_on" />
+				<locstring name="brief_text" value="11220535" />
 				<locstring name="help_text_alternate" value="0" />
-				<locstring name="screen_name_alternate" value="11158242" />
+				<locstring name="screen_name_alternate" value="11220531" />
 				<locstring name="screen_name_short" value="0" />
 				<string name="debug_text" value="" />
 				<string name="tooltip_data_template" value="" />
@@ -81,116 +81,21 @@
 				<string name="sound" value="" />
 				<string name="sound_alternative" value="" />
 			</group>
+			<list name="ui_contextual_info">
+			</list>
 			<locstring name="ui_usage_txt" value="0" />
 			<bool name="validate_actions" value="True" />
 			<list name="requirements">
-				<template_reference name="required" value="requirements\required_squad_upgrade" List.ItemID="-1030614949">
-					<enum name="reason" value="usage" />
-					<locstring name="ui_name" value="0" />
-					<bool name="include_completed" value="True" />
-					<bool name="include_queued" value="False" />
-					<bool name="is_present" value="False" />
-					<instance_reference name="upgrade_name" value="upgrade\american\vehicle\hmg_quadmount_halftrack_us" />
-					<int name="min_completed" value="1" />
-					<int name="max_completed" value="100" />
-					<group name="include_pbg_parenting">
-						<bool name="include_child_pbgs" value="False" />
-						<bool name="include_parent_pbgs" value="False" />
-					</group>
-				</template_reference>
-				<template_reference name="required" value="requirements\required_squad_upgrade" List.ItemID="1775472929">
-					<enum name="reason" value="usage" />
-					<locstring name="ui_name" value="0" />
-					<bool name="include_completed" value="True" />
-					<bool name="include_queued" value="False" />
-					<bool name="is_present" value="False" />
-					<instance_reference name="upgrade_name" value="upgrade\american\vehicle\75mm_halftrack_us" />
-					<int name="min_completed" value="1" />
-					<int name="max_completed" value="100" />
-					<group name="include_pbg_parenting">
-						<bool name="include_child_pbgs" value="False" />
-						<bool name="include_parent_pbgs" value="False" />
-					</group>
-				</template_reference>
-				<template_reference name="required" value="requirements\required_squad_upgrade" List.ItemID="952806727">
-					<enum name="reason" value="usage" />
-					<locstring name="ui_name" value="0" />
-					<bool name="include_completed" value="True" />
-					<bool name="include_queued" value="False" />
-					<bool name="is_present" value="False" />
-					<instance_reference name="upgrade_name" value="upgrade\german\vehicle\stummel_halftrack_ger" />
-					<int name="min_completed" value="1" />
-					<int name="max_completed" value="100" />
-					<group name="include_pbg_parenting">
-						<bool name="include_child_pbgs" value="False" />
-						<bool name="include_parent_pbgs" value="False" />
-					</group>
-				</template_reference>
-				<template_reference name="required" value="requirements\required_not" List.ItemID="-414199524">
-					<enum name="reason" value="usage_and_display" />
-					<locstring name="ui_name" value="0" />
-					<list name="requirement_table">
-						<template_reference name="required" value="requirements\required_unit_type" List.ItemID="474286473">
-							<enum name="reason" value="usage_and_display" />
-							<locstring name="ui_name" value="0" />
-							<enum name="unit_type" value="upgraded_halftrack" />
-							<template_reference name="qualify_option" value="options\none">
-							</template_reference>
-							<bool name="search_load_out" value="False" />
-						</template_reference>
-					</list>
-				</template_reference>
-				<template_reference name="required" value="requirements\required_population" List.ItemID="-810471478">
-					<enum name="reason" value="usage" />
-					<group name="free_pop">
-						<float name="medic" value="-1" />
-						<float name="personnel" value="2" />
-						<float name="vehicle" value="-1" />
-					</group>
-				</template_reference>
-				<template_reference name="required" value="requirements\required_not" List.ItemID="953670613">
-					<enum name="reason" value="usage" />
-					<locstring name="ui_name" value="0" />
-					<list name="requirement_table">
-						<template_reference name="required" value="requirements\required_in_state" List.ItemID="1757581608">
-							<enum name="reason" value="usage" />
-							<locstring name="ui_name" value="34" mod="9239c1ca0dd047c28f698b95e2071674" />
-							<float name="was_attacked_within_seconds" value="6" />
-							<list name="check_states">
-							</list>
-							<float name="was_attacking_within_seconds" value="6" />
-						</template_reference>
-					</list>
-				</template_reference>
-				<template_reference name="required" value="requirements\required_not" List.ItemID="2057547337">
-					<enum name="reason" value="usage" />
-					<locstring name="ui_name" value="0" />
-					<list name="requirement_table">
-						<template_reference name="required" value="requirements\required_near_entity" List.ItemID="1184590215">
-							<enum name="reason" value="usage" />
-							<locstring name="ui_name" value="33" mod="9239c1ca0dd047c28f698b95e2071674" />
-							<list name="near_entity_requirement">
-							</list>
-							<template_reference name="area_option" value="options\area_info_options\circle_area_option">
-								<float name="outer_radius" value="35" />
-								<float name="inner_radius" value="0" />
-								<bool name="is_two_dimensional" value="True" />
-								<enum name="dynamic_radius_type" value="fixed" />
-							</template_reference>
-							<enum name="nearby_collision_filter" value="executing_player" />
-						</template_reference>
-					</list>
-				</template_reference>
 			</list>
 			<enum name="ability_super" value="tp_none" />
 			<group name="ui_position">
-				<int name="ui_position_row" value="3" />
-				<int name="ui_position_column" value="1" />
+				<int name="ui_position_row" value="2" />
+				<int name="ui_position_column" value="4" />
 			</group>
-			<bool name="ui_mini_map_capture" value="True" />
+			<bool name="ui_mini_map_capture" value="False" />
 			<bool name="facing_ignore_during_active" value="False" />
 			<instance_reference name="ui_range" value="ui_reticule\ability_range_default" />
-			<instance_reference name="ui_reticule" value="ui_reticule\ability_reticule_attack" />
+			<instance_reference name="ui_reticule" value="" />
 			<float name="ui_reticule_radius_min" value="1" />
 			<float name="ui_reticule_radius_max" value="1" />
 			<enum name="pending_ability_out_of_range_behaviour" value="chase" />
@@ -207,32 +112,6 @@
 			</enum_table>
 			<enum name="ui_group_cast_type" value="single" />
 			<list name="requirements_target">
-				<template_reference name="required" value="requirements\required_is_being_towed" List.ItemID="-1467592671">
-					<bool name="compare_to_value" value="False" />
-					<enum name="reason" value="usage_and_display" />
-				</template_reference>
-				<template_reference name="required" value="requirements\required_any_in_list" List.ItemID="72284584">
-					<enum name="reason" value="usage" />
-					<locstring name="ui_name" value="11232877" />
-					<list name="requirements">
-						<template_reference name="requirement" value="requirements\required_unit_type" List.ItemID="-153672266">
-							<enum name="reason" value="usage" />
-							<locstring name="ui_name" value="0" />
-							<enum name="unit_type" value="team_weapon" />
-							<template_reference name="qualify_option" value="options\none">
-							</template_reference>
-							<bool name="search_load_out" value="False" />
-						</template_reference>
-						<template_reference name="requirement" value="requirements\required_unit_type" List.ItemID="228555236">
-							<enum name="reason" value="usage" />
-							<locstring name="ui_name" value="0" />
-							<enum name="unit_type" value="emplacement" />
-							<template_reference name="qualify_option" value="options\none">
-							</template_reference>
-							<bool name="search_load_out" value="False" />
-						</template_reference>
-					</list>
-				</template_reference>
 			</list>
 			<template_reference name="targeted_ability_option" value="options\none">
 			</template_reference>
@@ -254,11 +133,11 @@
 			</enum_table>
 			<bool name="ability_super_event_cue" value="False" />
 			<enum name="ui_progress_bar_type" value="no_bar" />
-			<enum name="ui_ability_issue_type" value="DefaultAction" />
+			<enum name="ui_ability_issue_type" value="Normal" />
 			<string name="speech_code" value="" />
 			<template_reference name="channeling" value="options\none">
 			</template_reference>
-			<bool name="can_be_interrupted" value="True" />
+			<bool name="can_be_interrupted" value="False" />
 			<template_reference name="casting_option" value="options\none">
 			</template_reference>
 			<template_reference name="proxy_range_option" value="options\none">
@@ -270,30 +149,28 @@
 			<instance_reference name="construction_preview_override" value="" />
 			<enum name="statetree_ability_id" value="" />
 			<bool name="construction_preview" value="False" />
-			<state_tree_node name="entity_tree" value="" />
+			<bool name="show_range_reticule_in_contruction_item_preview" value="False" />
+			<state_tree_node name="statetree_node_prereq_self_requirement" value="" />
+			<state_tree_node name="statetree_node_prereq_target_requirement" value="" />
+			<state_tree_node name="statetree_node_prereq_self_recharge_requirement" value="" />
+			<state_tree_node name="entity_tree" value="vehicle_apply_handbrake" />
 			<state_tree_node name="squad_tree" value="" />
 			<group name="ability_active_state_tree_group">
-				<state_tree_node name="ability_activate_squad_tree" value="recrew_team_weapon_halftrack_us" />
+				<state_tree_node name="ability_activate_squad_tree" value="" />
 				<state_tree_node name="ability_activate_entity_tree" value="" />
 				<state_tree_node name="ability_activate_deferred_tree" value="" />
 			</group>
-			<state_tree_node name="statetree_node_prereq_self_requirement" value="" />
-			<state_tree_node name="statetree_node_prereq_target_requirement" value="recrew_team_weapon_halftrack_us\global_library\target_requirement\target_requirement" />
-			<state_tree_node name="statetree_node_prereq_self_recharge_requirement" value="" />
 			<float name="hold_period" value="0" />
-			<float name="min_range" value="0" />
 			<bool name="clear_ability_on_blueprint_conversion" value="True" />
+			<float name="min_range" value="0" />
 			<instance_reference name="ability_description" value="" />
 			<enum name="ability_description_storage_index" value="" />
-			<int name="default_command_weight_modifier" value="1" />
+			<int name="default_command_weight_modifier" value="0" />
 			<state_tree_node name="global_tree" value="" />
 			<bool name="ui_visibility_ignore_prerequisite" value="False" />
 			<bool name="use_simbox_to_simbox_range" value="True" />
 			<bool name="ui_range_reticule_shows_while_active" value="False" />
 			<bool name="can_move_to_cast" value="True" />
-			<list name="ui_contextual_info">
-			</list>
-			<bool name="show_range_reticule_in_contruction_item_preview" value="False" />
 			<string name="toggle_ability_group" value="" />
 			<instance_reference name="projectile_for_preview" value="" />
 			<bool name="ui_ability_can_display" value="True" />
@@ -333,7 +210,7 @@
 			<state_tree_node name="statetree_node_prereq_entity_target_filter" value="" />
 			<state_tree_node name="statetree_node_prereq_entity_target_default_command_filter" value="" />
 		</group>
-		<uniqueid name="pbgid" value="1374913" />
+		<uniqueid name="pbgid" value="2072141" />
 		<instance_reference name="parent_pbg" value="" />
 		<template_reference name="custom_properties" value="custom_property_template">
 			<list name="custom_bool_properties">
@@ -366,8 +243,8 @@
 	</variant>
 	<variant name="sp">
 		<group name="ability_bag">
-			<enum name="activation" value="targeted" />
-			<bool name="can_target_in_fow" value="True" />
+			<enum name="activation" value="toggle" />
+			<bool name="can_target_in_fow" value="False" />
 			<float name="caster_close_in_distance" value="0" />
 			<bool name="casters_can_evacuate" value="False" />
 			<enum_table name="cost_to_player">
@@ -376,7 +253,7 @@
 				<float name="popcap" value="0" />
 				<float name="fuel" value="0" />
 				<float name="munition" value="0" />
-				<float name="manpower" value="50" />
+				<float name="manpower" value="0" />
 				<float name="requisition" value="0" />
 				<float name="ultimate" value="0" />
 			</enum_table>
@@ -395,35 +272,35 @@
 			<bool name="garrison_target" value="False" />
 			<bool name="initial_recharge" value="False" />
 			<bool name="move_back" value="False" />
-			<float name="move_back_distance" value="0" />
-			<float name="range" value="20" />
+			<float name="move_back_distance" value="10" />
+			<float name="range" value="30" />
 			<bool name="range_ignore" value="False" />
-			<float name="recharge_time" value="30" />
+			<float name="recharge_time" value="0" />
 			<bool name="refundable" value="True" />
 			<bool name="require_no_shot_block" value="False" />
 			<enum name="shared_timer" value="" />
 			<bool name="shared_timer_player_wide" value="False" />
-			<enum name="squad_caster" value="squad" />
-			<enum name="target" value="tp_entity" />
+			<enum name="squad_caster" value="one_entity" />
+			<enum name="target" value="tp_squad" />
 			<float name="toggled_recharge_time_off" value="0" />
 			<float name="toggled_recharge_time_on" value="0" />
 			<group name="ui_cursor">
-				<string name="cursor_bad" value="modal_ability_cancel" />
-				<string name="cursor_good" value="modal_ability" />
-				<string name="cursor_nonmodal_good" value="modal_ability" />
+				<string name="cursor_bad" value="" />
+				<string name="cursor_good" value="modal_reinforce" />
+				<string name="cursor_nonmodal_good" value="" />
 			</group>
 			<group name="ui_info">
-				<locstring name="extra_text" value="0" />
-				<locstring name="help_text" value="11239537" />
-				<string name="hotkey_name" value="W" />
-				<file name="icon_name" value="races\common\abilities\recrew_weapon" />
+				<locstring name="extra_text" value="11215090" />
+				<locstring name="help_text" value="11225081" />
+				<string name="hotkey_name" value="a" />
+				<file name="icon_name" value="races\common\abilities\handbrake_off" />
 				<string name="overlay_name" value="" />
 				<bool name="reveal_for_decryption" value="False" />
-				<locstring name="screen_name" value="11198127" />
-				<file name="icon_alternate_name" value="" />
-				<locstring name="brief_text" value="11240384" />
+				<locstring name="screen_name" value="11220530" />
+				<file name="icon_alternate_name" value="races\common\abilities\handbrake_on" />
+				<locstring name="brief_text" value="11220535" />
 				<locstring name="help_text_alternate" value="0" />
-				<locstring name="screen_name_alternate" value="11158242" />
+				<locstring name="screen_name_alternate" value="11220531" />
 				<locstring name="screen_name_short" value="0" />
 				<string name="debug_text" value="" />
 				<string name="tooltip_data_template" value="" />
@@ -446,116 +323,21 @@
 				<string name="sound" value="" />
 				<string name="sound_alternative" value="" />
 			</group>
+			<list name="ui_contextual_info">
+			</list>
 			<locstring name="ui_usage_txt" value="0" />
 			<bool name="validate_actions" value="True" />
 			<list name="requirements">
-				<template_reference name="required" value="requirements\required_squad_upgrade" List.ItemID="2021759939">
-					<enum name="reason" value="usage" />
-					<locstring name="ui_name" value="0" />
-					<bool name="include_completed" value="True" />
-					<bool name="include_queued" value="False" />
-					<bool name="is_present" value="False" />
-					<instance_reference name="upgrade_name" value="upgrade\american\vehicle\hmg_quadmount_halftrack_us" />
-					<int name="min_completed" value="1" />
-					<int name="max_completed" value="100" />
-					<group name="include_pbg_parenting">
-						<bool name="include_child_pbgs" value="False" />
-						<bool name="include_parent_pbgs" value="False" />
-					</group>
-				</template_reference>
-				<template_reference name="required" value="requirements\required_squad_upgrade" List.ItemID="-928175554">
-					<enum name="reason" value="usage" />
-					<locstring name="ui_name" value="0" />
-					<bool name="include_completed" value="True" />
-					<bool name="include_queued" value="False" />
-					<bool name="is_present" value="False" />
-					<instance_reference name="upgrade_name" value="upgrade\american\vehicle\75mm_halftrack_us" />
-					<int name="min_completed" value="1" />
-					<int name="max_completed" value="100" />
-					<group name="include_pbg_parenting">
-						<bool name="include_child_pbgs" value="False" />
-						<bool name="include_parent_pbgs" value="False" />
-					</group>
-				</template_reference>
-				<template_reference name="required" value="requirements\required_squad_upgrade" List.ItemID="1612355488">
-					<enum name="reason" value="usage" />
-					<locstring name="ui_name" value="0" />
-					<bool name="include_completed" value="True" />
-					<bool name="include_queued" value="False" />
-					<bool name="is_present" value="False" />
-					<instance_reference name="upgrade_name" value="upgrade\german\vehicle\stummel_halftrack_ger" />
-					<int name="min_completed" value="1" />
-					<int name="max_completed" value="100" />
-					<group name="include_pbg_parenting">
-						<bool name="include_child_pbgs" value="False" />
-						<bool name="include_parent_pbgs" value="False" />
-					</group>
-				</template_reference>
-				<template_reference name="required" value="requirements\required_not" List.ItemID="2116395368">
-					<enum name="reason" value="usage_and_display" />
-					<locstring name="ui_name" value="0" />
-					<list name="requirement_table">
-						<template_reference name="required" value="requirements\required_unit_type" List.ItemID="-286742324">
-							<enum name="reason" value="usage_and_display" />
-							<locstring name="ui_name" value="0" />
-							<enum name="unit_type" value="upgraded_halftrack" />
-							<template_reference name="qualify_option" value="options\none">
-							</template_reference>
-							<bool name="search_load_out" value="False" />
-						</template_reference>
-					</list>
-				</template_reference>
-				<template_reference name="required" value="requirements\required_population" List.ItemID="1410392194">
-					<enum name="reason" value="usage" />
-					<group name="free_pop">
-						<float name="medic" value="-1" />
-						<float name="personnel" value="2" />
-						<float name="vehicle" value="-1" />
-					</group>
-				</template_reference>
-				<template_reference name="required" value="requirements\required_not" List.ItemID="-995720032">
-					<enum name="reason" value="usage" />
-					<locstring name="ui_name" value="0" />
-					<list name="requirement_table">
-						<template_reference name="required" value="requirements\required_in_state" List.ItemID="892384587">
-							<enum name="reason" value="usage" />
-							<locstring name="ui_name" value="0" />
-							<float name="was_attacked_within_seconds" value="-1" />
-							<list name="check_states">
-							</list>
-							<float name="was_attacking_within_seconds" value="-1" />
-						</template_reference>
-					</list>
-				</template_reference>
-				<template_reference name="required" value="requirements\required_not" List.ItemID="1521306474">
-					<enum name="reason" value="usage" />
-					<locstring name="ui_name" value="0" />
-					<list name="requirement_table">
-						<template_reference name="required" value="requirements\required_near_entity" List.ItemID="-1539046466">
-							<enum name="reason" value="usage" />
-							<locstring name="ui_name" value="0" />
-							<list name="near_entity_requirement">
-							</list>
-							<template_reference name="area_option" value="options\area_info_options\circle_area_option">
-								<float name="outer_radius" value="0" />
-								<float name="inner_radius" value="0" />
-								<bool name="is_two_dimensional" value="True" />
-								<enum name="dynamic_radius_type" value="fixed" />
-							</template_reference>
-							<enum name="nearby_collision_filter" value="all" />
-						</template_reference>
-					</list>
-				</template_reference>
 			</list>
 			<enum name="ability_super" value="tp_none" />
 			<group name="ui_position">
-				<int name="ui_position_row" value="3" />
-				<int name="ui_position_column" value="1" />
+				<int name="ui_position_row" value="2" />
+				<int name="ui_position_column" value="2" />
 			</group>
-			<bool name="ui_mini_map_capture" value="True" />
+			<bool name="ui_mini_map_capture" value="False" />
 			<bool name="facing_ignore_during_active" value="False" />
 			<instance_reference name="ui_range" value="ui_reticule\ability_range_default" />
-			<instance_reference name="ui_reticule" value="ui_reticule\ability_reticule_attack" />
+			<instance_reference name="ui_reticule" value="" />
 			<float name="ui_reticule_radius_min" value="1" />
 			<float name="ui_reticule_radius_max" value="1" />
 			<enum name="pending_ability_out_of_range_behaviour" value="chase" />
@@ -572,32 +354,6 @@
 			</enum_table>
 			<enum name="ui_group_cast_type" value="single" />
 			<list name="requirements_target">
-				<template_reference name="required" value="requirements\required_is_being_towed" List.ItemID="1233959208">
-					<bool name="compare_to_value" value="False" />
-					<enum name="reason" value="usage_and_display" />
-				</template_reference>
-				<template_reference name="required" value="requirements\required_any_in_list" List.ItemID="1117757000">
-					<enum name="reason" value="usage" />
-					<locstring name="ui_name" value="11232877" />
-					<list name="requirements">
-						<template_reference name="requirement" value="requirements\required_unit_type" List.ItemID="183606146">
-							<enum name="reason" value="usage" />
-							<locstring name="ui_name" value="0" />
-							<enum name="unit_type" value="team_weapon" />
-							<template_reference name="qualify_option" value="options\none">
-							</template_reference>
-							<bool name="search_load_out" value="False" />
-						</template_reference>
-						<template_reference name="requirement" value="requirements\required_unit_type" List.ItemID="-1353380564">
-							<enum name="reason" value="usage" />
-							<locstring name="ui_name" value="0" />
-							<enum name="unit_type" value="emplacement" />
-							<template_reference name="qualify_option" value="options\none">
-							</template_reference>
-							<bool name="search_load_out" value="False" />
-						</template_reference>
-					</list>
-				</template_reference>
 			</list>
 			<template_reference name="targeted_ability_option" value="options\none">
 			</template_reference>
@@ -619,11 +375,11 @@
 			</enum_table>
 			<bool name="ability_super_event_cue" value="False" />
 			<enum name="ui_progress_bar_type" value="no_bar" />
-			<enum name="ui_ability_issue_type" value="DefaultAction" />
+			<enum name="ui_ability_issue_type" value="Normal" />
 			<string name="speech_code" value="" />
 			<template_reference name="channeling" value="options\none">
 			</template_reference>
-			<bool name="can_be_interrupted" value="True" />
+			<bool name="can_be_interrupted" value="False" />
 			<template_reference name="casting_option" value="options\none">
 			</template_reference>
 			<template_reference name="proxy_range_option" value="options\none">
@@ -635,30 +391,28 @@
 			<instance_reference name="construction_preview_override" value="" />
 			<enum name="statetree_ability_id" value="" />
 			<bool name="construction_preview" value="False" />
-			<state_tree_node name="entity_tree" value="" />
+			<bool name="show_range_reticule_in_contruction_item_preview" value="False" />
+			<state_tree_node name="statetree_node_prereq_self_requirement" value="" />
+			<state_tree_node name="statetree_node_prereq_target_requirement" value="" />
+			<state_tree_node name="statetree_node_prereq_self_recharge_requirement" value="" />
+			<state_tree_node name="entity_tree" value="sp_vehicle_apply_handbrake" />
 			<state_tree_node name="squad_tree" value="" />
 			<group name="ability_active_state_tree_group">
-				<state_tree_node name="ability_activate_squad_tree" value="sp_recrew_team_weapon_halftrack_us" />
+				<state_tree_node name="ability_activate_squad_tree" value="" />
 				<state_tree_node name="ability_activate_entity_tree" value="" />
 				<state_tree_node name="ability_activate_deferred_tree" value="" />
 			</group>
-			<state_tree_node name="statetree_node_prereq_self_requirement" value="" />
-			<state_tree_node name="statetree_node_prereq_target_requirement" value="sp_recrew_team_weapon_halftrack_us\global_library\target_requirement\target_requirement" />
-			<state_tree_node name="statetree_node_prereq_self_recharge_requirement" value="" />
 			<float name="hold_period" value="0" />
-			<float name="min_range" value="0" />
 			<bool name="clear_ability_on_blueprint_conversion" value="True" />
+			<float name="min_range" value="0" />
 			<instance_reference name="ability_description" value="" />
 			<enum name="ability_description_storage_index" value="" />
-			<int name="default_command_weight_modifier" value="1" />
+			<int name="default_command_weight_modifier" value="0" />
 			<state_tree_node name="global_tree" value="" />
 			<bool name="ui_visibility_ignore_prerequisite" value="False" />
 			<bool name="use_simbox_to_simbox_range" value="True" />
 			<bool name="ui_range_reticule_shows_while_active" value="False" />
 			<bool name="can_move_to_cast" value="True" />
-			<list name="ui_contextual_info">
-			</list>
-			<bool name="show_range_reticule_in_contruction_item_preview" value="False" />
 			<string name="toggle_ability_group" value="" />
 			<instance_reference name="projectile_for_preview" value="" />
 			<bool name="ui_ability_can_display" value="True" />
@@ -698,7 +452,7 @@
 			<state_tree_node name="statetree_node_prereq_entity_target_filter" value="" />
 			<state_tree_node name="statetree_node_prereq_entity_target_default_command_filter" value="" />
 		</group>
-		<uniqueid name="pbgid" value="1374913" />
+		<uniqueid name="pbgid" value="2072141" />
 		<instance_reference name="parent_pbg" value="" />
 		<template_reference name="custom_properties" value="custom_property_template">
 			<list name="custom_bool_properties">
