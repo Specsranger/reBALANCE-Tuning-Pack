@@ -284,7 +284,7 @@
 					</group>
 					<group name="race_mapping" List.ItemID="693474" List.ListAction="Append">
 						<instance_reference name="race_key" value="racebps\germans" overrideParent="True" />
-						<instance_reference name="presentation_entity_override" value="ebps\races\german\vehicles\armored_car_ger" overrideParent="True" />
+						<instance_reference name="presentation_entity_override" value="ebps\races\german\vehicles\armored_car_ger" mod="9239c1ca0dd047c28f698b95e2071674" overrideParent="True" />
 						<instance_reference name="presentation_squad_override" value="sbps\races\german\vehicles\armored_car_ger" overrideParent="True" />
 					</group>
 				</list>
@@ -578,7 +578,7 @@
 					</group>
 					<group name="race_mapping" List.ItemID="856151362" List.ListAction="Append">
 						<instance_reference name="race_key" value="racebps\germans" overrideParent="True" />
-						<instance_reference name="presentation_entity_override" value="ebps\races\german\vehicles\armored_car_ger" overrideParent="True" />
+						<instance_reference name="presentation_entity_override" value="ebps\races\german\vehicles\armored_car_ger" mod="9239c1ca0dd047c28f698b95e2071674" overrideParent="True" />
 						<instance_reference name="presentation_squad_override" value="sbps\races\german\vehicles\armored_car_ger" overrideParent="True" />
 					</group>
 				</list>

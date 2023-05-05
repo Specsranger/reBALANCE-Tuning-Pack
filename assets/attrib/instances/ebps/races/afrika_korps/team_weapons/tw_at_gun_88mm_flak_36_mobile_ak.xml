@@ -851,7 +851,7 @@
 				<bool name="is_cover_directional" value="True" />
 				<bool name="is_shoot_through" value="False" />
 				<bool name="use_simbox_range" value="True" />
-				<bool name="absorb_explosions" value="False" />
+				<bool name="absorb_explosions" value="True" />
 				<bool name="generate_cover_spots" value="True" />
 				<bool name="absorb_non_damaging_shots_and_their_on_penetrated_actions" value="False" />
 				<template_reference name="additional_sim_box_option" value="options\none">

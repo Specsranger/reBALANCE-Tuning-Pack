@@ -341,7 +341,7 @@
 					</group>
 					<group name="race_mapping" overrideParent="True" List.ItemID="1157565577" List.ListAction="Append">
 						<instance_reference name="race_key" value="racebps\germans" />
-						<instance_reference name="presentation_entity_override" value="ebps\races\german\vehicles\panzer_iv_ger" />
+						<instance_reference name="presentation_entity_override" value="ebps\races\german\vehicles\panzer_iv_ger" mod="9239c1ca0dd047c28f698b95e2071674" />
 						<instance_reference name="presentation_squad_override" value="sbps\races\german\vehicles\panzer_iv_ger" />
 					</group>
 				</list>
@@ -723,7 +723,7 @@
 					</group>
 					<group name="race_mapping" overrideParent="True" List.ItemID="715806086" List.ListAction="Append">
 						<instance_reference name="race_key" value="racebps\germans" />
-						<instance_reference name="presentation_entity_override" value="ebps\races\german\vehicles\panzer_iv_ger" />
+						<instance_reference name="presentation_entity_override" value="ebps\races\german\vehicles\panzer_iv_ger" mod="9239c1ca0dd047c28f698b95e2071674" />
 						<instance_reference name="presentation_squad_override" value="sbps\races\german\vehicles\panzer_iv_ger" />
 					</group>
 				</list>

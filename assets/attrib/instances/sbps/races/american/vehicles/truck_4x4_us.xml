@@ -30,7 +30,7 @@
 			<template_reference name="squadexts" value="sbpextensions\squad_loadout_ext" List.ItemID="-1664135055" List.ParentItemID="-1664135055">
 				<list name="unit_list">
 					<group name="loadout_data" List.ItemID="-226045775" List.ParentItemID="-226045775">
-						<instance_reference name="type" value="ebps\races\american\vehicles\truck_4x4_us" overrideParent="True" />
+						<instance_reference name="type" value="ebps\races\american\vehicles\truck_4x4_us" mod="9239c1ca0dd047c28f698b95e2071674" overrideParent="True" />
 					</group>
 				</list>
 			</template_reference>
@@ -282,7 +282,7 @@
 			<template_reference name="squadexts" value="sbpextensions\squad_loadout_ext" List.ItemID="-1664135055" List.ParentItemID="-1664135055">
 				<list name="unit_list">
 					<group name="loadout_data" List.ItemID="-226045775" List.ParentItemID="-226045775">
-						<instance_reference name="type" value="ebps\races\american\vehicles\truck_4x4_us" overrideParent="True" />
+						<instance_reference name="type" value="ebps\races\american\vehicles\truck_4x4_us" mod="9239c1ca0dd047c28f698b95e2071674" overrideParent="True" />
 					</group>
 				</list>
 			</template_reference>

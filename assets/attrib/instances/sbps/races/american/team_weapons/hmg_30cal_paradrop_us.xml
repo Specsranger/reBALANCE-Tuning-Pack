@@ -17,7 +17,7 @@
 			<template_reference name="squadexts" value="sbpextensions\squad_loadout_ext" List.ItemID="-1528023562" List.ParentItemID="-1528023562">
 				<list name="unit_list">
 					<group name="loadout_data" List.ItemID="325174559" List.ParentItemID="325174559">
-						<instance_reference name="type" value="ebps\races\american\weapons\small_arms\machine_guns\heavy_machine_gun\w_30cal_hmg_us" overrideParent="True" />
+						<instance_reference name="type" value="ebps\races\american\weapons\small_arms\machine_guns\heavy_machine_gun\w_30cal_hmg_us" mod="9239c1ca0dd047c28f698b95e2071674" overrideParent="True" />
 					</group>
 					<group name="loadout_data" List.ItemID="86213419" List.ParentItemID="86213419">
 						<instance_reference name="type" value="ebps\races\american\infantry\crew_hmg_us" overrideParent="True" />
@@ -106,7 +106,7 @@
 			<template_reference name="squadexts" value="sbpextensions\squad_loadout_ext" List.ItemID="-1528023562" List.ParentItemID="-1528023562">
 				<list name="unit_list">
 					<group name="loadout_data" List.ItemID="325174559" List.ParentItemID="325174559">
-						<instance_reference name="type" value="ebps\races\american\weapons\small_arms\machine_guns\heavy_machine_gun\w_30cal_hmg_us" overrideParent="True" />
+						<instance_reference name="type" value="ebps\races\american\weapons\small_arms\machine_guns\heavy_machine_gun\w_30cal_hmg_us" mod="9239c1ca0dd047c28f698b95e2071674" overrideParent="True" />
 					</group>
 					<group name="loadout_data" List.ItemID="86213419" List.ParentItemID="86213419">
 						<instance_reference name="type" value="ebps\races\american\infantry\crew_hmg_us" overrideParent="True" />

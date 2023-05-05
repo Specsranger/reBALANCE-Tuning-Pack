@@ -119,7 +119,7 @@
 					<bool name="include_completed" value="True" />
 					<bool name="include_queued" value="False" />
 					<bool name="is_present" value="False" />
-					<instance_reference name="upgrade_name" value="upgrade\british_africa\infantry\lmg_bren_tommy_africa_uk" />
+					<instance_reference name="upgrade_name" value="upgrade\british_africa\infantry\lmg_bren_tommy_africa_uk" mod="9239c1ca0dd047c28f698b95e2071674" />
 					<int name="min_completed" value="1" />
 					<int name="max_completed" value="100" />
 					<group name="include_pbg_parenting">
@@ -133,7 +133,7 @@
 					<bool name="include_completed" value="True" />
 					<bool name="include_queued" value="False" />
 					<bool name="is_present" value="False" />
-					<instance_reference name="upgrade_name" value="upgrade\british_africa\infantry\boys_anti_tank_rifles_tommy_africa_uk" />
+					<instance_reference name="upgrade_name" value="upgrade\british_africa\infantry\boys_anti_tank_rifles_tommy_africa_uk" mod="9239c1ca0dd047c28f698b95e2071674" />
 					<int name="min_completed" value="1" />
 					<int name="max_completed" value="100" />
 					<group name="include_pbg_parenting">
@@ -429,7 +429,7 @@
 					<bool name="include_completed" value="True" />
 					<bool name="include_queued" value="False" />
 					<bool name="is_present" value="False" />
-					<instance_reference name="upgrade_name" value="upgrade\british_africa\infantry\lmg_bren_tommy_africa_uk" />
+					<instance_reference name="upgrade_name" value="upgrade\british_africa\infantry\lmg_bren_tommy_africa_uk" mod="9239c1ca0dd047c28f698b95e2071674" />
 					<int name="min_completed" value="1" />
 					<int name="max_completed" value="100" />
 					<group name="include_pbg_parenting">
@@ -443,7 +443,7 @@
 					<bool name="include_completed" value="True" />
 					<bool name="include_queued" value="False" />
 					<bool name="is_present" value="False" />
-					<instance_reference name="upgrade_name" value="upgrade\british_africa\infantry\boys_anti_tank_rifles_tommy_africa_uk" />
+					<instance_reference name="upgrade_name" value="upgrade\british_africa\infantry\boys_anti_tank_rifles_tommy_africa_uk" mod="9239c1ca0dd047c28f698b95e2071674" />
 					<int name="min_completed" value="1" />
 					<int name="max_completed" value="100" />
 					<group name="include_pbg_parenting">

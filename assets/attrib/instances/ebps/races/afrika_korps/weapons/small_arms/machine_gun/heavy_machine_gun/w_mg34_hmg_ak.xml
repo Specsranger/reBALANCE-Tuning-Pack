@@ -539,7 +539,7 @@
 				<list name="race_mapping_list">
 					<group name="race_mapping" List.ItemID="845317357">
 						<instance_reference name="race_key" value="racebps\americans" />
-						<instance_reference name="presentation_entity_override" value="ebps\races\american\weapons\small_arms\machine_guns\heavy_machine_gun\w_30cal_hmg_us" />
+						<instance_reference name="presentation_entity_override" value="ebps\races\american\weapons\small_arms\machine_guns\heavy_machine_gun\w_30cal_hmg_us" mod="9239c1ca0dd047c28f698b95e2071674" />
 						<instance_reference name="presentation_squad_override" value="sbps\races\american\team_weapons\hmg_30cal_us" />
 					</group>
 					<group name="race_mapping" List.ItemID="-2036875627">
@@ -549,7 +549,7 @@
 					</group>
 					<group name="race_mapping" List.ItemID="1876295717">
 						<instance_reference name="race_key" value="racebps\british_africa" />
-						<instance_reference name="presentation_entity_override" value="ebps\races\british_africa\weapons\small_arms\machine_guns\heavy_machine_gun\w_vickers_hmg_africa_uk" />
+						<instance_reference name="presentation_entity_override" value="ebps\races\british_africa\weapons\small_arms\machine_guns\heavy_machine_gun\w_vickers_hmg_africa_uk" mod="9239c1ca0dd047c28f698b95e2071674" />
 						<instance_reference name="presentation_squad_override" value="sbps\races\british_africa\team_weapons\hmg_vickers_africa_uk" />
 					</group>
 					<group name="race_mapping" List.ItemID="-1488113781">
@@ -1116,7 +1116,7 @@
 				<list name="race_mapping_list">
 					<group name="race_mapping" List.ItemID="780613686">
 						<instance_reference name="race_key" value="racebps\americans" />
-						<instance_reference name="presentation_entity_override" value="ebps\races\american\weapons\small_arms\machine_guns\heavy_machine_gun\w_30cal_hmg_us" />
+						<instance_reference name="presentation_entity_override" value="ebps\races\american\weapons\small_arms\machine_guns\heavy_machine_gun\w_30cal_hmg_us" mod="9239c1ca0dd047c28f698b95e2071674" />
 						<instance_reference name="presentation_squad_override" value="sbps\races\american\team_weapons\hmg_30cal_us" />
 					</group>
 					<group name="race_mapping" List.ItemID="2090402662">
@@ -1126,7 +1126,7 @@
 					</group>
 					<group name="race_mapping" List.ItemID="232286678">
 						<instance_reference name="race_key" value="racebps\british_africa" />
-						<instance_reference name="presentation_entity_override" value="ebps\races\british_africa\weapons\small_arms\machine_guns\heavy_machine_gun\w_vickers_hmg_africa_uk" />
+						<instance_reference name="presentation_entity_override" value="ebps\races\british_africa\weapons\small_arms\machine_guns\heavy_machine_gun\w_vickers_hmg_africa_uk" mod="9239c1ca0dd047c28f698b95e2071674" />
 						<instance_reference name="presentation_squad_override" value="sbps\races\british_africa\team_weapons\hmg_vickers_africa_uk" />
 					</group>
 					<group name="race_mapping" List.ItemID="-74196271">

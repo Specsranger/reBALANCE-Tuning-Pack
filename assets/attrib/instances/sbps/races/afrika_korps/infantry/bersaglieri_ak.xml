@@ -162,6 +162,7 @@
 					<instance_reference name="ability" value="abilities\races\afrika_korps\battlegroups\italian_combined_arms\italian_combined_arms_secured_flanks_ak" List.ItemID="-1514229989" List.ListAction="Append" />
 					<instance_reference name="ability" value="abilities\races\afrika_korps\infantry\secured_flanks_ak" List.ItemID="-859832390" List.ListAction="Append" />
 					<instance_reference name="ability" value="abilities\races\afrika_korps\infantry\force_recon_ak" List.ItemID="-1011689635" List.ListAction="Append" />
+					<instance_reference name="ability" value="abilities\races\german\veterancy\special_ops\infantry\fast_capture_grenadiers_vet_ger" List.ItemID="302770647" List.ListAction="Append" />
 				</list>
 			</template_reference>
 		</list>
@@ -333,6 +334,7 @@
 					<instance_reference name="ability" value="abilities\races\afrika_korps\infantry\secured_flanks_ak" List.ItemID="-1793311900" List.ListAction="Append" />
 					<instance_reference name="ability" value="abilities\races\afrika_korps\infantry\force_recon_ak" List.ItemID="-4261670" List.ListAction="Append" />
 					<instance_reference name="ability" value="abilities\races\common\infantry\breach" List.ItemID="392223476" List.ListAction="Append" />
+					<instance_reference name="ability" value="abilities\races\german\veterancy\special_ops\infantry\fast_capture_grenadiers_vet_ger" List.ItemID="-1866623070" List.ListAction="Append" />
 				</list>
 			</template_reference>
 		</list>

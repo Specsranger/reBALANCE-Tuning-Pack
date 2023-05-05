@@ -1,0 +1,208 @@
+<instance version="5" description="" template="abilities">
+	<variant name="default">
+		<group name="ability_bag">
+			<enum_table name="cost_to_player">
+				<float name="munition" value="30" overrideParent="True" />
+			</enum_table>
+			<float name="range" value="45" comment="Must be lower than weapon range or ability breaks." overrideParent="True" />
+			<float name="recharge_time" value="30" overrideParent="True" />
+			<enum name="shared_timer" value="shared_ability_1" overrideParent="True" />
+			<group name="ui_info">
+				<file name="icon_name" value="common\abilities\ability_incendiary_artillery" overrideParent="True" />
+			</group>
+			<list name="requirements">
+				<template_reference name="required" value="requirements\required_any_in_list" overrideParent="True" List.ItemID="-10318555" List.ListAction="Append">
+					<enum name="reason" value="usage_and_display" />
+					<locstring name="ui_name" value="0" />
+					<list name="requirements">
+						<template_reference name="requirement" value="requirements\required_all_in_list" List.ItemID="-1941909413">
+							<enum name="reason" value="usage_and_display" />
+							<locstring name="ui_name" value="0" />
+							<list name="requirements">
+								<template_reference name="requirement" value="requirements\required_squad_upgrade" List.ItemID="1799043944">
+									<enum name="reason" value="usage_and_display" />
+									<locstring name="ui_name" value="0" />
+									<bool name="include_queued" value="False" />
+									<bool name="is_present" value="False" overrideParent="True" />
+									<instance_reference name="upgrade_name" value="upgrade\american\veterancy\veterancy_1_unlock_a" />
+									<int name="min_completed" value="1" />
+									<int name="max_completed" value="100" />
+									<group name="include_pbg_parenting">
+										<bool name="include_child_pbgs" value="False" />
+										<bool name="include_parent_pbgs" value="False" />
+									</group>
+									<bool name="include_completed" value="True" />
+								</template_reference>
+								<template_reference name="requirement" value="requirements\required_squad_upgrade" List.ItemID="1549255517">
+									<enum name="reason" value="usage_and_display" />
+									<locstring name="ui_name" value="0" />
+									<bool name="include_queued" value="False" />
+									<bool name="is_present" value="True" overrideParent="True" />
+									<instance_reference name="upgrade_name" value="upgrade\american\veterancy\veterancy_1_unlock_b" />
+									<int name="min_completed" value="1" />
+									<int name="max_completed" value="100" />
+									<group name="include_pbg_parenting">
+										<bool name="include_child_pbgs" value="False" />
+										<bool name="include_parent_pbgs" value="False" />
+									</group>
+									<bool name="include_completed" value="True" />
+								</template_reference>
+							</list>
+						</template_reference>
+						<template_reference name="requirement" value="requirements\required_all_in_list" List.ItemID="-1773752253">
+							<enum name="reason" value="usage_and_display" />
+							<locstring name="ui_name" value="0" />
+							<list name="requirements">
+								<template_reference name="requirement" value="requirements\required_all_in_list" List.ItemID="-1868808213">
+									<enum name="reason" value="usage_and_display" />
+									<locstring name="ui_name" value="0" />
+									<list name="requirements">
+										<template_reference name="requirement" value="requirements\required_not" List.ItemID="520891919">
+											<enum name="reason" value="usage_and_display" />
+											<locstring name="ui_name" value="0" />
+											<list name="requirement_table">
+												<template_reference name="required" value="requirements\required_race" List.ItemID="-1259741780">
+													<enum name="reason" value="usage" />
+													<locstring name="ui_name" value="0" />
+													<instance_reference name="race" value="racebps\americans" />
+												</template_reference>
+											</list>
+										</template_reference>
+										<template_reference name="requirement" value="requirements\required_not" List.ItemID="620570401">
+											<enum name="reason" value="usage_and_display" />
+											<locstring name="ui_name" value="0" />
+											<list name="requirement_table">
+												<template_reference name="required" value="requirements\required_race" List.ItemID="731971596">
+													<enum name="reason" value="usage" />
+													<locstring name="ui_name" value="0" />
+													<instance_reference name="race" value="racebps\americans_campaign" />
+												</template_reference>
+											</list>
+										</template_reference>
+									</list>
+								</template_reference>
+							</list>
+						</template_reference>
+					</list>
+				</template_reference>
+				<template_reference name="required" value="requirements\required_squad_veterancy" List.ItemID="1889640206" List.ListAction="Append">
+					<enum name="reason" value="usage" />
+					<locstring name="ui_name" value="11233037" />
+					<float name="veterancy_rank" value="1" />
+				</template_reference>
+			</list>
+			<group name="ui_position">
+				<int name="ui_position_column" value="4" overrideParent="True" />
+			</group>
+			<float name="ui_reticule_radius_min" value="6" overrideParent="True" />
+			<float name="ui_reticule_radius_max" value="6" overrideParent="True" />
+			<state_tree_node name="entity_tree" value="sherman_bulldozer_incendiary_barrage_us" overrideParent="True" />
+			<state_tree_node name="statetree_node_prereq_self_requirement" value="ability_requirement_queries\inactive_ability_requirements\us_sherman_bulldozer_105mm" overrideParent="True" />
+		</group>
+		<uniqueid name="pbgid" value="2044859" />
+		<instance_reference name="parent_pbg" value="abilities\races\common\vehicles\concurrent_vehicle_barrage_parent" />
+	</variant>
+	<variant name="sp">
+		<group name="ability_bag">
+			<enum_table name="cost_to_player">
+				<float name="munition" value="30" overrideParent="True" />
+			</enum_table>
+			<float name="range" value="40" comment="Must be lower than weapon range or ability breaks." overrideParent="True" />
+			<float name="recharge_time" value="30" overrideParent="True" />
+			<enum name="shared_timer" value="shared_ability_1" overrideParent="True" />
+			<group name="ui_info">
+				<file name="icon_name" value="common\abilities\ability_incendiary_artillery" overrideParent="True" />
+			</group>
+			<list name="requirements">
+				<template_reference name="required" value="requirements\required_any_in_list" overrideParent="True" List.ItemID="-1534682479" List.ListAction="Append">
+					<enum name="reason" value="usage_and_display" />
+					<locstring name="ui_name" value="0" />
+					<list name="requirements">
+						<template_reference name="requirement" value="requirements\required_all_in_list" List.ItemID="1705452918">
+							<enum name="reason" value="usage_and_display" />
+							<locstring name="ui_name" value="0" />
+							<list name="requirements">
+								<template_reference name="requirement" value="requirements\required_squad_upgrade" List.ItemID="1832122772">
+									<enum name="reason" value="usage_and_display" />
+									<locstring name="ui_name" value="0" />
+									<bool name="include_queued" value="False" />
+									<bool name="is_present" value="False" overrideParent="True" />
+									<instance_reference name="upgrade_name" value="upgrade\american\veterancy\veterancy_1_unlock_a" />
+									<int name="min_completed" value="1" />
+									<int name="max_completed" value="100" />
+									<group name="include_pbg_parenting">
+										<bool name="include_child_pbgs" value="False" />
+										<bool name="include_parent_pbgs" value="False" />
+									</group>
+									<bool name="include_completed" value="True" />
+								</template_reference>
+								<template_reference name="requirement" value="requirements\required_squad_upgrade" List.ItemID="7323518">
+									<enum name="reason" value="usage_and_display" />
+									<locstring name="ui_name" value="0" />
+									<bool name="include_queued" value="False" />
+									<bool name="is_present" value="True" overrideParent="True" />
+									<instance_reference name="upgrade_name" value="upgrade\american\veterancy\veterancy_1_unlock_b" />
+									<int name="min_completed" value="1" />
+									<int name="max_completed" value="100" />
+									<group name="include_pbg_parenting">
+										<bool name="include_child_pbgs" value="False" />
+										<bool name="include_parent_pbgs" value="False" />
+									</group>
+									<bool name="include_completed" value="True" />
+								</template_reference>
+							</list>
+						</template_reference>
+						<template_reference name="requirement" value="requirements\required_all_in_list" List.ItemID="-247175783">
+							<enum name="reason" value="usage_and_display" />
+							<locstring name="ui_name" value="0" />
+							<list name="requirements">
+								<template_reference name="requirement" value="requirements\required_all_in_list" List.ItemID="1264146506">
+									<enum name="reason" value="usage_and_display" />
+									<locstring name="ui_name" value="0" />
+									<list name="requirements">
+										<template_reference name="requirement" value="requirements\required_not" List.ItemID="-957339973">
+											<enum name="reason" value="usage_and_display" />
+											<locstring name="ui_name" value="0" />
+											<list name="requirement_table">
+												<template_reference name="required" value="requirements\required_race" List.ItemID="-1481314055">
+													<enum name="reason" value="usage" />
+													<locstring name="ui_name" value="0" />
+													<instance_reference name="race" value="racebps\americans" />
+												</template_reference>
+											</list>
+										</template_reference>
+										<template_reference name="requirement" value="requirements\required_not" List.ItemID="1620585580">
+											<enum name="reason" value="usage_and_display" />
+											<locstring name="ui_name" value="0" />
+											<list name="requirement_table">
+												<template_reference name="required" value="requirements\required_race" List.ItemID="-453704712">
+													<enum name="reason" value="usage" />
+													<locstring name="ui_name" value="0" />
+													<instance_reference name="race" value="racebps\americans_campaign" />
+												</template_reference>
+											</list>
+										</template_reference>
+									</list>
+								</template_reference>
+							</list>
+						</template_reference>
+					</list>
+				</template_reference>
+				<template_reference name="required" value="requirements\required_squad_veterancy" List.ItemID="531094346" List.ListAction="Append">
+					<enum name="reason" value="usage" />
+					<locstring name="ui_name" value="11233037" />
+					<float name="veterancy_rank" value="1" />
+				</template_reference>
+			</list>
+			<group name="ui_position">
+				<int name="ui_position_column" value="4" overrideParent="True" />
+			</group>
+			<float name="ui_reticule_radius_min" value="6" overrideParent="True" />
+			<float name="ui_reticule_radius_max" value="6" overrideParent="True" />
+			<state_tree_node name="entity_tree" value="sp_sherman_bulldozer_incendiary_barrage_us" overrideParent="True" />
+			<state_tree_node name="statetree_node_prereq_self_requirement" value="ability_requirement_queries\inactive_ability_requirements\us_sherman_bulldozer_105mm" overrideParent="True" />
+		</group>
+		<uniqueid name="pbgid" value="2044859" />
+		<instance_reference name="parent_pbg" value="abilities\races\common\vehicles\concurrent_vehicle_barrage_parent" />
+	</variant>
+</instance>

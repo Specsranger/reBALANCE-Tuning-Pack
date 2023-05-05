@@ -86,15 +86,55 @@
 			<locstring name="ui_usage_txt" value="0" />
 			<bool name="validate_actions" value="True" />
 			<list name="requirements">
-				<template_reference name="required" value="requirements\required_all_in_list" List.ItemID="-2024700934">
+				<template_reference name="required" value="requirements\required_all_in_list" List.ItemID="743248841">
 					<enum name="reason" value="usage" />
 					<locstring name="ui_name" value="0" />
 					<list name="requirements">
-						<template_reference name="requirement" value="requirements\required_number_of_squad_members" List.ItemID="-532191733">
+						<template_reference name="requirement" value="requirements\required_number_of_squad_members" List.ItemID="-476816513">
 							<enum name="reason" value="usage" />
 							<locstring name="ui_name" value="0" />
 							<enum name="comparison" value="greater_than_or_equal_to" />
 							<float name="number_of_members" value="2" />
+						</template_reference>
+					</list>
+				</template_reference>
+				<template_reference name="required" value="requirements\required_not" List.ItemID="-1447456181">
+					<enum name="reason" value="usage_and_display" />
+					<locstring name="ui_name" value="0" />
+					<list name="requirement_table">
+						<template_reference name="required" value="requirements\required_any_in_list" List.ItemID="1121782871">
+							<enum name="reason" value="usage_and_display" />
+							<locstring name="ui_name" value="0" />
+							<list name="requirements">
+								<template_reference name="requirement" value="requirements\required_squad_upgrade" List.ItemID="-1827850751">
+									<enum name="reason" value="usage_and_display" />
+									<locstring name="ui_name" value="0" />
+									<bool name="include_completed" value="True" />
+									<bool name="include_queued" value="False" />
+									<bool name="is_present" value="True" />
+									<instance_reference name="upgrade_name" value="upgrade\british\infantry\utility_sapper_uk" />
+									<int name="min_completed" value="1" />
+									<int name="max_completed" value="100" />
+									<group name="include_pbg_parenting">
+										<bool name="include_child_pbgs" value="False" />
+										<bool name="include_parent_pbgs" value="False" />
+									</group>
+								</template_reference>
+								<template_reference name="requirement" value="requirements\required_squad_upgrade" List.ItemID="-944505298">
+									<enum name="reason" value="usage_and_display" />
+									<locstring name="ui_name" value="0" />
+									<bool name="include_completed" value="True" />
+									<bool name="include_queued" value="False" />
+									<bool name="is_present" value="True" />
+									<instance_reference name="upgrade_name" value="upgrade\british_africa\infantry\utility_sapper_africa_uk" />
+									<int name="min_completed" value="1" />
+									<int name="max_completed" value="100" />
+									<group name="include_pbg_parenting">
+										<bool name="include_child_pbgs" value="False" />
+										<bool name="include_parent_pbgs" value="False" />
+									</group>
+								</template_reference>
+							</list>
 						</template_reference>
 					</list>
 				</template_reference>
@@ -348,15 +388,55 @@
 			<locstring name="ui_usage_txt" value="0" />
 			<bool name="validate_actions" value="True" />
 			<list name="requirements">
-				<template_reference name="required" value="requirements\required_all_in_list" List.ItemID="312867803">
+				<template_reference name="required" value="requirements\required_all_in_list" List.ItemID="599597441">
 					<enum name="reason" value="usage" />
 					<locstring name="ui_name" value="0" />
 					<list name="requirements">
-						<template_reference name="requirement" value="requirements\required_number_of_squad_members" List.ItemID="-838082391">
+						<template_reference name="requirement" value="requirements\required_number_of_squad_members" List.ItemID="149054939">
 							<enum name="reason" value="usage" />
 							<locstring name="ui_name" value="0" />
 							<enum name="comparison" value="greater_than_or_equal_to" />
 							<float name="number_of_members" value="2" />
+						</template_reference>
+					</list>
+				</template_reference>
+				<template_reference name="required" value="requirements\required_not" List.ItemID="-224161145">
+					<enum name="reason" value="usage_and_display" />
+					<locstring name="ui_name" value="0" />
+					<list name="requirement_table">
+						<template_reference name="required" value="requirements\required_any_in_list" List.ItemID="-1156986275">
+							<enum name="reason" value="usage_and_display" />
+							<locstring name="ui_name" value="0" />
+							<list name="requirements">
+								<template_reference name="requirement" value="requirements\required_squad_upgrade" List.ItemID="-758029020">
+									<enum name="reason" value="usage_and_display" />
+									<locstring name="ui_name" value="0" />
+									<bool name="include_completed" value="True" />
+									<bool name="include_queued" value="False" />
+									<bool name="is_present" value="True" />
+									<instance_reference name="upgrade_name" value="upgrade\british\infantry\utility_sapper_uk" />
+									<int name="min_completed" value="1" />
+									<int name="max_completed" value="100" />
+									<group name="include_pbg_parenting">
+										<bool name="include_child_pbgs" value="False" />
+										<bool name="include_parent_pbgs" value="False" />
+									</group>
+								</template_reference>
+								<template_reference name="requirement" value="requirements\required_squad_upgrade" List.ItemID="-1769142896">
+									<enum name="reason" value="usage_and_display" />
+									<locstring name="ui_name" value="0" />
+									<bool name="include_completed" value="True" />
+									<bool name="include_queued" value="False" />
+									<bool name="is_present" value="True" />
+									<instance_reference name="upgrade_name" value="upgrade\british_africa\infantry\utility_sapper_africa_uk" />
+									<int name="min_completed" value="1" />
+									<int name="max_completed" value="100" />
+									<group name="include_pbg_parenting">
+										<bool name="include_child_pbgs" value="False" />
+										<bool name="include_parent_pbgs" value="False" />
+									</group>
+								</template_reference>
+							</list>
 						</template_reference>
 					</list>
 				</template_reference>
