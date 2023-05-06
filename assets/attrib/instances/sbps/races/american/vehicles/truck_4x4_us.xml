@@ -30,7 +30,7 @@
 			<template_reference name="squadexts" value="sbpextensions\squad_loadout_ext" List.ItemID="-1664135055" List.ParentItemID="-1664135055">
 				<list name="unit_list">
 					<group name="loadout_data" List.ItemID="-226045775" List.ParentItemID="-226045775">
-						<instance_reference name="type" value="ebps\races\american\vehicles\truck_4x4_us" mod="9239c1ca0dd047c28f698b95e2071674" overrideParent="True" />
+						<instance_reference name="type" value="ebps\races\american\vehicles\truck_4x4_us" overrideParent="True" />
 					</group>
 				</list>
 			</template_reference>
@@ -187,7 +187,7 @@
 							<file name="portrait_name" value="races\american\vehicles\4x4_truck_us_portrait" overrideParent="True" />
 							<locstring name="help_text" value="11235814" overrideParent="True" />
 							<locstring name="screen_name" value="11241674" overrideParent="True" />
-							<locstring name="brief_text" value="11242087" overrideParent="True" />
+							<locstring name="brief_text" value="11248798" overrideParent="True" />
 							<locstring name="extra_help_text" value="11242336" overrideParent="True" />
 						</group>
 					</group>
@@ -282,7 +282,7 @@
 			<template_reference name="squadexts" value="sbpextensions\squad_loadout_ext" List.ItemID="-1664135055" List.ParentItemID="-1664135055">
 				<list name="unit_list">
 					<group name="loadout_data" List.ItemID="-226045775" List.ParentItemID="-226045775">
-						<instance_reference name="type" value="ebps\races\american\vehicles\truck_4x4_us" mod="9239c1ca0dd047c28f698b95e2071674" overrideParent="True" />
+						<instance_reference name="type" value="ebps\races\american\vehicles\truck_4x4_us" overrideParent="True" />
 					</group>
 				</list>
 			</template_reference>
@@ -439,7 +439,7 @@
 							<file name="portrait_name" value="races\american\vehicles\4x4_truck_us_portrait" overrideParent="True" />
 							<locstring name="help_text" value="11235814" overrideParent="True" />
 							<locstring name="screen_name" value="11241674" overrideParent="True" />
-							<locstring name="brief_text" value="11242087" overrideParent="True" />
+							<locstring name="brief_text" value="11248798" overrideParent="True" />
 							<locstring name="extra_help_text" value="11242336" overrideParent="True" />
 						</group>
 					</group>
