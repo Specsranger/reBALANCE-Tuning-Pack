@@ -182,7 +182,7 @@
 			</template_reference>
 			<template_reference name="squadexts" value="sbpextensions\squad_ability_ext" List.ItemID="-427816430" List.ParentItemID="-427816430">
 				<list name="abilities">
-					<instance_reference name="ability" value="abilities\races\afrika_korps\infantry\infantry_combined_arms_ak" List.ItemID="1088793951" List.ListAction="Append" />
+					<instance_reference name="ability" value="abilities\races\afrika_korps\infantry\infantry_combined_arms_ak" mod="9239c1ca0dd047c28f698b95e2071674" List.ItemID="1088793951" List.ListAction="Append" />
 					<instance_reference name="ability" value="abilities\races\afrika_korps\infantry\rudimentary_repair_ak" List.ItemID="-779304789" List.ListAction="Append" />
 					<instance_reference name="ability" value="abilities\races\afrika_korps\infantry\panzerbuchse_tear_gas_shot_ak" List.ItemID="-755943805" List.ListAction="Append" />
 					<instance_reference name="ability" value="abilities\races\afrika_korps\infantry\counter_attack_passive_ak" List.ItemID="-1990232134" List.ListAction="Append" />
@@ -386,7 +386,7 @@
 			</template_reference>
 			<template_reference name="squadexts" value="sbpextensions\squad_ability_ext" List.ItemID="-427816430" List.ParentItemID="-427816430">
 				<list name="abilities">
-					<instance_reference name="ability" value="abilities\races\afrika_korps\infantry\infantry_combined_arms_ak" List.ItemID="-1856703956" List.ListAction="Append" />
+					<instance_reference name="ability" value="abilities\races\afrika_korps\infantry\infantry_combined_arms_ak" mod="9239c1ca0dd047c28f698b95e2071674" List.ItemID="-1856703956" List.ListAction="Append" />
 					<instance_reference name="ability" value="abilities\races\afrika_korps\infantry\rudimentary_repair_ak" List.ItemID="802861295" List.ListAction="Append" />
 					<instance_reference name="ability" value="abilities\races\afrika_korps\infantry\panzerbuchse_tear_gas_shot_ak" List.ItemID="-1435830658" List.ListAction="Append" />
 					<instance_reference name="ability" value="abilities\races\afrika_korps\infantry\counter_attack_passive_ak" List.ItemID="-608469867" List.ListAction="Append" />

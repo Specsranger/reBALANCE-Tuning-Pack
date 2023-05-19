@@ -7,7 +7,7 @@
 					<instance_reference name="ability" value="abilities\races\american\veterancy\vehicles\halftrack_75mm\veterancy_1_unlock_b_halftrack_75mm_us" List.ItemID="1910041308" List.ListAction="Append" />
 					<instance_reference name="ability" value="abilities\races\american\veterancy\vehicles\halftrack_75mm\veterancy_1a_target_weak_point_halftrack_75mm_us" List.ItemID="364362793" List.ListAction="Append" />
 					<instance_reference name="ability" value="abilities\races\american\veterancy\vehicles\halftrack_75mm\veterancy_1b_take_aim_halftrack_75mm_us" List.ItemID="1451093705" List.ListAction="Append" />
-					<instance_reference name="ability" value="abilities\races\american\vehicles\barrage_halftrack_75mm_us" List.ItemID="-443449007" List.ListAction="Append" />
+					<instance_reference name="ability" value="abilities\races\american\vehicles\barrage_halftrack_75mm_us" mod="9239c1ca0dd047c28f698b95e2071674" List.ItemID="-443449007" List.ListAction="Append" />
 					<instance_reference name="ability" value="abilities\races\american\vehicles\self_repair_passive_halftrack_us" List.ItemID="1130298148" List.ListAction="Append" />
 					<instance_reference name="ability" value="abilities\prioritize_vehicles" List.ItemID="100732252" List.ListAction="Append" />
 					<instance_reference name="ability" value="abilities\races\american\vehicles\repair_critical_engine_damage_us" List.ItemID="-1867521691" List.ListAction="Append" />
@@ -148,7 +148,7 @@
 					<instance_reference name="ability" value="abilities\races\american\veterancy\vehicles\halftrack_75mm\veterancy_1_unlock_b_halftrack_75mm_us" List.ItemID="-49382532" List.ListAction="Append" />
 					<instance_reference name="ability" value="abilities\races\american\veterancy\vehicles\halftrack_75mm\veterancy_1a_target_weak_point_halftrack_75mm_us" List.ItemID="-1249092409" List.ListAction="Append" />
 					<instance_reference name="ability" value="abilities\races\american\veterancy\vehicles\halftrack_75mm\veterancy_1b_take_aim_halftrack_75mm_us" List.ItemID="2006065749" List.ListAction="Append" />
-					<instance_reference name="ability" value="abilities\races\american\vehicles\barrage_halftrack_75mm_us" List.ItemID="-621718938" List.ListAction="Append" />
+					<instance_reference name="ability" value="abilities\races\american\vehicles\barrage_halftrack_75mm_us" mod="9239c1ca0dd047c28f698b95e2071674" List.ItemID="-621718938" List.ListAction="Append" />
 					<instance_reference name="ability" value="abilities\races\american\vehicles\self_repair_passive_halftrack_us" List.ItemID="1266977562" List.ListAction="Append" />
 					<instance_reference name="ability" value="abilities\prioritize_vehicles" List.ItemID="-354702457" List.ListAction="Append" />
 					<instance_reference name="ability" value="abilities\races\american\vehicles\repair_critical_engine_damage_us" List.ItemID="-1326955917" List.ListAction="Append" />

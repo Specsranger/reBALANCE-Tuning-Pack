@@ -178,7 +178,7 @@
 			</template_reference>
 			<template_reference name="squadexts" value="sbpextensions\squad_ability_ext" List.ItemID="-427816430" List.ParentItemID="-427816430">
 				<list name="abilities">
-					<instance_reference name="ability" value="abilities\races\german\infantry\repair_pioneer_ger" mod="9239c1ca0dd047c28f698b95e2071674" List.ItemID="-918298448" List.ListAction="Append" />
+					<instance_reference name="ability" value="abilities\races\german\infantry\repair_pioneer_ger" overrideParent="True" List.ItemID="-918298448" List.ListAction="Append" />
 					<instance_reference name="ability" value="abilities\races\american\infantry\cut_wire_engineer_us" List.ItemID="-1273905553" List.ListAction="Append" />
 					<instance_reference name="ability" value="abilities\dev\vault_movement" List.ItemID="-1330577499" List.ListAction="Append" />
 					<instance_reference name="ability" value="abilities\races\german\infantry\toggle_detect_mines_ger" List.ItemID="-1676095578" List.ListAction="Append" />
@@ -484,7 +484,6 @@
 			</template_reference>
 			<template_reference name="squadexts" value="sbpextensions\squad_ability_ext" List.ItemID="-427816430" List.ParentItemID="-427816430">
 				<list name="abilities">
-					<instance_reference name="ability" value="abilities\races\german\infantry\repair_pioneer_ger" mod="9239c1ca0dd047c28f698b95e2071674" List.ItemID="-825883379" List.ListAction="Append" />
 					<instance_reference name="ability" value="abilities\races\american\infantry\cut_wire_engineer_us" List.ItemID="1652987727" List.ListAction="Append" />
 					<instance_reference name="ability" value="abilities\dev\vault_movement" List.ItemID="-1323668784" List.ListAction="Append" />
 					<instance_reference name="ability" value="abilities\races\german\infantry\toggle_detect_mines_ger" List.ItemID="-1309097034" List.ListAction="Append" />
