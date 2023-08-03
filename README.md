@@ -134,7 +134,7 @@ With the current state of balance in Company of Heroes 3, my co-dev and I decide
     - Decreased damage to 100 to serve the new AI/AT role
     - Increased AOE
 - MG42 cost increased to 280 from 240 to reflect performance
-- Flak 30 Anti-Aircraft Gun Team increased damage can deal with head on strafes 
+- Flak 30 Anti-Aircraft Gun Team increased damage towards aircraft can deal with head on strafes 
 - Nebelwerfer scatter reduced to 8 from 12 so it’s DOT is less oppressive
 - Decreased reload time of Stummel from 5 to 4 to improve upgrade desirability 
 - Revert fuel costs of Panzer IV to 90 from 100 to match medium tank price to performance ratio
