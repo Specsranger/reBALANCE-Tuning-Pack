@@ -148,4 +148,4 @@ With the current state of balance in Company of Heroes 3, my co-dev and I decide
 
 ## Known Issues
 - 221 Scout Car gunner and Hellcat crew are scaled incorrectly after unit scale change
-- ASC’s “Improved Munitions” incorrectly calls in double P47’s for rocket strafe and a JU-87 for Bombing Run
+- ASC’s “Improved Munitions” incorrectly calls in double P47’s for rocket strafe and a JU-87 for for Heavy Dive Bomb
