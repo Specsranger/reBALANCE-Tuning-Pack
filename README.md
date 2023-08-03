@@ -92,7 +92,7 @@ With the current state of balance in Company of Heroes 3, my co-dev and I decide
 ### DAK
 - Armored Support reworked to address “free” upgrades
     - Replaced Superior Fire Drills with Teller Mines
-    - Replaced Vehicle Awareness with Spotting scopes 
+    - Replaced Vehicle Awareness with Spotting Scopes 
 - Kradschützen requires tuning to increase mid-late game utility
     - Included as a unit that provides combined arms
     - Increased cost to 240 from 200 as a result of new utility
