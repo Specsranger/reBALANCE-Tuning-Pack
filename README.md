@@ -7,7 +7,7 @@ With the current state of balance in Company of Heroes 3, my co-dev and I decide
 - Limited ability for either factions to paradrop starting units at the start of the match
     - Wehrmacht Medical Bunkers can now auto reinforce
     - Grenadier’s merge ability should not be applicable to retreating units
-- Added “Breach” ability to all grenade throwing units which include Gurkhas, Footguards, Commandos, Grenadiers, Stosstruppen and Paratroopers.
+- Added “Breach” ability to all grenade throwing units which include Gurkhas, Footguards, Commandos, Grenadiers, Stosstruppen, and Paratroopers.
 - Emplacements, towable heavy artillery, and offmaps should no longer attack HQs
     - Includes BL5.5 Artillery Emplacement, Cannone Da 105/28 Howitzer, Infantry Section’s Forward Observer Artillery Barrage, and Dingo’s Forward Observer Artillery Barrage
 - Changed requirements for USF support companies to lock T4 rather than T2/3 to open more viable strategies.
