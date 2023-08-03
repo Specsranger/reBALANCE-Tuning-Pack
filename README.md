@@ -50,7 +50,7 @@ With the current state of balance in Company of Heroes 3, my co-dev and I decide
 - Heavy Machine Gun Paradrop needs tuning relative to their timing
     - Can only be dropped within LOS
 - Riflemen performance can be reduced
-    - Removed 2nd BAR upgrade to improve combined arms builds
+    - Removed 2nd BAR upgrade to encourage combined arms builds
 - Assault Engineers required rework as USF lacked reliable SMG units
     - CP cost increased to 2 from 1 
     - Health increased to 100 from 90
