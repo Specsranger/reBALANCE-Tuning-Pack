@@ -3,7 +3,13 @@
 With the current state of balance in Company of Heroes 3, my co-dev and I decided to develop a soft COH3 balance tuning pack for consideration in assisting with multiplayer balancing.
 
 ## Highlights
-- Streamlined all AA performance to standardized range of 180 from 270. Damage greatly increased so a single magazine can down aircraft to encourage local airspace control.
+- Aircraft and AA revamp
+    - Replaced all Attack Loiters with Strafes with reduced 3CP requirement
+    - Re-standardized max AA distance to 200 from 270
+    - Re-standardized max AA distance to 200 from 270
+    - Recon plane health increased from 480 to 1280 to balance to new AA damage
+    - High-Altitude bomber plane health increased from 480 to 720 to new AA damage
+- All medium and heavy vehicle callins have been replaced with T4 unlocks similar to COH2. All CP requirements reduced by 1
 - Limited ability for either factions to paradrop starting units at the start of the match
     - Wehrmacht Medical Bunkers can now auto reinforce
     - Grenadier’s merge ability should not be applicable to retreating units
@@ -35,6 +41,7 @@ With the current state of balance in Company of Heroes 3, my co-dev and I decide
 
 ## Faction Changes
 ### US Forces
+- Replaced Armored Battlegroup’s “Veteran Crews” with “Rigorous Vehicle Training”
 - Air Support Center required rework
     - P-47 Strafing Run cost reverted to 60 from 50
     - P-47 Dive Bomb cost reverted to 90 from 70
@@ -77,19 +84,24 @@ With the current state of balance in Company of Heroes 3, my co-dev and I decide
 - M18 Hellcat is under tuned comparatively to other TDs
     - Scaled down by 10% for on screen fluency of threat level
     - Increased max speed to 6.5 to match base PIII speed
+    - On the moving accuracy from 0.65 to 0.75
+- Unlockable Easy 8 cost reduced to 440 manpower from 640, and CP cost reduced further to 5CP
 
 ### British Forces
-- Engineer SMG profile is overturned
-    - Increased cooldown duration to 2.5 from 1.375
+- Replaced British Armored Battlegroup’s “Light Vehicle Withdraw and Refit” with “Rapid Salvage”
 - Infantry Section requires tuning
     - Gated Boys and Bren upgrades behind T2
     - Decreased cost of Bren LMG to 75 from 100
 - Gurkhas manpower cost have been increased to 380 from 360 to reflect their performance
+- Increased CMP 15cwt AA damage to infantry by 30%, DPS now nearly comparable to 8rad
 - Increased Centaur base range to 40 from 35 to kite AT Infantry more effectively
 - Increased armor of M3 Grant to 195 from 170 to improve survivability of unit and attractiveness of unlock
+- Increased Churchill IV Tank penetration by 15%
 - Perimeter Monitor cost have been reduced to 225 from 250 to reflect performance
 
 ### DAK
+- Armored Reserve upgrade moved to T4 and increased manpower cost to 250 from 100
+- Exchanged “Rapid Advance” with “Veteran Squad Leaders” upgrade positions at T2 and raised cost manpower to 400 from 360 to improve DAK’s map presence
 - Armored Support reworked to address “free” upgrades
     - Replaced Superior Fire Drills with Teller Mines
     - Replaced Vehicle Awareness with Spotting Scopes 
@@ -119,6 +131,9 @@ With the current state of balance in Company of Heroes 3, my co-dev and I decide
           - Decreased cost to 50 from 55 to keep in line with specialized passive defense like the teller mine
   
 ### Wehrmacht
+- Luftwaffe Battlegroup requires update after callin changes
+    - Fallschirmjäger Squad Paradrop now replaces Luftwaffe Combat Group, CP increased to 2 from 1
+    - Smoke Bombing Run now replaces Stuka Strafing Run, which has now been replaced Fallschirmjäger Squad Paradrop’s previous position
 - Grenadier is undertuned relative to their role and cost with little late game viability
     - Reduced upgrade Grenadier to elite cost to 50MP
     - Added LMG42 upgrade to open late game options
@@ -138,9 +153,11 @@ With the current state of balance in Company of Heroes 3, my co-dev and I decide
 - Nebelwerfer scatter reduced to 8 from 12 so it’s DOT is less oppressive
 - Decreased reload time of Stummel from 5 to 4 to improve upgrade desirability 
 - Revert fuel costs of Panzer IV to 90 from 100 to match medium tank price to performance ratio
+- Updated Panzer Officer Quarters text to “Promotes all non-unlockable units“ from “Promotes all units”
 - Panther performance can be adjusted to be more dedicated against vehicles
     - Increased range to 45 from 40
     - Reduced speed to 5 from 5.2
+    - Manpower cost reduced to 500 from 550
 - Increased Brummbar base range to 40 from 30 to kite AT Infantry more effectively
 
 ## Potential Future Changes
