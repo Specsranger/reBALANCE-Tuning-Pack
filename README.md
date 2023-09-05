@@ -161,8 +161,10 @@ With the current state of balance in Company of Heroes 3, my co-dev and I decide
 - Increased Brummbar base range to 40 from 30 to kite AT Infantry more effectively
 
 ## Potential Future Changes
-- Remove on the move repair with the USF Field Repairs ability
+- Remove on the move repair with the USF Field Repairs ability (blocked by editor restrictions)
+- Update veteran abilities of certain units to better reflect their roles (blocked by editor restrictions)
 
 ## Known Issues
 - 221 Scout Car gunner and Hellcat crew are scaled incorrectly after unit scale change
 - ASC’s “Improved Munitions” incorrectly calls in double P47’s for rocket strafe and a JU-87 for for Heavy Dive Bomb
+- Incorrect VO playing with new Strafe update
