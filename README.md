@@ -9,7 +9,7 @@ With the current state of balance in Company of Heroes 3, my co-dev and I decide
     - Re-standardized max AA distance to 200 from 270
     - Recon plane health increased from 480 to 1280 to balance to new AA damage
     - High-Altitude bomber plane health increased from 480 to 720 to new AA damage
-- All medium and heavy vehicle callins have been replaced with T4 unlocks similar to COH2. All CP requirements reduced by 1
+- All medium and heavy vehicle callins have been replaced with T4 unlocks similar to COH2. All CP requirements reduced by 1 to keep in line with COH3 match timings
 - Limited ability for either factions to paradrop starting units at the start of the match
     - Wehrmacht Medical Bunkers can now auto reinforce
     - Grenadier’s merge ability should not be applicable to retreating units
